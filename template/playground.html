@@ -1,0 +1,244 @@
+<!DOCTYPE html> 
+	<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style">
+	<link rel="stylesheet" href="css/jquerymobile-1.4.0.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" href="css/jqmobile.min.css">
+	<link rel="stylesheet" href="css/icon/style.css">
+	<style type="text/css">.ui-page{background-image:url(images/playbackground.gif);background-size:100% ;background-repeat: no-repeat; background-attachment:fixed;}
+	.playd{font-size:22px;}.playdw{font-size:36px;}
+	.ui-icon-nbr:after{background-image: url("css/images/nbr.svg");}
+	.ui-icon-nbr:after{background-size: 18px 18px;}
+	.ui-icon-pigpaper:after{background-image: url("css/images/pigpaper.svg");}
+	.ui-icon-pigpaper:after{background-size: 18px 18px;}
+	</style>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	<script src="js/fastvclick.js"></script>
+	<script>$(function(){Fastvclick.attach(document.body);});</script>
+	
+	</head>
+	<body><div data-role="page" class="page" data-theme="">
+	<div  data-role="header" id="hrdiv" data-theme="">
+	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-tag">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="playbhr"></h1>
+	</div>
+	<div data-role="content">
+	<a href="playground.html" data-ajax="false" class="ui-btn ui-icon-refresh ui-btn-icon-notext ui-btn-inline">Refresh</a>
+	<a href="#"  class="ui-btn ui-icon-nbr ui-btn-icon-notext ui-btn-inline" id="sign">Sign</a>
+	<a href="#"  class="ui-btn ui-icon-pigpaper ui-btn-icon-notext ui-btn-inline" id="nbr">Number</a>	
+	<a href="#"  class="ui-btn ui-icon-bullets ui-btn-inline  ui-btn-icon-notext" id="playr"></a>
+	<a href="#"  class="ui-btn ui-icon-grid ui-btn-icon-notext ui-btn-inline" id="popw"></a>
+
+
+	<div class="ui-grid-a" style="">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-user ui-btn-icon-left playdw" data-rel="popup" style="color:red;background-image:url(images/result1.gif);background-size:100% 100%;" pigs="" id="piga"></a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-user ui-btn-icon-right playdw" data-rel="popup" style="color:red;background-image:url(images/result2.gif);background-size:100% 100%;" pigs="" id="pigb"></a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#" class="ui-btn ui-icon-user ui-btn-icon-left playd" id="player1"  style="color:red;background-image:url(images/player1.gif);background-size:100% 100%;"></a></div>
+	<div class="ui-block-b"><a href="#" class="ui-btn ui-icon-user ui-btn-icon-right playd" id="player2"  style="color:red;background-image:url(images/player2.gif);background-size:100% 100%;"></a></div>
+	</div>
+	
+	<hr>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p1" style="background-image:url(images/playground1.gif);background-size:100% 100%;">1</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p2" style="background-image:url(images/playground2.gif);background-size:100% 100%;">2</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p3" style="background-image:url(images/playground3.gif);background-size:100% 100%;">3</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p4" style="background-image:url(images/playground4.gif);background-size:100% 100%;">4</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p5" style="background-image:url(images/playground5.gif);background-size:100% 100%;">5</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p6" style="background-image:url(images/playground6.gif);background-size:100% 100%;">6</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p7" style="background-image:url(images/playground7.gif);background-size:100% 100%;">7</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p8" style="background-image:url(images/playground8.gif);background-size:100% 100%;">8</a></div>
+	</div>
+	
+	<hr>
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p9" style="background-image:url(images/playground9.gif);background-size:100% 100%;">9</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p10" style="background-image:url(images/playground10.gif);background-size:100% 100%;">10</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p11" style="background-image:url(images/playground11.gif);background-size:100% 100%;">11</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p12" style="background-image:url(images/playground12.gif);background-size:100% 100%;">12</a></div>
+	</div>
+
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p13" style="background-image:url(images/playground13.gif);background-size:100% 100%;">13</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p14" style="background-image:url(images/playground14.gif);background-size:100% 100%;">14</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p15" style="background-image:url(images/playground15.gif);background-size:100% 100%;">15</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p16" style="background-image:url(images/playground16.gif);background-size:100% 100%;">16</a></div>
+	</div>
+	<hr>
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p17" style="background-image:url(images/playground17.gif);background-size:100% 100%;">17</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p18" style="background-image:url(images/playground18.gif);background-size:100% 100%;">18</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p19" style="background-image:url(images/playground19.gif);background-size:100% 100%;">19</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p20" style="background-image:url(images/playground20.gif);background-size:100% 100%;">20</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p21" style="background-image:url(images/playground21.gif);background-size:100% 100%;">21</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p22" style="background-image:url(images/playground22.gif);background-size:100% 100%;">22</a></div>
+	</div>
+	
+<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p23" style="background-image:url(images/playground23.gif);background-size:100% 100%;">23</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p24" style="background-image:url(images/playground24.gif);background-size:100% 100%;">24</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p25" style="background-image:url(images/playground25.gif);background-size:100% 100%;">25</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p26" style="background-image:url(images/playground26.gif);background-size:100% 100%;">26</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p27" style="background-image:url(images/playground27.gif);background-size:100% 100%;">27</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p28" style="background-image:url(images/playground28.gif);background-size:100% 100%;">28</a></div>
+	</div>
+	
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p29" style="background-image:url(images/playground29.gif);background-size:100% 100%;">29</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p30" style="background-image:url(images/playground30.gif);background-size:100% 100%;">30</a></div>
+	</div>	
+
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-left playd" data-rel="popup" id="p31" style="background-image:url(images/playground31.gif);background-size:100% 100%;">31</a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p32" style="background-image:url(images/playground32.gif);background-size:100% 100%;">32</a></div>
+	</div>
+	
+	<div id="popup" data-role="popup" style="width:100%"><img style="width:100%" id="img" src=""/></div>
+
+	<div id="navigations" data-role="popup" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" id="uls" data-inset="true">
+	</ul></div><!-- /navigation -->
+		
+	<div id="navigation" data-role="popup" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-inset="true">
+	<li><a href="index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
+	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
+	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
+	<li><a href="playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
+	<li><a href="video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
+	<li><a href="album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
+	<li><a href="poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
+	</ul></div><!-- /navigation -->
+	</div></body>
+	</html>
+	<script src="js/theme.js"></script>
+	<script>
+	$("#sign").click(function(){localStorage.setItem('playground','1');window.location='playground.html';});
+	$("#nbr").click(function(){localStorage.setItem('playground','');window.location='playground.html';});
+	
+	$("#playr").click(function(){if(localStorage.getItem('playr')){localStorage.setItem('playr','');}else{localStorage.setItem('playr','1');};window.location='playground.html';});
+	if(localStorage.getItem('playr')){$("#playr").removeClass('ui-icon-bullets').addClass('ui-icon-recycle');};
+	
+	$("#popw").click(function(){if(localStorage.getItem('playshw')){localStorage.setItem('playshw','');}else{localStorage.setItem('playshw','1');};window.location='playground.html';});
+	if(localStorage.getItem('playshw')){$("#popw").removeClass('ui-icon-grid').addClass('ui-icon-action');};
+	
+	var tm = '';
+	if(localStorage.getItem('playground')==1){tm = 30;}else{tm = 32;}
+	
+	setInterval(function() {
+	var pig = Math.ceil(Math.random() * tm);
+	$('#player1').text(pig);},50);
+	setInterval(function() {
+	var pig = Math.ceil(Math.random() * tm);
+	$('#player2').text(pig);},50);
+	
+	if(localStorage.getItem('playground')==1){
+		$("#sign").removeClass('ui-icon-nbr').addClass('');var styclr = '';var nbrclick = '';var nbrclicks = '';var styclrs= '';
+		$("#player1").click(function(){var rlt = '';var vlu = Math.ceil(Math.random() * tm);
+		nbrclick++;
+		if(nbrclick/2==parseInt(nbrclick/2)){styclr = 'style="color:red"';}else{styclr = 'style="color:blue"';}
+		if(vlu <= 10){rlt = '<span class="pigs-rock" '+styclr+'></span>';}else if(vlu > 10 && vlu <= 20){rlt = '<span class="pigs-scissors" '+styclr+'></span>';}else if(vlu > 20 && vlu <= 30){rlt = '<span class="pigs-paper" '+styclr+'></span>';}
+		$("#piga").html(rlt);});
+		
+		$("#player2").click(function(){var rlt = '';var vlu = Math.ceil(Math.random() * tm);
+		nbrclicks++;
+		if(nbrclicks/2==parseInt(nbrclicks/2)){styclrs = 'style="color:blue"';}else{styclrs = 'style="color:red"';}
+		if(vlu <= 10){rlt = '<span class="pigs-rock" '+styclrs+'></span>';}else if(vlu > 10 && vlu <= 20){rlt = '<span class="pigs-scissors" '+styclrs+'></span>';}else if(vlu > 20 && vlu <= 30){rlt = '<span class="pigs-paper" '+styclrs+'</span>';}
+		$("#pigb").html(rlt);});
+
+	}else{
+		$("#nbr").removeClass('ui-icon-pigpaper').addClass('');	
+		
+		$("#player1").click(function(){var pigalu = Math.ceil(Math.random() * tm); 
+							$("#piga").html(pigalu);$("#piga").attr('pigs',pigalu);});
+		$("#player2").click(function(){var pigblu = Math.ceil(Math.random() * tm);
+							$("#pigb").html(pigblu);$("#pigb").attr('pigs',pigblu);});
+	}
+	
+	if(localStorage.getItem('playr')==1){	
+		$(".playd").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+	}else{
+		$(".playd").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('id').replace('p','')+".gif");});
+	}
+	
+
+	
+	if(localStorage.getItem('playshw')==1 && localStorage.getItem('playr')==1 && localStorage.getItem('playground')==1){	
+		
+		$("#piga").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$("#pigb").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+	
+	}else if(localStorage.getItem('playshw')==1 && !localStorage.getItem('playr') && !localStorage.getItem('playground')){	
+		
+		$("#piga").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
+		$("#pigb").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
+		
+	}else{
+		$("#piga").attr('href','#');
+		$("#pigb").attr('href','#');
+	}
+	
+	if(localStorage.getItem('playshw')==1 && !localStorage.getItem('playr')==1 && localStorage.getItem('playground')==1){	
+		localStorage.setItem('playshw','');window.location='playground.html';
+	;}
+	
+	if(localStorage.getItem('playshw')==1 && localStorage.getItem('playr')==1 && !localStorage.getItem('playground')){	
+		localStorage.setItem('playshw','');window.location='playground.html';
+	;}
+
+$('.nvmenu').click(function() {
+		var nvmenuhtml = $(this).attr('href');
+		$(document).on({"pageshow": function () {window.location = nvmenuhtml.replace('../','');}}, '.page');
+;})
+	
+var albummenu='';var slt='';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+var menusdir='';var menushtml='';var pigsmenu='';var pigsmenudir='';
+if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = '';}
+for(var j=0;j < albummenu.length;j++){
+if(j)menusdir = j+'/';
+if($("#playbhr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
+if(albummenu[j])menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'playground.html" data-ajax="false" style="background-image:url('+menusdir+'images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';
+;}
+
+
+
+if(menushtml){$('#uls').html(menushtml);$('#uls').listview('refresh');}
+else{$('#menubttns').css('display','none');}
+	</script>

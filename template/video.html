@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+	<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style">
+	<link rel="stylesheet" href="css/jquerymobile-1.4.0.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" href="css/jqmobile.min.css">
+	<link rel="stylesheet" href="css/icons/style.css">	
+	<style type="text/css">.ui-page{background-image:url(images/vdbackground.gif);background-size:100% ;background-repeat: no-repeat; background-attachment:fixed;}#form5{background:rgba(255, 255, 255, 0.2);}
+    @media all and (min-width: 1250px){.ifrwidth{min-width:1250px;min-height:680px;};}
+	@media all and (min-width: 1020px) and (max-width: 1250px){.ifrwidth{width:100%;min-height:650px;}
+	.ifrwidthpig{min-width:980px;};}
+	@media all and (min-width: 768px) and (max-width: 1020px){.ifrwidth{width:100%;min-height:500px;}
+	.ifrwidthpig{min-width:728px;};}
+	@media all and (min-width: 601px) and (max-width: 768px){.ifrwidth{width:100%;min-height:405px;}
+	.ifrwidthpig{min-width:568px;};}
+	@media all and (min-width: 321px) and (max-width: 600px){.ifrwidth{width:100%;min-height:405px;}
+	.ifrwidthpig{min-width:310px;};}
+	@media all and (max-width: 320px){.ifrwidth{width:100%;min-height:350px;};}
+	</style>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	</head>
+	<body><div data-role="page" class="page" data-theme="">
+	<div  data-role="header" id="hrdiv" data-theme="">
+	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-video">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="videohr"></h1>
+	</div>
+	<div data-role="content">
+	<div id="video1"></div><BR>
+	<div id="video2"></div><BR>
+	<div id="video3"></div><BR>
+	<div id="video4"></div><BR>
+	<div id="video5"></div>
+	
+	<div id="navigations" data-role="popup" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" id="uls" data-inset="true">
+	</ul></div><!-- /navigation -->
+	
+	<div id="navigation" data-role="popup" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-inset="true">
+	<li><a href="index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
+	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
+	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
+	<li><a href="playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
+	<li><a href="video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
+	<li><a href="album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
+	<li><a href="poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
+	</ul></div><!-- /navigation -->
+	</div></body>
+	</html>
+	<script src="js/theme.js"></script>
+	<script>
+		(function($) {
+		var infhref= localStorage.getItem('infhref');
+		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
+		if(infhref.substr(infhref.length - 1)=='/'){var videophp = 'video.php';}else{var videophp = '/video.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var url = infhref+webdir+videophp;}else{var url = infhref+videophp;}
+		$.ajax({
+   		type: 'GET',
+    	url: url,
+    	async: false,
+    	jsonpCallback: 'datp',
+    	contentType: 'application/json',
+    	dataType: 'jsonp'});})(jQuery);
+		function datp(data) { var video = []; var videotitle = []; var videomsg = []; var videolike = [];  var videozone = []; var videowb = [];
+			for(var i=0; i < data.btn.length; i++) {
+			if(data.btn[i].video)video[i] = data.btn[i].video;
+			if(data.btn[i].videotitle)videotitle[i]= data.btn[i].videotitle;
+			if(data.btn[i].videomsg)videomsg[i] = data.btn[i].videomsg;
+			if(data.btn[i].videolike)videolike[i] = data.btn[i].videolike;
+			if(data.btn[i].videozone)videozone[i] = data.btn[i].videozone;
+			if(data.btn[i].videowb)videowb[i] = data.btn[i].videowb;
+			}
+		
+		var videovar  = JSON.stringify(video);
+		var videotitlevar  = JSON.stringify(videotitle);
+		var videomsgvar  = JSON.stringify(videomsg);
+		var videolikevar  = JSON.stringify(videolike);
+		var videozonevar  = JSON.stringify(videozone);
+		var videowbvar  = JSON.stringify(videowb);
+		
+		if(videovar.length < 3500){
+			localStorage['video']=videovar;
+			if(videotitlevar.length < 3500)localStorage['videotitle']=videotitlevar;
+			if(videomsgvar.length < 28800)localStorage['videomsg']=videomsgvar;
+			if(videolikevar.length < 3500)localStorage['videolike']=videolikevar;
+			if(videozonevar.length < 3500)localStorage['videozone']=videozonevar;
+			if(videowbvar.length < 3500)localStorage['videowb']=videowbvar;
+		}
+		}
+		
+		
+		
+		var videos = [];  var videotitles = [];  var videomsgs = [];   var videolikes = []; var videozones = []; var videowbs = []; 
+		if(localStorage.getItem("video"))videos =  $.parseJSON(localStorage.getItem("video"));
+		if(localStorage.getItem("videotitle"))videotitles =  $.parseJSON(localStorage.getItem("videotitle"));
+		if(localStorage.getItem("videomsg"))videomsgs =  $.parseJSON(localStorage.getItem("videomsg"));
+		if(localStorage.getItem("videolike"))videolikes =  $.parseJSON(localStorage.getItem("videolike"));
+		if(localStorage.getItem("videozone"))videozones =  $.parseJSON(localStorage.getItem("videozone"));
+		if(localStorage.getItem("videowb"))videowbs =  $.parseJSON(localStorage.getItem("videowb"));
+		
+		
+		
+		function video(http) { 
+			var video = '<video width="100%"  controls><source src="'+http+'" type="video/mp4"><source src="'+http+'" type="video/ogg"></video>';
+			return video;
+		;}
+		
+		function qqvytub(http) { 
+			if(http.indexOf('v.qq.com') != -1){var vhgt = 0.833;}else{var vhgt = 0.563;}
+			var hgt = ($(window).width()-30)*vhgt;
+			var video = '<iframe width="'+$(window).width()+'" height="'+hgt+'" src="'+http+'" frameborder="0" allowfullscreen></iframe>';
+			return video;
+		;}
+		
+		function vdlike(http) { 
+			if(http.indexOf('facebook') != -1){
+			var videolike = "<iframe src='"+http+"' scrolling='no' frameborder='0' style='border:none; overflow:hidden; height:80px;' allowTransparency='true'></iframe>";
+			}	
+			return videolike;
+		;}
+		
+		function vdzone(http) { 
+			if(http.indexOf('open.qzone.qq.com') != -1){
+			var vdzone = "<iframe src='"+http+"' allowtransparency='true' scrolling='no' border='0' frameborder='0' style='width:120px;height:24px;border:none;overflow:hidden;'></iframe>";		
+			;}		
+			return vdzone;
+		;}
+		
+		function vdwb(http) { 
+			if(http.indexOf('widget.weibo.com') != -1){
+			var videowb = "<iframe src='"+http+"' width='100' height='25' frameborder='0' scrolling='no'></iframe>";		
+			;}		
+			return videowb;
+		;}
+		
+		function videohtml(video,videotitle,videomsg,tag,videolike,videozone,videowb){
+		var videohtml ='';
+		if(videotitle)videohtml ='<h3>'+videotitle+'</h3>';
+		if(video && (video.indexOf('http:') == -1 && video.indexOf('www.youtube.com') != -1))video = 'http://'+video;
+		if(video && (video.indexOf('v.qq.com') != -1 || video.indexOf('www.youtube.com') != -1)){videohtml += qqvytub(video);}
+		else if(video){videohtml += video(video);}
+		if(videowb){videohtml +='<div class="ui-grid-a" style="height:35px"><div class="ui-block-a">';}else{videohtml +='<div class="ui-grid-solo" style="height:35px">';}
+		if(videolike)videohtml +=''+vdlike(videolike)+'</div>';
+		if(videolike){videohtml +='<div class="ui-block-b">';}else{videohtml +='<div class="ui-grid-solo">';}
+		if(videowb)videohtml +=''+vdwb(videowb)+'</div>';
+		if(videolike){videohtml +='</div>';}else{videohtml +='';}
+		if(videozone)videohtml +='<div class="ui-grid-solo">'+vdzone(videozone)+'</div>';
+		if(videomsg)videohtml +='<p>'+videomsg+'</p>';
+		$('#'+tag).html(videohtml);
+		;}
+		
+		
+		if(videos[0] || videotitles[0] || videomsgs[0] || videolikes[0] || videozones[0] || videowbs[0])videohtml(videos[0],videotitles[0],videomsgs[0],'video1',videolikes[0],videozones[0],videowbs[0]);
+		if(videos[1] || videotitles[1] || videomsgs[1] || videolikes[1] || videozones[1] || videowbs[1])videohtml(videos[1],videotitles[1],videomsgs[1],'video2',videolikes[1],videozones[1],videowbs[1]);
+		if(videos[2] || videotitles[2] || videomsgs[2] || videolikes[2] || videozones[2] || videowbs[2])videohtml(videos[2],videotitles[2],videomsgs[2],'video3',videolikes[2],videozones[2],videowbs[2]);
+		if(videos[3] || videotitles[3] || videomsgs[3] || videolikes[3] || videozones[3] || videowbs[3])videohtml(videos[3],videotitles[3],videomsgs[3],'video4',videolikes[3],videozones[3],videowbs[3]);
+		if(videos[4] || videotitles[4] || videomsgs[4] || videolikes[4] || videozones[4] || videowbs[4])videohtml(videos[4],videotitles[4],videomsgs[4],'video5',videolikes[4],videozones[4],videowbs[4]);
+
+$('.nvmenu').click(function() {
+		var nvmenuhtml = $(this).attr('href');
+		$(document).on({"pageshow": function () {window.location = nvmenuhtml.replace('../','');}}, '.page');
+;})
+		
+var albummenu='';var slt='';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+var menusdir='';var menushtml='';var pigsmenu='';var pigsmenudir='';
+if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = '';}
+for(var j=0;j < albummenu.length;j++){
+if(j)menusdir = j+'/';
+if($("#videohr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
+if(albummenu[j])menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'video.html" data-ajax="false" style="background-image:url('+menusdir+'images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';
+;}
+
+
+
+if(menushtml){$('#uls').html(menushtml);$('#uls').listview('refresh');}
+else{$('#menubttns').css('display','none');}
+	</script>

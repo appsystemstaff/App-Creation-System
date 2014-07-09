@@ -1,0 +1,453 @@
+<!DOCTYPE html> 
+	<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style">
+	<title>pork</title>
+	<link rel="stylesheet" href="../css/jquerymobile-1.4.0.min.css">
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" href="../css/jqmobile.min.css">
+	<link rel="stylesheet" href="../css/icons/style.css"><!--listviewcss-->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--copyiframe--><style type="text/css">
+	.ui-page{background-image:url(images/posterbackground.gif);background-size:100% ;background-repeat: no-repeat; background-attachment:fixed;}
+	.album{background-size:100%;background-repeat: no-repeat; }
+	.fit-content{bottom:0px;top:44px;position:absolute;left:0;right:0;}
+	.introcptalbum{position:absolute;bottom:0px;left:0px;width:100%;padding:18px;}
+    @media all and (min-width: 1250px){.ifrwidth{min-width:1250px;min-height:680px;};}
+	@media all and (min-width: 1020px) and (max-width: 1250px){.ifrwidth{width:100%;min-height:650px;}
+	.ifrwidthpig{min-width:980px;};}
+	@media all and (min-width: 768px) and (max-width: 1020px){.ifrwidth{width:100%;min-height:500px;}
+	.ifrwidthpig{min-width:728px;};}
+	@media all and (min-width: 601px) and (max-width: 768px){.ifrwidth{width:100%;min-height:405px;}
+	.ifrwidthpig{min-width:568px;};}
+	@media all and (min-width: 321px) and (max-width: 600px){.ifrwidth{width:100%;min-height:405px;}
+	.ifrwidthpig{min-width:310px;};}
+	@media all and (max-width: 320px){.ifrwidth{width:100%;min-height:350px;};}
+	.area {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color:;}
+	
+	.area1 {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color:;}
+	
+	.area2 {
+    display: block;
+    width: 100px;
+    height: 75px;
+    background-color:;}
+	
+	.area3 {
+    display: block;
+    width: 125px;
+    height: 75px;
+    background-color:;}
+	
+	.area4 {
+    display: block;
+	width: 150px;
+    height: 100px;
+    background-color:;}
+
+	@media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi){
+	.area {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color:;}
+	
+	.area1 {
+    display: block;
+    width: 112.5px;
+    height: 112.5px;
+    background-color:;}
+	
+	.area2 {
+    display: block;
+    width: 150px;
+    height: 112.5px;
+    background-color:;}
+	
+	.area3 {
+    display: block;
+    width: 187.5px;
+    height: 112.5px;
+    background-color:;}
+	
+	.area4 {
+    display: block;
+	width: 225px;
+    height: 150px;
+    background-color:;}
+	}
+	@media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){
+	.area {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color:;}
+	
+	.area1 {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color:;}
+	
+	.area2 {
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-color:;}
+	
+	.area3 {
+    display: block;
+    width: 250px;
+    height: 150px;
+    background-color:;}
+	
+	.area4 {
+    display: block;
+	width: 300px;
+    height: 200px;
+    background-color:;}}
+	
+	
+	
+	
+	@media(-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
+	.area {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color:;}
+	
+	.area1 {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color:;}
+	
+	.area2 {
+    display: block;
+    width: 300px;
+    height: 250px;
+    background-color:;}
+	
+	.area3 {
+    display: block;
+    width: 375px;
+    height: 250px;
+    background-color:;}
+	
+	.area4 {
+    display: block;
+	width: 450px;
+    height: 300px;
+    background-color:;
+	
+	
+	}}
+	
+	.btndata {display: none;}
+	</style><!--copyiframes-->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.mobile-1.4.0.min.js"></script><script src="../js/fastclick.js"></script>
+	<!--copyiframe--><!--copyiframes-->
+	<script>$(function(){FastClick.attach(document.body);});</script>
+	</head>
+	<body>
+	<div data-role="page" class="page" data-theme="">
+	<div  data-role="header" id="hrdiv" data-theme="">
+	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-camera">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="posterhr"></h1>
+	</div>
+	<div data-role="content" class="fit-content album" style="width:100%;height:100%;">
+	
+
+	
+	
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn1" btn="1" data-transition="flip" id="1" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn2" btn="2" data-transition="flip" id="2" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn3" btn="3" data-transition="flip" id="3" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn4" btn="4" data-transition="flip" id="4" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn5" btn="5" data-transition="flip" id="5" href="#"></a>
+
+
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn6" btn="6" data-transition="flip" id="6" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn7" btn="7" data-transition="flip" id="7" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn8" btn="8" data-transition="flip" id="8" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn9" btn="9" data-transition="flip" id="9" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-corner-all ui-btn-inline btn btn10" btn="10" data-transition="flip"  id="10" href="#"></a>
+
+	
+	
+
+	
+	<div id="btnpopup1" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup1.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup2" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup2.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup3" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup3.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup4" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup4.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup5" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup5.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup6" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup6.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup7" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup7.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup8" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup8.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup9" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup9.gif);background-size:100% 100%;"></div>
+	<div id="btnpopup10" data-role="popup" data-arrow="true" style="background-image:url(images/posterpopup10.gif);background-size:100% 100%;"></div>
+	<div class="ui-content" id="btnpopup15" data-role="popup" data-tolerance="15,15">
+    <iframe width="496" height="298" src="" seamless="" id="btnpopupvideo"></iframe></div>
+
+
+
+	</div><!-- /content -->
+	
+	
+	
+	<div id="navigations" data-role="popup" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" id="uls" data-inset="true">
+	</ul></div><!-- /navigation -->
+
+	
+	<div id="navigation" data-role="popup" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-inset="true">
+	<li><a href="../index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
+	<li><a href="../form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
+	<li><a href="../kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
+	<li><a href="../playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
+	<li><a href="../video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
+	<li><a href="../album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
+	<li><a href="../poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
+	</ul></div><!-- /navigation -->
+	</div><!--copyiframes--></body>
+	</html>
+<script src="js/theme.js"></script>	
+<script> 
+
+			
+		(function($) {
+		var infhref= localStorage.getItem('infhref');
+		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
+		if(infhref.substr(infhref.length - 1)=='/'){var albumphp = 'poster.php';}else{var albumphp = '/poster.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var url = infhref+webdir+albumphp;}else{var url = infhref+albumphp;}		
+		$.ajax({
+   		type: 'GET',
+    	url: url,
+    	async: false,
+    	jsonpCallback: 'datp',
+    	contentType: 'application/json',
+    	dataType: 'jsonp'});})(jQuery);
+
+		function datp(data) {  var albumurl = []; var albumratio = [];var albumnbr = [];var albumpx = [];var albumpv = []; var albumtype = [];var albumicon = []; var albumtitle = [];var albumhtml = [];
+			for(var i=0; i < data.btn.length; i++) {
+			if(data.btn[i].posterurl)albumurl[i] = data.btn[i].posterurl;
+			if(data.btn[i].posternbr)albumnbr[i]= data.btn[i].posternbr;
+			if(data.btn[i].posterratio)albumratio[i]= data.btn[i].posterratio;
+			if(data.btn[i].posterpx)albumpx[i]= data.btn[i].posterpx;
+			if(data.btn[i].posterpv)albumpv[i]= data.btn[i].posterpv;
+			if(data.btn[i].postericon)albumicon[i]= data.btn[i].postericon;
+			if(data.btn[i].postertype)albumtype[i]= data.btn[i].postertype;
+			if(data.btn[i].postertitle)albumtitle[i]= data.btn[i].postertitle;
+			if(data.btn[i].posterhtml)albumhtml[i] = data.btn[i].posterhtml;
+			}
+		
+		var albumurlvar  = JSON.stringify(albumurl);
+		var albumnbrvar  = JSON.stringify(albumnbr);
+		var albumratiovar  = JSON.stringify(albumratio);
+		var albumpxvar  = JSON.stringify(albumpx);
+		var albumpvvar  = JSON.stringify(albumpv);
+		var albumiconvar  = JSON.stringify(albumicon);
+		var albumtypevar  = JSON.stringify(albumtype);
+		var albumtitlevar  = JSON.stringify(albumtitle);
+		var albumhtmlvar  = JSON.stringify(albumhtml);
+
+
+		
+		if(albumurlvar.length < 355){
+			localStorage['posterurl']=albumurlvar;
+			if(albumnbr.length < 15)localStorage['posternbr']=albumnbrvar;
+			if(albumratio.length < 15)localStorage['posterratio']=albumratiovar;
+			if(albumpx.length < 15)localStorage['posterpx']=albumpxvar;
+			if(albumpv.length < 15)localStorage['posterpv']=albumpvvar;
+			if(albumicon.length < 15)localStorage['postericon']=albumiconvar;
+			if(albumtype.length < 150)localStorage['postertype']=albumtypevar;
+			if(albumtitlevar.length < 285)localStorage['postertitle']=albumtitlevar;
+			if(albumhtml.length < 15500)localStorage['posterhtml']=albumhtmlvar;
+		}
+		
+		}
+
+		
+		var albumurls = []; var albumnbrs = [];var albumratios = []; var albumpxs = [];var albumpvs = []; var albumtypes = [];var albumicons = []; var albumtitles = [];var albumhtmln = [];
+		if(localStorage.getItem("posterurl")){
+		albumurls =  $.parseJSON(localStorage.getItem("posterurl"));
+		albumnbrs =  $.parseJSON(localStorage.getItem("posternbr"));
+		albumratios =  $.parseJSON(localStorage.getItem("posterratio"));
+		albumpxs =  $.parseJSON(localStorage.getItem("posterpx"));
+		albumpvs =  $.parseJSON(localStorage.getItem("posterpv"));
+		albumicons =  $.parseJSON(localStorage.getItem("postericon"));
+		albumtypes =  $.parseJSON(localStorage.getItem("postertype"));
+		albumtitles =  $.parseJSON(localStorage.getItem("postertitle"));
+		albumhtmln =  $.parseJSON(localStorage.getItem("posterhtml"));
+		$(".album").css("background-image",'url(' + albumurls[0] + ')');}
+		
+		
+			
+		var j = '';
+		
+		
+		for(var i=0;i<10;i++){
+		j=i+1;
+		
+		if(!albumtypes[i])$(".btn"+j).addClass('btndata');
+		
+		if(albumtypes[i] && albumtypes[i].indexOf('area')!=-1){
+			$(".btn"+j).removeClass('ui-btn').addClass(albumtypes[i]);
+		}else{
+			$(".btn"+j).addClass(albumtypes[i]);		
+		;}
+		
+		var porks = /^[0-9]+$/;
+		
+		if(albumhtmln[i]){
+		 	if(albumhtmln[i].indexOf('http')==0){
+		     	$(".btn"+j).attr('id',15);
+				$("#btnpopupvideo").attr("src",albumhtmln[i]);
+			;}else if(porks.test(albumhtmln[i])){
+		    	$(".btn"+j).attr('id','');		
+				$(".btn"+j).attr('href',albumhtmln[i]+'/poster.html');
+				$(".btn"+j).removeClass('btn');
+				$(".btn"+j).click(function() {
+				var htmls = $(this).attr('href');
+				$(document).on({"pageshow": function () {window.location = 'poster.html';}}, '.page');
+				;})
+			;}else if(albumhtmln[i].indexOf('btn')==0){
+		    	$(".btn"+j).attr('id','');
+				$(".btn"+j).removeClass('btn').addClass('bg');
+			;}else if(albumhtmln[i].match(".html$")){
+		    	$(".btn"+j).attr('id','');
+				$(".btn"+j).attr('href',albumhtmln[i]);
+				$(".btn"+j).removeClass('btn');
+				$(".btn"+j).click(function() {
+				var htmls = $(this).attr('href');
+				$(document).on({"pageshow": function () {window.location = htmls;}}, '.page');
+				;})
+			;}else if(albumhtmln[i]=='index'){
+		    	$(".btn"+j).attr('id','');		
+				$(".btn"+j).attr('href','../poster.html');
+				$(".btn"+j).removeClass('btn');
+				$(".btn"+j).click(function() {
+				var htmls = $(this).attr('href');
+				$(document).on({"pageshow": function () {window.location = 'poster.html';}}, '.page');
+				;})
+			;}else{
+				$("#btnpopup"+j).html(albumhtmln[i]);
+			;}
+		;}
+		
+			if(albumtitles[i]){
+				$(".btn"+j).removeClass('ui-btn-icon-notext').addClass('ui-btn-icon-left');
+				$(".btn"+j).text(albumtitles[i]);
+			}
+			if(albumicons[i]){
+				if(albumicons[i].indexOf('ui-icon-')!=-1){
+					$(".btn"+j).addClass(albumicons[i]);}
+				else{albumtitles[i] = '<i class="iconfont">&#'+albumicons[i]+'</i> '+albumtitles[i];}
+			}
+		var width =  $(window).width();	
+		if(albumratios[i])$(".album").height(width*albumratios[i]);
+		if(albumratios[i]){var height =  $(window).width()* albumratios[i];}	
+		if(albumpxs[i]){var pxs = width * albumpxs[i]/100;}else{var pxs = 0;}
+		if(albumpvs[i] && albumratios[i]){var pvs = height * albumpvs[i]/100;}else if(albumpvs[i]){var pvs = albumpvs[i];}else{var pvs = 0;}
+		if(albumpvs[i] && albumpxs[i])$(".btn"+j).css({top: pvs, left: pxs, position:'absolute'});	
+		;}
+	
+		$('.bg').click(function() {
+			var bgbtnnbr = parseInt($(this).attr('btn'))-1;
+			if(albumurls[bgbtnnbr])$('.album').css('background-image', 'url(' + albumurls[bgbtnnbr] + ')');
+		;})
+		
+		$.mobile.document.on( "click", ".btn", function( evt ) {
+			var typ = $(this).attr('id');		
+    		if(typ)$( "#btnpopup"+typ  ).popup( "open", { x: evt.pageX, y: evt.pageY } );
+    		evt.preventDefault();
+		});
+
+		
+$( document ).on( "pagecreate", function() {   
+    function scale( width, height, padding, border ) {
+        var scrWidth = $( window ).width() - 30,
+            scrHeight = $( window ).height() - 30,
+            ifrPadding = 2 * padding,
+            ifrBorder = 2 * border,
+            ifrWidth = width + ifrPadding + ifrBorder,
+            ifrHeight = height + ifrPadding + ifrBorder,
+            h, w;
+        if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
+            w = ifrWidth;
+            h = ifrHeight;
+        } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
+            w = scrWidth;
+            h = ( scrWidth / ifrWidth ) * ifrHeight;
+        } else {
+            h = scrHeight;
+            w = ( scrHeight / ifrHeight ) * ifrWidth;
+        }
+        return {
+            'width': w - ( ifrPadding + ifrBorder ),
+            'height': h - ( ifrPadding + ifrBorder )
+        };
+    };
+    $( ".ui-popup iframe" )
+        .attr( "width", 0 )
+        .attr( "height", "auto" );
+    $( "#btnpopup15" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 497, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#btnpopup15 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#btnpopup15 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+});
+
+
+
+
+
+
+$('.nvmenu').click(function() {
+		var nvmenuhtml = $(this).attr('href');
+		$(document).on({"pageshow": function () {window.location = nvmenuhtml.replace('../','');}}, '.page');
+;})
+
+var albummenu='';var js='';var slt='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+var menusdir='';var menushtml='';var pigsmenu='';
+if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = '';}
+for(var j=0;j < albummenu.length;j++){
+if(j){menusdir = j+'/';}
+if(j)js = j;
+if($("#posterhr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
+if(albummenu[j])menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'poster.html" data-ajax="false" id="href'+js+'" style="background-image:url('+menusdir+'images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';
+;}
+
+
+
+
+if(menushtml){$('#uls').html(menushtml);$('#uls').listview('refresh');}
+else{$('#menubttns').css('display','none');}
+</script>
