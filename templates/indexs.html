@@ -1,20 +1,20 @@
 <!DOCTYPE html> 
 	<html>
-	<head> 
+	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style">
 	<title></title>
-	<link rel="stylesheet" href="css/jquerymobile-1.4.0.min.css">
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
-	<link rel="stylesheet" href="css/jqmobile.min.css">
-	<link rel="stylesheet" href="css/icons/style.css">
-	<link href="css/icons/icon.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/jquerymobile-1.4.0.min.css">
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" href="../css/jqmobile.min.css">
+	<link rel="stylesheet" href="../css/icons/style.css">
+	<link href="../css/icons/icon.css" rel="stylesheet"><!--listviewcss--><!--ntscss-->
 	<link rel="shortcut icon" href="favicon.ico">
 	<!--wettopbr--><style type="text/css">.ui-page{background-image:url(images/background.gif);background-size:100% ;background-repeat: no-repeat; background-attachment:fixed;}
-	.ui-icon-football:after{background-image: url("css/images/football.svg");}
+	.ui-icon-football:after{background-image: url("../css/images/football.svg");}
 	.ui-icon-football:after{background-size: 18px 18px;}
 	.xkn{height:1px;}
 	@media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi){.xkn{height:1.5px;}}
@@ -34,18 +34,12 @@
 	html head + body .ui-btn.ui-btn-f{text-shadow:none;}
 	html head + body .ui-btn.ui-btn-y{text-shadow:none;border: none !important;}
 	</style><!--copyiframes-->
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.mobile-1.4.0.min.js"></script><script src="js/fastclick.js"></script>
-	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.mobile-1.4.0.min.js"></script><script src="../js/fastclick.js"></script>
 	<!--copyiframe--><!--copyiframes-->
-	<script>$(function(){FastClick.attach(document.body);});
-	function onLoad() {
-	if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){
-	var networkState = navigator.connection.type;
-	if(networkState == Connection.NONE)alert("No Internet.");};}
-	</script>
+	<script>$(function(){FastClick.attach(document.body);});</script>
 	</head>
-	<body onLoad="onLoad()"><div data-role="page" data-theme="" class="page indexhtml">
+	<body><div data-role="page" data-theme="" class="page indexhtml">
 	<div  data-role="header" id="hrdiv" data-theme=""><h1 id="hrs"></h1><a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-calendar">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a>
 	</div><!-- /header --><div data-role="content" class="pagebg"><!--copyiframe--><!-- /content!-->
 	
@@ -305,8 +299,7 @@
 	<div class="ui-grid-solo" style="background-image:url(images/ftitlebackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="ftitle"></div>
 	<div class="ui-grid-solo" style="background-image:url(images/ftextbackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="ftext"></div>
 		
-	<div data-role="popup" data-corners="false" id="etpigagree"><iframe id="etpigagrees" src="1.html"></iframe><div style="padding:5px" id="agreepig">You need to accept the agreement. </div><br><div style="padding:5px" ><a href="#" class="ui-btn ui-btn-b" id="agreeapp">I Agree.</a></div>
-	</div>
+
 	</div><!-- /content -->
 
 	
@@ -341,22 +334,19 @@
 	
 	<div id="navigation" data-role="popup" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
-	<li><a href="index.php" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
-	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
-	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
-	<li><a href="playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
-	<li><a href="video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
-	<li><a href="album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
-	<li><a href="poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
+	<li><a href="../index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
+	<li><a href="../form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
+	<li><a href="../kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
+	<li><a href="../playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
+	<li><a href="../video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
+	<li><a href="../album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
+	<li><a href="../poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
 	</ul></div><!-- /navigation -->
 	</div><!--copyiframes--></body>
 	</html>
 	<script src="js/theme.js"></script>
 	
-	<script>if(!localStorage.getItem("agreeapp")){
-		$(document).on({"pageshow": function () {$('#etpigagrees').css("width",$(window).width()*0.85);$('#etpigagrees').css("height",$(window).height()*0.5);setTimeout(function(){$('#etpigagree').popup("open");},1500);$('#etpigagrees').attr("src","1.html");}}, '.indexhtml'); $( document ).on( "popupafterclose", "#etpigagree", function() {$('#etpigagree').popup("open");});$(".page").click(function(){window.location="index.html";});
-		 $("#agreeapp").click(function(){localStorage.setItem("agreeapp",1);window.location="index.html";});}
-</script>
+	
 	<script>
 	var infhrefs= localStorage.getItem('infhref');
 		if(infhrefs.indexOf('http') == -1){infhrefs= 'http://'+infhrefs;}		
@@ -459,7 +449,7 @@
 	if(localStorage.getItem("jsjsn"))var jsn =  $.parseJSON(localStorage.getItem("jsjsn"));
 	if(localStorage.getItem("jsmsg"))var msg =  $.parseJSON(localStorage.getItem("jsmsg"));
 
-	var weekdaysun = localStorage.getItem('weekdaysun');	
+	var weekdaysun = localStorage.getItem('weekdaysun');		
 	for(var j=0;j<ndate.length;j++){
 		var xday = ndate[j].split("-");
 		if(mnh==xday[1] && yr==xday[0]){$("#"+nbr[j]+"day"+xday[2]).show();if(jsn[j])$("#jsn"+nbr[j]).html(jsn[j]);$(".msg"+nbr[j]).html(msg[j]);};};
@@ -467,7 +457,7 @@
 	$(".day").each(function(){
 	$("#w"+$(this).attr("id")).text(wdayn[sdy]);
 	
-	if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");if($(this).attr("id")=="day28" || $(this).attr("id")=="day29" || $(this).attr("id")=="day30" || $(this).attr("id")=="day31"){var ltdyn = $(this).attr("id").replace("day","");if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
+	if(wdayns[sdy]==weekdaysun)$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");if($(this).attr("id")=="day28" || $(this).attr("id")=="day29" || $(this).attr("id")=="day30" || $(this).attr("id")=="day31"){var ltdyn = $(this).attr("id").replace("day","");if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
 	/*startjs*/
 	if(sdy<(sdy+30))sdy++;});<!--$(".day").each(function!-->
 
@@ -488,7 +478,7 @@
 		var ltdyn = $(this).attr("id").replace("day","");
 			if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
 	
-	if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");/*shtnfjs*/
+	if(wdayns[sdy]==weekdaysun)$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");/*shtnfjs*/
 	if(sdy<(sdy+30))sdy++;});
 	
 	if($(this).attr("vlus")==12){
@@ -502,7 +492,7 @@ else{$("#shtb").attr("vlus",parseInt($(this).attr("vlus"))+1);$(this).attr("vlus
 		if($(this).attr("vlus")==xday[1] && $(this).attr("vluyr")==xday[0])
 		{$("#"+nbr[j]+"day"+xday[2]).show();if(jsn[j])$("#jsn"+nbr[j]).html(jsn[j]);$(".msg"+nbr[j]).html(msg[j]);}else{$("#"+nbr[j]+"day"+xday[2]).hide();};};
 	$(".month").text($(this).attr("vlus"));$(".year").text($(this).attr("vluyr"));
-	});
+	});/*$("#shtf")*/
 	
 	$("#shtb").click(function(event) {
 	event.preventDefault();
@@ -519,7 +509,7 @@ else{$("#shtb").attr("vlus",parseInt($(this).attr("vlus"))+1);$(this).attr("vlus
 		var ltdyn = $(this).attr("id").replace("day","");
 		if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
 		
-		if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");
+		if(wdayns[sdy]==weekdaysun)$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");
 		/*shtnbjs*/
 		if(sdy<(sdy+30))sdy++;});/*$(".day")*/
 	if($(this).attr("vlus")==1){

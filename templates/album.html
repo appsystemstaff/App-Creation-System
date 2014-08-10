@@ -28,6 +28,7 @@
 	@media all and (min-width: 321px) and (max-width: 600px){.ifrwidth{width:100%;min-height:405px;}
 	.ifrwidthpig{min-width:310px;};}
 	@media all and (max-width: 320px){.ifrwidth{width:100%;min-height:350px;};}
+	.tps tr,.tps td{border-top: 1px solid #000000;}
 	</style><!--copyiframes-->
 	<script src="../js/jquery.js"></script>
 	<script src="../js/jquery.mobile-1.4.0.min.js"></script><script src="../js/fastclick.js"></script>
@@ -37,13 +38,13 @@
 	<body>
 	<div data-role="page" class="page" data-theme="">
 	<div  data-role="header" id="hrdiv" data-theme="">
-	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-camera">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="albumhr"></h1>
+	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-camera">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="albumhr"></h1>
 	</div>
 	<div data-role="content" class="fit-content">
 	
 	<div nbr="1" class="album" id="nb" style="width:100%;height:100%;position:relative;">
 	
-	<a href="#" nbr="0" class="albumr ui-btn ui-btn-z ui-btn-icon-notext ui-btn-inline ui-icon-carat-l" style="text-decoration:none;"></a>
+	<a href="#" nbr="0" class="albumr ui-btn ui-btn-z ui-btn-icon-notext ui-btn-inline ui-icon-carat-l" style="text-decoration:none;position:relative;left:12px;"></a>
 	<a href="#" nbr="1" class="albuml ui-btn ui-btn-z  ui-btn-icon-notext  ui-btn-inline ui-icon-carat-r" style="text-decoration:none;float:right;"></a><!--webmodel[album]3.jpgimgcapt!-->
 	
 	
@@ -51,19 +52,36 @@
 	
 	<div class="introcptalbum" style="background-color:rgba(255, 255, 255, 0.4);">
 	<div style="color:red;" id="albumtilte"></div>
-	<div id="introcptaudio"><audio controls>
-   <source src="" id="mp" type="audio/ogg">
-   <source src="" id="wav" type="audio/mpeg"></audio> 
+	<div id="introcptaudio">
 	</div></div>
 	</div><!-- /content -->
-	
+
+	<div id="popup1" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup1"  style="background-image:url(images/apopuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup2" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup2"  style="background-image:url(images/apopuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup3" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup3"  style="background-image:url(images/apopuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
+	<div id="popup4" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup4"  style="background-image:url(images/apopuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup5" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup5"  style="background-image:url(images/apopuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup6" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup6"  style="background-image:url(images/apopuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup7" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup7"  style="background-image:url(images/apopuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup8" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup8"  style="background-image:url(images/apopuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup9" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup9"  style="background-image:url(images/apopuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup10" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup10"  style="background-image:url(images/apopuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup11" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup11"  style="background-image:url(images/apopuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup12" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup12"  style="background-image:url(images/apopuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup13" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup13"  style="background-image:url(images/apopuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup14" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup14"  style="background-image:url(images/apopuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup15" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup15"  style="background-image:url(images/apopuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup16" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup16"  style="background-image:url(images/apopuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup17" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup17"  style="background-image:url(images/apopuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup18" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup18"  style="background-image:url(images/apopuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+		
 	<div id="navigations" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" id="uls" data-inset="true">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" data-inset="true">
 	</ul></div><!-- /navigation -->
 
 	
 	<div id="navigation" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" data-inset="true">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
 	<li><a href="../index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
 	<li><a href="../form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
 	<li><a href="../kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
@@ -76,8 +94,36 @@
 	</html>
 <script src="js/theme.js"></script>	
 <script> 
+		(function($) {
+		var infhref= localStorage.getItem('infhref');
+		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
+		if(infhref.substr(infhref.length - 1)=='/'){var fbclrphp = 'albumpopup.php';}else{var fbclrphp = '/albumpopup.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var urls = infhref+webdir+fbclrphp;}else{var urls = infhref+fbclrphp;}
+		
+		var j='';
+		$.ajax({
+   		type: 'GET',
+    	url: urls,
+    	async: false,
+    	jsonpCallback: 'datps',
+    	contentType: 'application/json',
+    	dataType: 'jsonp'});})(jQuery);
+		function datps(data) { var popupimg = [];var popuptle = [];var popupftr = [];
+			for(var i=0; i < data.btns.length; i++) {
+			j = i+1;
+			popupimg= data.btns[i].img;
+			popuptle = data.btns[i].tle;
+			popupftr = data.btns[i].ftr;
+				if(popupimg.length < 150 && popuptle.length < 1500 && popupftr.length < 5500){
+				if(popupimg)popupimg = '<img style="width:100%" src="'+popupimg+'"/>';
+				$('#jsnpopup'+j).html(popuptle+popupimg+popupftr);
+				;}
+			popupnbr='';popuptle='';popupftr='';
+			}
+		;};
 
-			
+						
 		(function($) {
 		var infhref= localStorage.getItem('infhref');
 		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
@@ -114,14 +160,15 @@
 		}
 		
 		}
-
-		
+ 
+		$(document).ajaxStop(function() {
 		var albumurls = [];  var albumtitles = [];  var albumaudios = [];  var albumaudiomps = []; 
-		if(localStorage.getItem("albumurl")){
+		var albumurlvlu = localStorage.getItem("albumurl");
+		if(albumurlvlu){
 		albumurls =  $.parseJSON(localStorage.getItem("albumurl"));
 		$(".album").css("background-image",'url(' + albumurls[0] + ')');	
-		var urlnbr = albumurls.length-1;}
-		else{$(".albumr").css('display','none');$(".albuml").css('display','none');}
+		var urlnbr = albumurls.length-1;}		
+		if(!albumurlvlu || albumurlvlu.indexOf(',') == -1){$(".albumr").css('display','none');$(".albuml").css('display','none');}
 		
 		if(localStorage.getItem("albumtitle")){albumtitles =  $.parseJSON(localStorage.getItem("albumtitle"));
 		$("#albumtilte").html(albumtitles[0]);}
@@ -129,51 +176,57 @@
 		if(localStorage.getItem("albumaudio")){
 		albumaudios =  $.parseJSON(localStorage.getItem("albumaudio"));
 		albumaudiomps =  $.parseJSON(localStorage.getItem("albumaudiomp"));
-		$("#wav").attr('src',albumaudios[0]);$("#mp").attr('src',albumaudiomps[0]);}
+		if(albumaudiomps[0]){$("#introcptaudio").html('<audio controls loop id="audio"><source src="'+albumaudiomps[0]+'" id="mp" type="audio/mpeg"><source src="'+albumaudios[0]+'" id="wav" type="audio/wav"></audio>');}else{$("#introcptaudio").html('');}
+		}
 		
 		if(!albumtitles[0] && !albumaudios[0])$(".introcptalbum").css("display","none");
 		if(albumtitles[0] && !albumaudios[0])$("#introcptaudio").css("display","none");
 
 		
 		
-function navleft(nbr,albumclass,phototn,url,title,auido,auidomp){
+function navleft(nbr,albumclass,phototn,url,title,audio,audiomp){
 var nbrs = parseInt(nbr)+1;
 if(nbrs>=phototn)nbrs=phototn;				
 $(".album").css("background-image",'url(' + url + ')');
-if(title || auido){$(".introcptalbum").css("display","");$("#albumtilte").html(title);}else{$(".introcptalbum").css("display","none");}
-if(title && !auido){$("#introcptaudio").css("display","none");}
-else if(auido){$("#introcptaudio").css("display","");$("#wav").attr('src',auido);$("#mp").attr('src',auidomp);}
+if(title || audiomp){$(".introcptalbum").css("display","");$("#albumtilte").html(title);}else{$(".introcptalbum").css("display","none");}
+if(title && !audiomp){$("#introcptaudio").css("display","none");}
+else if(audiomp){$("#introcptaudio").css("display","");}
+if(audiomp){$("#introcptaudio").html('<audio controls loop id="audio"><source src="'+audiomp+'" id="mp" type="audio/mpeg"><source src="'+audio+'" id="wav" type="audio/wav"></audio>');}else{$("#introcptaudio").html('');}
 ;}
 				
-function navright(nbr,albumclass,url,title,auido,auidomp){
+function navright(nbr,albumclass,url,title,audio,audiomp){
 var nbrs = parseInt(nbr)-1;
 if(!nbrs)nbrs=1;
 $(".album").css("background-image",'url(' + url + ')');
-if(title || auido){$(".introcptalbum").css("display","");$("#albumtilte").html(title);}else{$(".introcptalbum").css("display","none");}
-if(title && !auido){$("#introcptaudio").css("display","none");}
-else if(auido){$("#introcptaudio").css("display","");$("#wav").attr('src',auido);$("#mp").attr('src',auidomp);}
+if(title || audiomp){$(".introcptalbum").css("display","");$("#albumtilte").html(title);}else{$(".introcptalbum").css("display","none");}
+if(title && !audiomp){$("#introcptaudio").css("display","none");}
+else if(audiomp){$("#introcptaudio").css("display","");}
+if(audiomp){$("#introcptaudio").html('<audio controls loop id="audio"><source src="'+audiomp+'" id="mp" type="audio/mpeg"><source src="'+audio+'" id="wav" type="audio/wav"></audio>');}else{$("#introcptaudio").html('');}
 ;};
 
 
 
 
-$(".albumr").click(function(){
+$(".albumr").click(function(event){
+event.preventDefault();
 var nbr = $(this).attr("nbr");
-navright(nbr,"album",albumurls[nbr],albumtitles[nbr],albumaudios[nbr]);
+navright(nbr,"album",albumurls[nbr],albumtitles[nbr],albumaudios[nbr],albumaudiomps[nbr]);
 $(".albuml").attr("nbr",parseInt(nbr)+1);
 nbr = parseInt(nbr)-1;
 if(nbr==-1)nbr=0;$(this).attr("nbr",nbr);
 })
 
-$(".albuml").click(function(){
+$(".albuml").click(function(event){
+event.preventDefault();
 var nbr = $(this).attr("nbr");
-navleft( nbr,"album",urlnbr,albumurls[nbr],albumtitles[nbr],albumaudios[nbr]);
+navleft( nbr,"album",urlnbr,albumurls[nbr],albumtitles[nbr],albumaudios[nbr],albumaudiomps[nbr]);
 $(".albumr").attr("nbr",parseInt(nbr)-1)
 nbr = parseInt(nbr)+1;
 if(nbr>urlnbr)nbr=urlnbr;
 $(this).attr("nbr",nbr);
 ;})
-
+;})/*ajaxS*/
+		
 $('.nvmenu').click(function() {
 		var nvmenuhtml = $(this).attr('href');
 		$(document).on({"pageshow": function () {window.location = nvmenuhtml.replace('../','');}}, '.page');

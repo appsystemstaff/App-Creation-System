@@ -11,7 +11,12 @@
 	<link rel="stylesheet" href="css/jqmobile.min.css">
 	<link rel="stylesheet" href="css/icon/style.css">
 	<style type="text/css">.ui-page{background-image:url(images/playbackground.gif);background-size:100% ;background-repeat: no-repeat; background-attachment:fixed;}
-	.playd{font-size:22px;}.playdw{font-size:36px;}
+	@media all and (min-width: 1250px){.playd{font-size:88px;}.playdw{font-size:144px;};}
+			@media all and (min-width: 1020px) and (max-width: 1250px){.playd{font-size:66px;}.playdw{font-size:108px;};}
+			@media all and (min-width: 768px) and (max-width: 1020px){.playd{font-size:44px;}.playdw{font-size:72px;};}
+			@media all and (min-width: 601px) and (max-width: 768px){.playd{font-size:33px;}.playdw{font-size:54px;};}
+			@media all and (min-width: 321px) and (max-width: 600px){.playd{font-size:28px;}.playdw{font-size:36px;};}
+			@media all and (max-width: 320px){.playd{font-size:22px;}.playdw{font-size:26px;};}
 	.ui-icon-nbr:after{background-image: url("css/images/nbr.svg");}
 	.ui-icon-nbr:after{background-size: 18px 18px;}
 	.ui-icon-pigpaper:after{background-image: url("css/images/pigpaper.svg");}
@@ -21,11 +26,11 @@
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
 	<script src="js/fastvclick.js"></script>
 	<script>$(function(){Fastvclick.attach(document.body);});</script>
-	
+	 
 	</head>
 	<body><div data-role="page" class="page" data-theme="">
 	<div  data-role="header" id="hrdiv" data-theme="">
-	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-tag">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="playbhr"></h1>
+	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-tag">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="playbhr"></h1>
 	</div>
 	<div data-role="content">
 	<a href="playground.html" data-ajax="false" class="ui-btn ui-icon-refresh ui-btn-icon-notext ui-btn-inline">Refresh</a>
@@ -36,8 +41,8 @@
 
 
 	<div class="ui-grid-a" style="">
-	<div class="ui-block-a"><a href="#popup" class="ui-btn ui-icon-user ui-btn-icon-left playdw" data-rel="popup" style="color:red;background-image:url(images/result1.gif);background-size:100% 100%;" pigs="" id="piga"></a></div>
-	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-user ui-btn-icon-right playdw" data-rel="popup" style="color:red;background-image:url(images/result2.gif);background-size:100% 100%;" pigs="" id="pigb"></a></div>
+	<div class="ui-block-a"><a href="#popup" class="ui-btn playdw" data-rel="popup" style="color:red;background-image:url(images/result1.gif);background-size:100% 100%;" pigs="" id="piga"></a></div>
+	<div class="ui-block-b"><a href="#popup" class="ui-btn playdw" data-rel="popup" style="color:red;background-image:url(images/result2.gif);background-size:100% 100%;" pigs="" id="pigb"></a></div>
 	</div>
 	
 	<div class="ui-grid-a">
@@ -129,15 +134,15 @@
 	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p32" style="background-image:url(images/playground32.gif);background-size:100% 100%;">32</a></div>
 	</div>
 	
-	<div id="popup" data-role="popup" style="width:100%"><img style="width:100%" id="img" src=""/></div>
+	<div id="popup" data-role="popup" data-corners="false" style="width:100%"><img style="width:100%" id="img" src=""/></div>
 
 	<div id="navigations" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" id="uls" data-inset="true">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" data-inset="true">
 	</ul></div><!-- /navigation -->
 		
 	<div id="navigation" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" data-inset="true">
-	<li><a href="index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
+	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
+	<li><a href="index.php" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
 	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
 	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
 	<li><a href="playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
@@ -149,13 +154,13 @@
 	</html>
 	<script src="js/theme.js"></script>
 	<script>
-	$("#sign").click(function(){localStorage.setItem('playground','1');window.location='playground.html';});
-	$("#nbr").click(function(){localStorage.setItem('playground','');window.location='playground.html';});
+	$("#sign").click(function(event){event.preventDefault();localStorage.setItem('playground','1');window.location='playground.html';});
+	$("#nbr").click(function(event){event.preventDefault();localStorage.setItem('playground','');window.location='playground.html';});
 	
-	$("#playr").click(function(){if(localStorage.getItem('playr')){localStorage.setItem('playr','');}else{localStorage.setItem('playr','1');};window.location='playground.html';});
+	$("#playr").click(function(event){event.preventDefault();if(localStorage.getItem('playr')){localStorage.setItem('playr','');}else{localStorage.setItem('playr','1');};window.location='playground.html';});
 	if(localStorage.getItem('playr')){$("#playr").removeClass('ui-icon-bullets').addClass('ui-icon-recycle');};
 	
-	$("#popw").click(function(){if(localStorage.getItem('playshw')){localStorage.setItem('playshw','');}else{localStorage.setItem('playshw','1');};window.location='playground.html';});
+	$("#popw").click(function(event){event.preventDefault();if(localStorage.getItem('playshw')){localStorage.setItem('playshw','');}else{localStorage.setItem('playshw','1');};window.location='playground.html';});
 	if(localStorage.getItem('playshw')){$("#popw").removeClass('ui-icon-grid').addClass('ui-icon-action');};
 	
 	var tm = '';
@@ -170,13 +175,13 @@
 	
 	if(localStorage.getItem('playground')==1){
 		$("#sign").removeClass('ui-icon-nbr').addClass('');var styclr = '';var nbrclick = '';var nbrclicks = '';var styclrs= '';
-		$("#player1").click(function(){var rlt = '';var vlu = Math.ceil(Math.random() * tm);
+		$("#player1").click(function(event){event.preventDefault();var rlt = '';var vlu = Math.ceil(Math.random() * tm);
 		nbrclick++;
 		if(nbrclick/2==parseInt(nbrclick/2)){styclr = 'style="color:red"';}else{styclr = 'style="color:blue"';}
 		if(vlu <= 10){rlt = '<span class="pigs-rock" '+styclr+'></span>';}else if(vlu > 10 && vlu <= 20){rlt = '<span class="pigs-scissors" '+styclr+'></span>';}else if(vlu > 20 && vlu <= 30){rlt = '<span class="pigs-paper" '+styclr+'></span>';}
 		$("#piga").html(rlt);});
 		
-		$("#player2").click(function(){var rlt = '';var vlu = Math.ceil(Math.random() * tm);
+		$("#player2").click(function(event){event.preventDefault();var rlt = '';var vlu = Math.ceil(Math.random() * tm);
 		nbrclicks++;
 		if(nbrclicks/2==parseInt(nbrclicks/2)){styclrs = 'style="color:blue"';}else{styclrs = 'style="color:red"';}
 		if(vlu <= 10){rlt = '<span class="pigs-rock" '+styclrs+'></span>';}else if(vlu > 10 && vlu <= 20){rlt = '<span class="pigs-scissors" '+styclrs+'></span>';}else if(vlu > 20 && vlu <= 30){rlt = '<span class="pigs-paper" '+styclrs+'</span>';}
@@ -185,29 +190,29 @@
 	}else{
 		$("#nbr").removeClass('ui-icon-pigpaper').addClass('');	
 		
-		$("#player1").click(function(){var pigalu = Math.ceil(Math.random() * tm); 
+		$("#player1").click(function(event){event.preventDefault();var pigalu = Math.ceil(Math.random() * tm); 
 							$("#piga").html(pigalu);$("#piga").attr('pigs',pigalu);});
-		$("#player2").click(function(){var pigblu = Math.ceil(Math.random() * tm);
+		$("#player2").click(function(event){event.preventDefault();var pigblu = Math.ceil(Math.random() * tm);
 							$("#pigb").html(pigblu);$("#pigb").attr('pigs',pigblu);});
 	}
 	
 	if(localStorage.getItem('playr')==1){	
-		$(".playd").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$(".playd").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
 	}else{
-		$(".playd").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('id').replace('p','')+".gif");});
+		$(".playd").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('id').replace('p','')+".gif");});
 	}
 	
 
 	
 	if(localStorage.getItem('playshw')==1 && localStorage.getItem('playr')==1 && localStorage.getItem('playground')==1){	
 		
-		$("#piga").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
-		$("#pigb").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$("#piga").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$("#pigb").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
 	
 	}else if(localStorage.getItem('playshw')==1 && !localStorage.getItem('playr') && !localStorage.getItem('playground')){	
 		
-		$("#piga").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
-		$("#pigb").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
+		$("#piga").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
+		$("#pigb").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
 		
 	}else{
 		$("#piga").attr('href','#');

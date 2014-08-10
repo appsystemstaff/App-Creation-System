@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-	<html>
+	<html> 
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -121,15 +121,23 @@
 	 
 	  <b style="color:#000000">Sub-app images folder</b><br>
 	  The images of sub-app follow the above naming method but only affect the app pages in sub-app folder. You need to place sub-app images to images folder in sub-app's folder 
-	  
+	 
+	 <hr>
+	 <h3 style="color:#000000"><b>Background pictures for popup in the Popup Photo Grid function</b></h3>	 
+
+	 You can add Popup Photo Grid to specific function page such as calendar(index.html), album and video. The format for calendar is popuppicbackground?.gif. The ? is popup id. You can add 1 to 18. The format for album is apopuppicbackground?.gif. The format for video is videopopuppicbackground?.gif.<br>
+	 e.g. popuppicbackground1.gif..........popuppicbackground18.gif for calendar(index.html)<br>
+	 	 e.g. apopuppicbackground1.gif..........apopuppicbackground18.gif for album<br>
+		 	 e.g. videopopuppicbackground1.gif..........videopopuppicbackground18.gif for video<br>
+	 <br> 
 	  
 	  <div id="navigations" data-role="popup" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-inset="true">
-	<li><a href="index.html">xls form design method</a></li>
-	<li><a href="background.html">Background pictures</a></li>
+	<li><a href="index.php" data-ajax="false">xls form design method</a></li>
+	<li><a href="background.html" data-ajax="false">Background pictures</a></li>
 	<li><a href="design.php" data-ajax="false">App design upload page</a></li>
 	<li><a href="designmenu.php" data-ajax="false">Navigation Menu for sub-apps</a></li>
-	<li><a href="explanation.php">Explanation</a></li>
+	<li><a href="explanation.php" data-ajax="false">Explanation</a></li>
 
 	
 

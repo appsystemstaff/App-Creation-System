@@ -1,6 +1,6 @@
 <?php session_start();  
 ?>  
- 
+  
 <!DOCTYPE html> 
 	<html>
 	<head>
@@ -62,11 +62,11 @@
 	</FORM>
   	<div id="navigations" data-role="popup" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-inset="true">
-	<li><a href="index.html">xls form design method</a></li>
-	<li><a href="background.html">Background pictures</a></li>
+	<li><a href="index.php" data-ajax="false">xls form design method</a></li>
+	<li><a href="background.html" data-ajax="false">Background pictures</a></li>
 	<li><a href="design.php" data-ajax="false">App design upload page</a></li>
 	<li><a href="designmenu.php" data-ajax="false">Navigation Menu for sub-apps</a></li>
-	<li><a href="explanation.php">Explanation</a></li>
+	<li><a href="explanation.php" data-ajax="false">Explanation</a></li>
 
 	
 

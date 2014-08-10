@@ -22,7 +22,7 @@
 
 </head>
 	<body><div data-role="page" data-theme="f" class="page indexhtml">
-	<div  data-role="header" id="hrdiv" data-theme="f"><h1 id="hrs">AppMoney712 App Creation System</h1><a href="index.html"  data-ajax="false" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-home">&nbsp;&nbsp;&nbsp;</a>
+	<div  data-role="header" id="hrdiv" data-theme="f"><h1 id="hrs">AppMoney712 App Creation System</h1><a href="index.php"  data-ajax="false" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-home">&nbsp;&nbsp;&nbsp;</a>
 	</div><!-- /header --><div data-role="content" class="pagebg"><!--copyiframe--><!-- /content!-->
 
 	

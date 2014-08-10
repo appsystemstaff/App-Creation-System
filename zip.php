@@ -1,12 +1,13 @@
 <?php session_start(); ?>
 <?php if($_SESSION[guanyin]){
 $zip = new ZipArchive;
-
+ 
 $zipname = 'app/'.$_SESSION[guanyin].'/phonegap'.$_SESSION[folder].'.zip';
 if($zip->open($zipname, ZipArchive::OVERWRITE) === TRUE){
 if($_SESSION[folder])$templates= 's';
+if(!$_SESSION[folder])$_SESSION[htmls]= '';
 
-  if(!$_SESSION[htmls] or strpos($_SESSION[htmls],'c')!==false)$zip->addFile("template".$templates."/index.html", "index.html");
+  if(!$_SESSION[htmls] or strpos($_SESSION[htmls],'c')!==false)$zip->addFile("template".$templates."/index".$templates.".html", "index".$templates.".html");
   if(!$_SESSION[htmls] or strpos($_SESSION[htmls],'k')!==false)$zip->addFile("template".$templates."/kiss.html", "kiss.html");
   if(!$_SESSION[htmls] or strpos($_SESSION[htmls],'g')!==false)$zip->addFile("template".$templates."/playground.html", "playground.html");
   if(!$_SESSION[htmls] or strpos($_SESSION[htmls],'v')!==false)$zip->addFile("template".$templates."/video.html", "video.html");

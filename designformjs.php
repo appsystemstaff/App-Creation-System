@@ -1,6 +1,6 @@
 <?php session_start();  
-?>   
-<?php
+?>    
+<?php 
 if($_SESSION[guanyin]){
 require_once 'excel_reader2.php';	
 		$ftexls="xls/".$_SESSION[guanyin].'trn.xls';
@@ -8,7 +8,7 @@ require_once 'excel_reader2.php';
 		$ftdata->setOutputEncoding('utf-8');
 		
 		$author = htmlspecialchars($ftdata->val(1,'B'));
-		$email = htmlspecialchars($ftdata->val(2,'B'));$appdir = str_replace('.','',$appdir);$appdir = str_replace('@','',$appdir);
+		$email = htmlspecialchars($ftdata->val(2,'B'));$appdir = str_replace('.','',$email);$appdir = str_replace('@','',$appdir);
 		$website = htmlspecialchars($ftdata->val(3,'B'));
 		$appn = htmlspecialchars($ftdata->val(4,'B'));
 		$des = htmlspecialchars($ftdata->val(5,'B'));
@@ -34,7 +34,8 @@ require_once 'excel_reader2.php';
 		$formremark = str_replace('&gt;','>',$formremark);$formremark = str_replace('”',"'",$formremark);
 		$formremark = str_replace('"',"'",$formremark);
 		$formail = htmlspecialchars($ftdata->val(18,'B'));
-		$infweb = htmlspecialchars($ftdata->val(19,'B'));
+		$infwebs = htmlspecialchars($ftdata->val(19,'B'));
+		$infweb = $infwebs.'/jqmpigdata/website/'.$appdir;
 		if(strpos($infweb,'http')===false)$infweb = 'http://'.$infweb;
 		
 		$like = htmlspecialchars($ftdata->val(20,'B'));
@@ -80,6 +81,7 @@ require_once 'excel_reader2.php';
 
 		
 if(!preg_match('/^[a-z]*$/', $theme) or !$theme or strlen($theme)>1)$theme = 'b';
+if($folderdir){$phonegapjsdir = '../';}else{$phonegapjsdir = '';}
 if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYPE html> 
 	<html>
 	<head>
@@ -98,30 +100,37 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	<script src="'.$folderdir.'js/jquery.js"></script>
 	<script src="'.$folderdir.'js/jquery.mobile-1.4.0.min.js"></script>
 	<script src="'.$folderdir.'js/fastclick.js"></script>
+	<script type="text/javascript" charset="utf-8" src="'.$phonegapjsdir.'cordova.js"></script>
 	<script>$(\'input[type=text], textarea\').val(\'\');
-	$(function(){FastClick.attach(document.body);});</script>
+	$(function(){FastClick.attach(document.body);});
+	
+	function onLoad() {
+	if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){
+	var networkState = navigator.connection.type;
+	if(networkState == Connection.NONE)alert("No Internet.");};}	
+	</script>
 	</head>
-	<body><div data-role="page"  class="page" data-theme="'.$theme.'">
+	<body onload="onLoad()"><div data-role="page"  class="page" data-theme="'.$theme.'">
 	<div  data-role="header" data-theme="'.$themehr.'">
-	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-edit">&nbsp;&nbsp;&nbsp;</a>
-	<a href="#navigation" id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="formhr">'.$form.'</h1>
+	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-edit">&nbsp;&nbsp;&nbsp;</a>
+	<a href="#navigation" id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="formhr">'.$form.'</h1>
 	</div>
 	<div data-role="content"><form id="form" name="form">';
-	if($formtitle)$htmlcontn .= '<h3>'.$formtitle.'</h3><BR>';
-	if($form1)$htmlcontn .= $form1.'<input type="text" id="form1" name="form1" required>';
-	if($form2)$htmlcontn .= $form2.'<input type="text" id="form2" name="form2">';
-	if($form3)$htmlcontn .= $form3.'<input type="text" id="form3" name="form3">';
-	if($form4)$htmlcontn .= $form4.'<input type="text" id="form4" name="form4">';
-	if($form5)$htmlcontn .= $form5.'<textarea id="form5" name="form5"></textarea>';
-	if($form1 or $form2 or $form3 or $form4 or $form5)$htmlcontn .= '<input type="submit" id="submit" Value="Send">';
+	if($formtitle)$htmlcontn .= ''.$formtitle.'<HR><BR>';
+	if($form1)$htmlcontn .= $form1.'<input type="text" id="form1" name="form1" data-corners="false" required>';
+	if($form2)$htmlcontn .= $form2.'<input type="text" id="form2" name="form2" data-corners="false">';
+	if($form3)$htmlcontn .= $form3.'<input type="text" id="form3" name="form3" data-corners="false">';
+	if($form4)$htmlcontn .= $form4.'<input type="text" id="form4" name="form4" data-corners="false">';
+	if($form5)$htmlcontn .= $form5.'<textarea id="form5" name="form5" data-corners="false"></textarea>';
+	if($form1 or $form2 or $form3 or $form4 or $form5)$htmlcontn .= '<HR><HR><input type="submit" id="submit" Value="Send" data-corners="false">';
 	if($formremark)$htmlcontn .= '<p>'.$formremark.'</p>';
-	$htmlcontn .= '</form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+	$htmlcontn .= '</form><a href="'.$folderdir.'index.html" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-home">&nbsp;&nbsp;&nbsp;</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 	<div id="navigations" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" id="uls" data-inset="true">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" id="uls" data-inset="true">
 	</ul></div><!-- /navigation -->
 	
 	<div id="navigation" data-role="popup" data-theme="none">
-<ul style="min-width:210px;" data-role="listview" id="ul" data-inset="true">
+<ul style="min-width:210px;" data-role="listview" data-corners="false" id="ul" data-inset="true">
 <li><a href="'.$folderdir.'index.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">'.$calendar.'</a></li>
 	<li><a href="'.$folderdir.'form.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-ajax="false" id="m2">'.$form.'</a></li>
 	<li><a href="'.$folderdir.'kiss.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">'.$kiss.'</a></li>
@@ -134,22 +143,12 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	</html>';
 	if($form1 or $form2 or $form3 or $form4 or $form5){
 	
-	
-	
-	//if(trim($appdir)=='www.appmoney712.net'){
-	//if(date("n")==11){$ndate = '1';}else if(date("n")==12){$ndate = '2';}else{$ndate = date("n");}
-	//$htmlcontn .= '<script>
-	//var ins = new Date();var insp = ins.getMonth()+1; 
-	//if(insp == '.$ndate.'){localStorage.setItem("infhrefs",localStorage.getItem("infhref"));}
-	//else{localStorage.setItem("infhrefs","appmoney.space3.info");}
-	//</ script>';}
+	if($folder)$formfolder = $folder.'/';
 	$htmlcontn .= '<script>
-	$("#form").submit(function() {';
-	
-	if(trim($appdir)=='www.appmoney712.net'){$infhref='infhrefs';}else{$infhref='infhref';}		
-	$htmlcontn .= 'var infhref= localStorage.getItem("'.$infhref.'");
+	$("#form").submit(function() {
+	var infhref= localStorage.getItem("infhref");
 		if(infhref.indexOf("http") == -1){infhref= "http://"+infhref;}		
-	if(infhref.substr(infhref.length - 1)=="/"){var postphp = "'.$appdir.'post.php";}else{var postphp = "/'.$appdir.'post.php";}
+		if(infhref.substr(infhref.length - 1)=="/"){var postphp = "'.$formfolder.'post.php";}else{var postphp = "/'.$formfolder.'post.php";}
 		var url = infhref+postphp;
 		
 	var order = $("form").serialize();
@@ -159,10 +158,11 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
     data: { \'order\': order },
     cache: false,
     success:function(data){
-                alert("Sent");			
+                alert("Sent.");			
 				window.location = "form.html";
             },
             error: function(){
+				alert("Error.");	
 				window.location = "form.html";
             }
     });
@@ -194,13 +194,26 @@ else{$(\'#menubttns\').css(\'display\',\'none\');}
 				;}//if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form))
 
 $pgver = '1225'.str_replace(' ','',$appn);
+$websites = str_replace('0','',$website);
+$websites = str_replace('1','',$websites);
+$websites = str_replace('2','',$websites);
+$websites = str_replace('3','',$websites);
+$websites = str_replace('4','',$websites);
+$websites = str_replace('5','',$websites);
+$websites = str_replace('6','',$websites);
+$websites = str_replace('7','',$websites);
+$websites = str_replace('8','',$websites);
+$websites = str_replace('9','',$websites);
+$webs = explode('.',$websites);
+$webn = $webs[2].'.'.$webs[1].'.'.$webs[0];
 
 if(!$_SESSION[folder]){$htmlcontn = '<?xml version="1.0" encoding="UTF-8"?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "1"
+        id        = "'.htmlspecialchars($webn).'"
         versionCode="'.htmlspecialchars($pgver).'" 
         version   = "1">
+	<preference name="phonegap-version" value="3.3.0" />
     <name>'.$appn.'</name>
     <description>
         '.$des.' 
@@ -212,16 +225,10 @@ if(!$_SESSION[folder]){$htmlcontn = '<?xml version="1.0" encoding="UTF-8"?>
 	<gap:platform name="ios"/>
 	<icon src="icon.png" />
 <preference name="permissions" value="none"/>
-<preference name="Orientation" value="portrait" />
-<access origin="youtube.com" subdomains="true"/>
-<access origin="weibo.com" subdomains="true"/>
-<access origin="qq.com" subdomains="true"/>
-<access origin="facebook.com" subdomains="true"/>
-<access origin="google.com" subdomains="true"/>
-<access origin="appmoney712.net" subdomains="true"/>';
-if($infweb)$htmlcontn .= '<access origin="'.$infweb.'" subdomains="true"/>';
+<access origin="*"/>';
 $htmlcontn .= '
 <gap:plugin name="org.apache.cordova.inappbrowser"/>
+<gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
 </widget>';
 
 				$fpagtrns="app/".$_SESSION[guanyin]."/config.xml";
@@ -234,6 +241,7 @@ $htmlcontn .= '
 if(!preg_match('/^[a-z]*$/', $themehr) or !$themehr or strlen($themehr)>1)$themehr = $theme;
 if($folderdir){$htmlcontn .= 'localStorage.setItem("pigsmenudir","1");';}else{$htmlcontn .= 'localStorage.setItem("pigsmenudir","");';}
 $htmlcontn .= '$(".page").attr("data-theme","'.$theme.'");$("#hrdiv").attr("data-theme","'.$themehr.'");';
+if($theme=='a' or $theme=='p' or $theme=='x')$htmlcontn .= '$(".tps td").css("border-top","1px solid #FFFFFF");';
 if($calendar)$htmlcontn .= '$("#hrs").html("'.$calendar.'");';
 if($htitle)$htmlcontn .= '$("#htitle").html("'.$htitle.'");';
 if($htext)$htmlcontn .= '$("#htext").html("'.$htext.'");';
@@ -244,13 +252,15 @@ $htmlcontn .= '$("#videohr").html("'.$video.'");$("#kisshr").html("'.$kiss.'");$
 $("#albumhr").html("'.$album.'");$("#posterhr").html("'.$poster.'");
 $("#jsqr").html("'.$appn.'");$("#appr").html("'.$appr.'");
 $("#google").attr("href","https://play.google.com/store/search?q='.str_replace(' ','%20',$appn).'&c=apps");
-$("#facebk").attr("href","'.str_replace('..','',$tl).'");
-if(!localStorage.getItem("infhref"))localStorage.setItem("infhref","'.$infweb.'");
-if(!localStorage.getItem("webdir"))localStorage.setItem("webdir","'.$appdir.'");';
+$("#facebk").attr("href","'.str_replace('..','',$tl).'");';
+if(!$_SESSION[folder])$htmlcontn .= 'if(!localStorage.getItem("infhref") || localStorage.getItem("infhref")!="'.$infweb.'")localStorage.setItem("infhref","'.$infweb.'");';
+if($folder){$htmlcontn .= 'localStorage.setItem("webdir","/'.$folder.'");';}else{$htmlcontn .= 'localStorage.setItem("webdir","");';}
 
-if(!$_SESSION[folder])$htmlcontn .= 'localStorage["nagvigationmenu"]; 
-if(!localStorage.getItem("nagvigationmenu")){
-
+if(!$_SESSION[folder])$htmlcontn .=';if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){
+var mobile = 1;}else{var mobile = \'\';};
+localStorage["nagvigationmenu"];
+sessionStorage["nagvigationmenu"];
+if( (!localStorage.getItem("nagvigationmenu") && mobile) || (!sessionStorage.getItem("nagvigationmenu") && !mobile) ){
 var url = "menu.html";
 		$.ajax({
    		type: "GET",
@@ -277,7 +287,8 @@ var url = "menu.html";
 			}
 			
 		}
-localStorage.setItem("nagvigationmenu","1");
+if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){
+localStorage.setItem("nagvigationmenu","1");}else{sessionStorage.setItem("nagvigationmenu","1");}
 };';
 
 
