@@ -34,7 +34,7 @@
 	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-tag">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="playbhr"></h1>
 	</div>
 	<div data-role="content">
-	<a href="../playground.html" data-ajax="false" class="ui-btn ui-icon-refresh ui-btn-icon-notext ui-btn-inline">Refresh</a>
+	<a href="playground.html" data-ajax="false" class="ui-btn ui-icon-refresh ui-btn-icon-notext ui-btn-inline">Refresh</a>
 	<a href="#"  class="ui-btn ui-icon-nbr ui-btn-icon-notext ui-btn-inline" id="sign">Sign</a>
 	<a href="#"  class="ui-btn ui-icon-pigpaper ui-btn-icon-notext ui-btn-inline" id="nbr">Number</a>	
 	<a href="#"  class="ui-btn ui-icon-bullets ui-btn-inline  ui-btn-icon-notext" id="playr"></a>
@@ -198,22 +198,22 @@
 	}
 	
 	if(localStorage.getItem('playr')==1){	
-		$(".playd").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$(".playd").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
 	}else{
-		$(".playd").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('id').replace('p','')+".gif");});
+		$(".playd").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('id').replace('p','')+".gif");});
 	}
 	
 
 	
 	if(localStorage.getItem('playshw')==1 && localStorage.getItem('playr')==1 && localStorage.getItem('playground')==1){	
 		
-		$("#piga").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
-		$("#pigb").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$("#piga").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$("#pigb").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
 	
 	}else if(localStorage.getItem('playshw')==1 && !localStorage.getItem('playr') && !localStorage.getItem('playground')){	
 		
-		$("#piga").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
-		$("#pigb").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
+		$("#piga").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
+		$("#pigb").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
 		
 	}else{
 		$("#piga").attr('href','#');

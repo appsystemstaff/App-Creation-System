@@ -197,22 +197,22 @@
 	}
 	
 	if(localStorage.getItem('playr')==1){	
-		$(".playd").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$(".playd").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
 	}else{
-		$(".playd").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('id').replace('p','')+".gif");});
+		$(".playd").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('id').replace('p','')+".gif");});
 	}
 	
 
 	
 	if(localStorage.getItem('playshw')==1 && localStorage.getItem('playr')==1 && localStorage.getItem('playground')==1){	
 		
-		$("#piga").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
-		$("#pigb").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$("#piga").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
+		$("#pigb").click(function(){$("#img").attr("src","images/ishow"+(Math.ceil(Math.random() * tm))+".gif");});
 	
 	}else if(localStorage.getItem('playshw')==1 && !localStorage.getItem('playr') && !localStorage.getItem('playground')){	
 		
-		$("#piga").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
-		$("#pigb").click(function(event){event.preventDefault();$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
+		$("#piga").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
+		$("#pigb").click(function(){$("#img").attr("src","images/ishow"+$(this).attr('pigs')+".gif");});
 		
 	}else{
 		$("#piga").attr('href','#');
