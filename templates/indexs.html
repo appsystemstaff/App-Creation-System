@@ -457,7 +457,7 @@
 	$(".day").each(function(){
 	$("#w"+$(this).attr("id")).text(wdayn[sdy]);
 	
-	if(wdayns[sdy]==weekdaysun)$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");if($(this).attr("id")=="day28" || $(this).attr("id")=="day29" || $(this).attr("id")=="day30" || $(this).attr("id")=="day31"){var ltdyn = $(this).attr("id").replace("day","");if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
+	if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");if($(this).attr("id")=="day28" || $(this).attr("id")=="day29" || $(this).attr("id")=="day30" || $(this).attr("id")=="day31"){var ltdyn = $(this).attr("id").replace("day","");if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
 	/*startjs*/
 	if(sdy<(sdy+30))sdy++;});<!--$(".day").each(function!-->
 
@@ -478,7 +478,7 @@
 		var ltdyn = $(this).attr("id").replace("day","");
 			if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
 	
-	if(wdayns[sdy]==weekdaysun)$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");/*shtnfjs*/
+	if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");/*shtnfjs*/
 	if(sdy<(sdy+30))sdy++;});
 	
 	if($(this).attr("vlus")==12){
@@ -496,7 +496,7 @@ else{$("#shtb").attr("vlus",parseInt($(this).attr("vlus"))+1);$(this).attr("vlus
 	
 	$("#shtb").click(function(event) {
 	event.preventDefault();
-	shtfm = parseInt($(this).attr("vlu"));
+	shtfm = parseInt($(this).attr("vlu")); 
 	var sdy = new Date(yr,shtfm-2, 1).getDay();var sdys = sdy;
 	var ltdy = new Date(yr,shtfm-1, 0).getDate();
 	$(this).attr("vlu",shtfm-1);$("#shtf").attr("vlu",shtfm-1);
@@ -509,7 +509,7 @@ else{$("#shtb").attr("vlus",parseInt($(this).attr("vlus"))+1);$(this).attr("vlus
 		var ltdyn = $(this).attr("id").replace("day","");
 		if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
 		
-		if(wdayns[sdy]==weekdaysun)$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");
+		if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");
 		/*shtnbjs*/
 		if(sdy<(sdy+30))sdy++;});/*$(".day")*/
 	if($(this).attr("vlus")==1){
