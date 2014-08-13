@@ -7,14 +7,13 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style">
 	<title></title>
-	<link rel="stylesheet" href="css/jquerymobile-1.4.0.min.css">
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
-	<link rel="stylesheet" href="css/jqmobile.min.css">
-	<link rel="stylesheet" href="css/icons/style.css">
-	<link href="css/icons/icon.css" rel="stylesheet">
+	<link rel="stylesheet" href="template/css/jquerymobile-1.4.0.min.css">
+	<link rel="stylesheet" href="template/css/jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" href="template/css/jqmobile.min.css">
+	<link rel="stylesheet" href="template/css/icons/style.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!--wettopbr--><style type="text/css">.ui-page{background-image:url(images/background.gif);background-size:100% ;background-repeat: no-repeat; background-attachment:fixed;}
-	.ui-icon-football:after{background-image: url("css/images/football.svg");}
+	.ui-icon-football:after{background-image: url("template/css/images/football.svg");}
 	.ui-icon-football:after{background-size: 18px 18px;}
 	.xkn{height:1px;}
 	@media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi){.xkn{height:1.5px;}}
@@ -45,19 +44,19 @@
 	if(networkState == Connection.NONE)alert("No Internet.");};}
 	</script>
 	</head>
-	<body onLoad="onLoad()"><div data-role="page" data-theme="" class="page indexhtml">
+	<body onLoad="onLoad()"><div data-role="page" data-theme="f" class="page indexhtml">
 	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/hr.gif);background-size:100% 100%;"><h1 id="hrs"></h1><a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-calendar">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a>
 	</div><!-- /header --><div data-role="content" class="pagebg"><!--copyiframe--><!-- /content!-->
 	
-	<div class="ui-grid-solo" style="background-image:url(images/htitlebackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="htitle"></div>
-	<div class="ui-grid-solo" style="background-image:url(images/htextbackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="htext"></div>
+	<div class="ui-grid-solo" style="background-image:url(img/ta.gif);background-size:100% 100%;background-repeat: no-repeat;" id="htitle">Header title area. Background fitting to content height.<br>Header title area<br>Header title area<br>Header title area<br>Header title area<br></div>
+	<div class="ui-grid-solo" style="background-image:url(img/ta.gif);background-size:100% 100%;background-repeat: no-repeat;" id="htext">Header text area. Background fitting to content height.<br>Header text area<br>Header text area<br>Header text area<br></div>
 	
 	<a class="ui-btn ui-btn-y ui-icon-carat-l ui-btn-icon-left ui-btn-inline ui-mini" vlu="" vlus="" vluyr="" id="shtb" href="#">&nbsp;<br>&nbsp;</a>
 	<a class="ui-btn ui-btn-y ui-icon-carat-r ui-btn-icon-right ui-btn-inline ui-mini" vlu="" vlus="" vluyr="" id="shtf" href="#">&nbsp;<br>&nbsp;</a><span class="year stycln8s1"></span> <span class="stycln8s1">-</span> <span class="month stycln8s1"></span><div style="background-color:rgba(255, 255, 255, 0.4);width:100%; padding:3px;" id="day1" class="day day1"><span class="stycln8s1">01</span> <span class="stycln8s1" id="wday1"></span> 
-	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-info inf" data-rel="popup"  style="background-image:url(images/infday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;display:none;" id="infday1" href="#infpig"><span class="msginf"></span></a>
-	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-football ftb" data-rel="popup"  style="background-image:url(images/ftbday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;display:none;" id="ftbday1" href="#ftbpig"><span class="msgftb"></span></a> 
-	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-shop sho" data-rel="popup"  style="background-image:url(images/shoday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;display:none;" id="shoday1" href="#shopig"><span class="msgsho"></span></a>
-	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-location ltn" data-rel="popup"  style="background-image:url(images/ltnday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;display:none;" id="ltnday1" href="#ltnpig"><span class="msgltn"></span></a>
+	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-info inf" data-rel="popup"  style="background-image:url(img/hr.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;" id="infday1" href="#infpig"><span class="msginf">Info button</span></a>
+	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-football ftb" data-rel="popup"  style="background-image:url(images/ftbday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;" id="ftbday1" href="#ftbpig"><span class="msgftb">Football button</span></a> 
+	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-shop sho" data-rel="popup"  style="background-image:url(images/shoday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;" id="shoday1" href="#shopig"><span class="msgsho">Shopping button</span></a>
+	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-location ltn" data-rel="popup"  style="background-image:url(images/ltnday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;" id="ltnday1" href="#ltnpig"><span class="msgltn">Location button</span></a>
 	<div id="fbnday1" class="ui-grid-solo" style="background-image:url(images/fbnday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;display:none;"><span class="msgfbn"></span></div>
 	</div>
 	
@@ -301,38 +300,25 @@
 	<div id="fbnday31" class="ui-grid-solo" style="background-image:url(images/fbnday31.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;display:none;"><span class="msgfbn"></span></div>
 	</div>
 	<div class="xkn"></div><!--copyiframes-->
+
 	
-	<div class="ui-grid-solo" style="background-image:url(images/ftitlebackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="ftitle"></div>
-	<div class="ui-grid-solo" style="background-image:url(images/ftextbackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="ftext"></div>
+	<div class="ui-grid-solo" style="background-image:url(img/ta.gif);background-size:100% 100%;background-repeat: no-repeat;" id="ftitle">Footer title area. Background fitting to content height.<br>Footer title area<br>Footer title area<br>Footer title area<br>Footer title area
+	<div class="ui-grid-solo"><a href="#popup1" data-rel="popup"><img src="img/tpsn.gif" style="width:100%"/></a></div></div>
+	<div class="ui-grid-solo" style="background-image:url(img/ta.gif);background-size:100% 100%;background-repeat: no-repeat;" id="ftext">Footer text area. Background fitting to content height.<br>Footer text area<br>Footer text area<br>Footer text area<br>Footer text area</div>
 		
-	<div data-role="popup" data-corners="false" id="etpigagree"><iframe id="etpigagrees" src="1.html"></iframe><div style="padding:5px" id="agreepig">You need to accept the agreement. </div><br><div style="padding:5px" ><a href="#" class="ui-btn ui-btn-b" id="agreeapp">I Agree.</a></div>
-	</div>
+
 	</div><!-- /content -->
 
 	
-	<div id="infpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsninf" style="background-image:url(images/jsninfbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
-	<div id="ftbpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div id="jsnftb" style="background-image:url(images/jsnftbbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div>
+	<div id="infpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsninf" style="background-image:url(img/loveBg.gif);background-size:100% 100%;background-repeat: no-repeat;color:blue;">Popup of Info button : jsninfbackground.gif</div></div>
+	<div id="ftbpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div id="jsnftb" style="background-image:url(img/hr.gif);background-size:100% 100%;background-repeat: no-repeat;">Popup of Football button : jsnftbbackground.gif<br>
+	The background picture of the following iframe is placed on your PHP server.
+</div>
 	<iframe class="ifrwidth" src="" id="jsnftbf"></iframe></div>
-	<div id="shopig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnsho" style="background-image:url(images/jsnshobackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
-	<div id="ltnpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnltn"  style="background-image:url(images/jsnltnbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
-	<div id="popup1" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup1"  style="background-image:url(images/popuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup2" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup2"  style="background-image:url(images/popuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup3" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup3"  style="background-image:url(images/popuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
-	<div id="popup4" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup4"  style="background-image:url(images/popuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup5" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup5"  style="background-image:url(images/popuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup6" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup6"  style="background-image:url(images/popuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup7" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup7"  style="background-image:url(images/popuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup8" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup8"  style="background-image:url(images/popuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup9" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup9"  style="background-image:url(images/popuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup10" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup10"  style="background-image:url(images/popuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup11" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup11"  style="background-image:url(images/popuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup12" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup12"  style="background-image:url(images/popuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup13" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup13"  style="background-image:url(images/popuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup14" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup14"  style="background-image:url(images/popuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup15" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup15"  style="background-image:url(images/popuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup16" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup16"  style="background-image:url(images/popuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup17" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup17"  style="background-image:url(images/popuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup18" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup18"  style="background-image:url(images/popuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="shopig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnsho" style="background-image:url(img/loveBg.gif);background-size:100% 100%;background-repeat: no-repeat;color:blue;">Popup of Shopping button : jsnshobackground.gif</div></div>
+	<div id="ltnpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnltn"  style="background-image:url(img/loveBg.gif);background-size:100% 100%;background-repeat: no-repeat;color:blue;">Popup of Location button : jsnltnbackground.gif</div></div>
+	<div id="popup1" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup1"  style="background-image:url(img/loveBg.gif);background-size:100% 100%;background-repeat: no-repeat;color:blue;">e.g. popuppicbackground1.gif for calendar(index.html)</div></div>	
+	
 	
 		
 	<div id="navigations" data-role="popup" data-theme="none">
@@ -341,219 +327,13 @@
 	
 	<div id="navigation" data-role="popup" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
-	<li><a href="index.php" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
-	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
-	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
-	<li><a href="playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
-	<li><a href="video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
-	<li><a href="album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
-	<li><a href="poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
+	<li><a href="#" data-transition="flip" class="nvmenu" style="background-image:url(img/ta.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">index page title : indexhtml.gif</a></li>
+	<li><a href="#" data-transition="flip" class="nvmenu" style="background-image:url(img/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">form page title : formhtml.gif</a></li>
+	<li><a href="#" data-transition="flip" class="nvmenu" style="background-image:url(img/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">kiss me page title : kisshtml.gif</a></li>
+	<li><a href="#" data-transition="flip" class="nvmenu" style="background-image:url(img/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">playground page title : playgroundhtml.gif</a></li>
+	<li><a href="#" data-transition="flip" class="nvmenu" style="background-image:url(img/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">video page title : videohtml.gif</a></li>
+	<li><a href="#" data-transition="flip" class="nvmenu" style="background-image:url(img/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">album page title : albumhtml.gif</a></li>
+	<li><a href="#" data-transition="flip" class="nvmenu" style="background-image:url(img/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">poster page title : posterhtml.gif</a></li>
 	</ul></div><!-- /navigation -->
 	</div><!--copyiframes--></body>
 	</html>
-	<script src="js/theme.js"></script>
-	
-	<script>if(!localStorage.getItem("agreeapp")){
-		$(document).on({"pageshow": function () {$('#etpigagrees').css("width",$(window).width()*0.85);$('#etpigagrees').css("height",$(window).height()*0.5);setTimeout(function(){$('#etpigagree').popup("open");},1500);$('#etpigagrees').attr("src","1.html");}}, '.indexhtml'); $( document ).on( "popupafterclose", "#etpigagree", function() {$('#etpigagree').popup("open");});$(".page").click(function(){window.location="index.html";});
-		 $("#agreeapp").click(function(){localStorage.setItem("agreeapp",1);window.location="index.html";});}
-</script>
-	<script>
-	var infhrefs= localStorage.getItem('infhref');
-		if(infhrefs.indexOf('http') == -1){infhrefs= 'http://'+infhrefs;}		
-		if(infhrefs.substr(infhrefs.length - 1)=='/'){var srcphp = '';}else{var srcphp = '/';}
-		var webdir = localStorage.getItem("webdir");
-		if(webdir){var ftblsrc = infhrefs+srcphp+webdir+'ftbl.php';}else{var ftblsrc = infhrefs+srcphp+'ftbl.php';}
-		
-
-	(function($) {
-		var infhref= localStorage.getItem('infhref');
-		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
-		if(infhref.substr(infhref.length - 1)=='/'){var fbclrphp = 'ftbinf.php';}else{var fbclrphp = '/ftbinf.php';}
-		var webdir = localStorage.getItem("webdir");
-		if(webdir){var url = infhref+webdir+fbclrphp;}else{var url = infhref+fbclrphp;}
-		$.ajax({
-   		type: 'GET',
-    	url: url,
-    	async: false,
-    	jsonpCallback: 'datp',
-    	contentType: 'application/json',
-    	dataType: 'jsonp'});})(jQuery);
-		function datp(data) { var ndate = []; var nbr = [];var jsn = [];var msg = [];
-			for(var i=0; i < data.btn.length; i++) {
-			if(data.btn[i].date)ndate[i] = data.btn[i].date;
-			if(data.btn[i].nbr){nbr[i]= data.btn[i].nbr;if(data.btn[i].jsn)jsn[i] = data.btn[i].jsn;
-			if(data.btn[i].msg)msg[i] = data.btn[i].msg;if(data.btn[i].jsnb)$('#jsn'+data.btn[i].nbr).html(data.btn[i].jsnb);}
-		;}
-		var jsndates = JSON.stringify(ndate);
-		var jsnbrs = JSON.stringify(nbr);
-		var jsjsns = JSON.stringify(jsn);
-		var jsmsgs = JSON.stringify(msg);
-		
-		if(jsnbrs.length < 1500 && jsndates.length < 1500){
-			localStorage['jsnbr']=jsnbrs;
-			localStorage['jsndate']=jsndates;
-			if(jsjsns.length < 28800)localStorage['jsjsn']=jsjsns;
-			if(jsmsgs.length < 15000)localStorage['jsmsg']=jsmsgs;
-		}
-
-		;};
-		
-		(function($) {
-		var infhref= localStorage.getItem('infhref');
-		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
-		if(infhref.substr(infhref.length - 1)=='/'){var fbclrphp = 'calendarpopup.php';}else{var fbclrphp = '/calendarpopup.php';}
-		var webdir = localStorage.getItem("webdir");
-		if(webdir){var urls = infhref+webdir+fbclrphp;}else{var urls = infhref+fbclrphp;}
-		
-		var j='';
-		$.ajax({
-   		type: 'GET',
-    	url: urls,
-    	async: false,
-    	jsonpCallback: 'datps',
-    	contentType: 'application/json',
-    	dataType: 'jsonp'});})(jQuery);
-		function datps(data) { var popupimg = [];var popuptle = [];var popupftr = [];
-			for(var i=0; i < data.btns.length; i++) {
-			j = i+1;
-			popupimg= data.btns[i].img;
-			popuptle = data.btns[i].tle;
-			popupftr = data.btns[i].ftr;
-				if(popupimg.length < 150 && popuptle.length < 1500 && popupftr.length < 5500){
-				if(popupimg)popupimg = '<img style="width:100%" src="'+popupimg+'"/>';
-				$('#jsnpopup'+j).html(popuptle+popupimg+popupftr);
-				;}
-			popupnbr='';popuptle='';popupftr='';
-			}
-		;};</script>
-	<!--copyiframe-->
-	<script>$(document).ajaxStop(function() {
-	if(localStorage.getItem("ftbl")){$("#jsnftbf").attr("src",ftblsrc);	}else{$("#jsnftbf").attr("src",'');}	
-	
-	localStorage.setItem("jsnyr","2014");
-	var d = new Date();var mnh = d.getMonth()+1;var day = d.getDate();var yr = d.getFullYear(); 
-	
-
-	
-	var sun = localStorage.getItem('weekdaysun');
-	var mon = localStorage.getItem('weekdaymon');
-	var tue = localStorage.getItem('weekdaytue');
-	var wed = localStorage.getItem('weekdaywed');
-	var thu = localStorage.getItem('weekdaythu');
-	var fri = localStorage.getItem('weekdayfri');
-	var sat = localStorage.getItem('weekdaysat');
-	
-	var wdayn = [sun,mon,tue,wed,thu,fri,sat,sun,mon,tue,wed,thu,fri,sat,sun,mon,tue,wed,thu,fri,sat,sun,mon,tue,wed,thu,fri,sat,sun,mon,tue,wed,thu,fri,sat,sun];
-	var wdayns = [sun,mon,tue,wed,thu,fri,sat,sun,mon,tue,wed,thu,fri,sat,sun,mon,tue,wed,thu,fri,sat,sun,mon,tue,wed,thu,fri,sat,sun,mon,tue,wed,thu,fri,sat,sun];
-	
-	
-
-	var sdy = new Date(yr,d.getMonth(), 1).getDay();var ltdy = new Date(yr,d.getMonth()+1, 0).getDate();
-	$(".year").text(yr);$(".month").text(mnh);
-	$("#shtf").attr("vlu",mnh);$("#shtb").attr("vlu",mnh);
-	$("#shtf").attr("vlus",mnh);$("#shtb").attr("vlus",mnh);
-	$("#shtf").attr("vluyr",yr);$("#shtb").attr("vluyr",yr);
-	var ndate = "";var nbr = "";var jsn = "";var msg = "";
-	if(localStorage.getItem("jsndate"))var ndate = $.parseJSON(localStorage.getItem("jsndate"));
-	if(localStorage.getItem("jsnbr"))var nbr =  $.parseJSON(localStorage.getItem("jsnbr"));
-	if(localStorage.getItem("jsjsn"))var jsn =  $.parseJSON(localStorage.getItem("jsjsn"));
-	if(localStorage.getItem("jsmsg"))var msg =  $.parseJSON(localStorage.getItem("jsmsg"));
-
-	var weekdaysun = localStorage.getItem('weekdaysun');	
-	for(var j=0;j<ndate.length;j++){
-		var xday = ndate[j].split("-");
-		if(mnh==xday[1] && yr==xday[0]){$("#"+nbr[j]+"day"+xday[2]).show();if(jsn[j])$("#jsn"+nbr[j]).html(jsn[j]);$(".msg"+nbr[j]).html(msg[j]);};};
-		
-	$(".day").each(function(){
-	$("#w"+$(this).attr("id")).text(wdayn[sdy]);
-	
-	if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");if($(this).attr("id")=="day28" || $(this).attr("id")=="day29" || $(this).attr("id")=="day30" || $(this).attr("id")=="day31"){var ltdyn = $(this).attr("id").replace("day","");if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
-	/*startjs*/
-	if(sdy<(sdy+30))sdy++;});<!--$(".day").each(function!-->
-
-	var shtf =0;var shtfm =0;
-	$("#shtf").click(function(event) {
-	event.preventDefault();
-	shtfm = parseInt($(this).attr("vlu"));
-	var sdy = new Date(yr,shtfm, 1).getDay();var sdys = sdy;
-	var ltdy = new Date(yr,shtfm+1, 0).getDate();
-	$(this).attr("vlu",shtfm+1);$("#shtb").attr("vlu",shtfm+1);
-	$(".day").css("background-color","rgba(255, 255, 255, 0.4)");
-	$(".day").css("display","");
-
-				
-	$(".day").each(function(){
-	$("#w"+$(this).attr("id")).text(wdayn[sdy]);
-	if($(this).attr("id")=="day28" || $(this).attr("id")=="day29" || $(this).attr("id")=="day30" || $(this).attr("id")=="day31"){
-		var ltdyn = $(this).attr("id").replace("day","");
-			if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
-	
-	if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");/*shtnfjs*/
-	if(sdy<(sdy+30))sdy++;});
-	
-	if($(this).attr("vlus")==12){
-	$("#shtb").attr("vlus",1);$(this).attr("vlus",1);
-	$("#shtb").attr("vluyr",parseInt($(this).attr("vluyr"))+1);
-	$(this).attr("vluyr",parseInt($(this).attr("vluyr"))+1);}
-else{$("#shtb").attr("vlus",parseInt($(this).attr("vlus"))+1);$(this).attr("vlus",parseInt($(this).attr("vlus"))+1);}
-	/*shtfjs*/
-	for(var j=0;j<ndate.length;j++){
-		var xday = ndate[j].split("-");
-		if($(this).attr("vlus")==xday[1] && $(this).attr("vluyr")==xday[0])
-		{$("#"+nbr[j]+"day"+xday[2]).show();if(jsn[j])$("#jsn"+nbr[j]).html(jsn[j]);$(".msg"+nbr[j]).html(msg[j]);}else{$("#"+nbr[j]+"day"+xday[2]).hide();};};
-	$(".month").text($(this).attr("vlus"));$(".year").text($(this).attr("vluyr"));
-	});
-	
-	$("#shtb").click(function(event) {
-	event.preventDefault();
-	shtfm = parseInt($(this).attr("vlu"));
-	var sdy = new Date(yr,shtfm-2, 1).getDay();var sdys = sdy;
-	var ltdy = new Date(yr,shtfm-1, 0).getDate();
-	$(this).attr("vlu",shtfm-1);$("#shtf").attr("vlu",shtfm-1);
-	$(".day").css("display","");
-	$(".day").css("background-color","rgba(255, 255, 255, 0.4)");
-	/*shtsfjs*/
-	$(".day").each(function(){
-	$("#w"+$(this).attr("id")).text(wdayn[sdy]);
-	if($(this).attr("id")=="day28" || $(this).attr("id")=="day29" || $(this).attr("id")=="day30" || $(this).attr("id")=="day31"){
-		var ltdyn = $(this).attr("id").replace("day","");
-		if(ltdyn > ltdy)$("#"+$(this).attr("id")).css("display","none");}
-		
-		if(wdayns[sdy]==weekdaysun || wdayns[sdy]=='六')$("#"+$(this).attr("id")).css("background-color","rgba(227,  57,  39,  0.5)");
-		/*shtnbjs*/
-		if(sdy<(sdy+30))sdy++;});/*$(".day")*/
-	if($(this).attr("vlus")==1){
-	$("#shtf").attr("vlus",12);$(this).attr("vlus",12);
-	$("#shtf").attr("vluyr",parseInt($(this).attr("vluyr"))-1);
-	$(this).attr("vluyr",parseInt($(this).attr("vluyr"))-1);}
-else{$("#shtf").attr("vlus",parseInt($(this).attr("vlus"))-1);$(this).attr("vlus",parseInt($(this).attr("vlus"))-1);}
-	/*shtbjs*/
-	for(var j=0;j<ndate.length;j++){
-		var xday = ndate[j].split("-");
-		if($(this).attr("vlus")==xday[1] && $(this).attr("vluyr")==xday[0])
-		{$("#"+nbr[j]+"day"+xday[2]).show();if(jsn[j])$("#jsn"+nbr[j]).html(jsn[j]);$(".msg"+nbr[j]).html(msg[j]);}else{$("#"+nbr[j]+"day"+xday[2]).hide();};};/*for(var*/
-		
-	$(".month").text($(this).attr("vlus"));$(".year").text($(this).attr("vluyr"));
-	});/*$("#shtb")*/
-	;});/*ajaxStop*/
-
-$('.nvmenu').click(function() {
-		var nvmenuhtml = $(this).attr('href');
-		$(document).on({"pageshow": function () {window.location = nvmenuhtml.replace('../','');}}, '.page');
-;})	
-
-var albummenu='';var slt='';
-if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
-var menusdir='';var menushtml='';var pigsmenu='';var pigsmenudir='';var piginds='';
-if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = '';}
-for(var j=0;j < albummenu.length;j++){
-if(j){menusdir = j+'/';piginds='s';}
-if($("#hrs").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
-if(albummenu[j])menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'index'+piginds+'.html" data-ajax="false" style="background-image:url('+menusdir+'images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';
-;}
-
-
-
-if(menushtml){$('#uls').html(menushtml);$('#uls').listview('refresh');}
-else{$('#menubttns').css('display','none');}
-	</script><!--copyiframes-->

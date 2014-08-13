@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/jquerymobile-1.4.0.min.css">
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
 	<link rel="stylesheet" href="css/jqmobile.min.css">
-	
+	<link rel="stylesheet" href="css/mtnpjhsp.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!--wettopbr--><style type="text/css">
 	</style><!--copyiframes-->
@@ -26,24 +26,46 @@
 	<h3 style="color:#000000"><b>App pictures</b></h3>
 	
 	 <h3 style="color:#000000"><b>App icon</b></h3>
-	 The app icon picture filename must be icon.png.
+	 The app icon picture filename must be icon.png. You need to place the icon.png to the root folder of your app.
 	 <hr>
 	 <h3 style="color:#000000"><b>Page background pictures</b></h3>
      If you want to add background pictures[portrait view] to the app pages, the picture names must be:<br><br>
-	 index page : background.gif<br>
+	 index page/indexs page : background.gif<br>
 	 form page : formbackground.gif<br>
 	 kiss me page : kissbackground.gif<br>
 	 playground page : playbackground.gif<br>
 	 video page : vdbackground.gif<br>
 	 album page : albumbackground.gif<br>
-	 poster page : posterbackground.gif
+	 poster page : posterbackground.gif<br>
+	 <a href="#" id="imgbg" class="ui-btn ui-btn-f ui-btn-inline">Show picture</a><br>
+	 You can click your broswer refresh button to clear the picture preview on this page.
+	 <hr>
+	 <h3 style="color:#000000"><b>Background pictures of Page header</b></h3>
+     The picture names must be:<br><br>
+	 index page/indexs page : hr.gif<br>
+	 form page : formhr.gif<br>
+	 kiss me page : kisshr.gif<br>
+	 playground page : playhr.gif<br>
+	 video page : videohr.gif<br>
+	 album page : albumhr.gif<br>
+	 poster page : posterhr.gif<br>
+	 <a href="#" id="hrbg" class="ui-btn ui-btn-f ui-btn-inline">Show picture</a>
 	 <hr>
 	 <h3 style="color:#000000"><b>Background pictures of Index page</b></h3>
 	 The picture names must be:<br><br>
-	 Header title area : ftitlebackground.gif<br>
+	 Header title area : htitlebackground.gif<br>
 	 Header text area : htextbackground.gif<br>
 	 Footer title area : ftitlebackground.gif<br>
 	 Footer text area : ftextbackground.gif<br>
+	 <a href="indexs.php"  class="ui-btn ui-btn-f ui-btn-inline" target="_blank">Show Example</a><br>
+	 <hr>
+	 <h3 style="color:#000000"><b>Background pictures of popup button on Index page</b></h3>
+	 The picture names must be:<br><br>
+	 Info button(Daily) : infday?.gif &nbsp; e.g. infday1.gif for day 1<br>
+	 Football button(Daily) : ftbday?.gif &nbsp; e.g. ftbday1.gif for day 1<br>
+	 Shopping button(Daily) : shoday?.gif &nbsp; e.g. shoday1.gif for day 1<br>
+	 Location button(Daily) : ltnday?.gif &nbsp; e.g. ltnday1.gif for day 1<br><br>
+	 Note: The ? in the above picture name formats is date number.
 	 <hr>
 	  <h3 style="color:#000000"><b>Background pictures of popup on Index page</b></h3>
 	 The picture names must be:<br><br>
@@ -66,7 +88,8 @@
 	 <h3 style="color:#000000"><b>Color background pictures for QR codes</b></h3>
 	 If you add pure color picture to QR code background, you need to test them. The picture names must be:<br><br>
 	 Google play QR code : jsqrbackground.gif<br>
-	 Facebook timeline QR code : jsqrsbackground.gif<br>
+	 Facebook timeline QR code : jsqrbackground1.gif<br>
+	  <a href="#" class="tps"><img style="width:22px" src="img/tps.gif"><span><img  src="img/qrbg.png" ></span></a> In the example, the white backgrounds add to the QR codes.
 	<hr>
 	 <h3 style="color:#000000"><b>Background pictures for buttons of playground page</b></h3>	 
 	 
@@ -110,8 +133,10 @@
 	 .<br>
 	 32 - ishow32.gif<br><br>
 	 
-	 Note : If you want to amend number of result options and possibilities of option result, you need to use our data system.
-
+	 
+	 
+	 Note : If you want to amend number of result options and possibilities of option result, you need to use our data system.<br>
+ 	 Note : You may need to prepare ishow.gif when you need to amend the possibility of option showing.
 	<hr>
 	 <h3 style="color:#000000"><b>Background pictures for buttons of playground page</b></h3>	 
 	 <b style="color:#000000">Placing background picture files to images folder</b><br>
@@ -146,6 +171,21 @@
 		</div><!-- /content -->
 	</div><!-- /page -->
 	
+<script>
+$('#imgbg').click(function () {
+var imageUrl = 'img/model.gif';
+$('.page').css('background-image', 'url(' + imageUrl + ')');
+$(".page").css("background-size","100% 100%");
+});
 
-	
+$('#hrbg').click(function () {
+var imageUrl = 'img/hr.gif';
+$('#hrdiv').css('background-image', 'url(' + imageUrl + ')');
+$("#hrdiv").css("background-size","100% 100%");
+$('html,body').animate({
+        scrollTop: $("#hrdiv").offset().top},
+        'slow');
+
+});
+</script>
 	

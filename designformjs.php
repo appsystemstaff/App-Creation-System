@@ -70,7 +70,7 @@ require_once 'excel_reader2.php';
 			if(!$calendar and !$form and !$kiss and !$playground and !$video and !$album and !$poster)$ndata = 1;
 		}else{$_SESSION[folder]='';}
 
-		if((!$calendar and !$folder) or $ndata)$calendar = 'Football calendar';
+		if((!$calendar and !$folder) or $ndata)$calendar = 'Calendar';
 		if((!$form and !$folder) or $ndata)$form = 'Form';
 		if((!$kiss and !$folder) or $ndata)$kiss = 'Kiss me';
 		if((!$playground and !$folder) or $ndata)$playground = 'Playground';
@@ -111,7 +111,7 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	</script>
 	</head>
 	<body onload="onLoad()"><div data-role="page"  class="page" data-theme="'.$theme.'">
-	<div  data-role="header" data-theme="'.$themehr.'">
+	<div  data-role="header" data-theme="'.$themehr.'" style="color:;background-image:url(images/formhr.gif);background-size:100% 100%;">
 	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-edit">&nbsp;&nbsp;&nbsp;</a>
 	<a href="#navigation" id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="formhr">'.$form.'</h1>
 	</div>
@@ -179,7 +179,7 @@ var menusdir=\'\';var menushtml=\'\';var pigsmenu=\'\';
 for(var j=0;j < albummenu.length;j++){
 if(j)menusdir = j+"/";
 if($("#formhr").text()==albummenu[j]){slt=\'data-icon="check"\';}else{slt=\'\';}
-if(albummenu[j])menushtml += \'<li \'+slt+\'><a href="';if($folderdir)$htmlcontn .= '../';$htmlcontn .= '\'+menusdir+\'form.html" data-ajax="false" style="background-image:url(\'+menusdir+\'images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">\'+albummenu[j]+\'</a></li>\';
+if(albummenu[j])menushtml += \'<li \'+slt+\'><a href="';if($folderdir)$htmlcontn .= '../';$htmlcontn .= '\'+menusdir+\'form.html" data-ajax="false" style="background-image:url(\'+menusdir+\'images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">\'+albummenu[j]+\'</a></li>\';
 ;}
 
 if(menushtml){$(\'#uls\').html(menushtml);$(\'#uls\').listview(\'refresh\');}
