@@ -93,7 +93,7 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	<link rel="stylesheet" href="'.$folderdir.'css/jquerymobile-1.4.0.min.css">
 	<link rel="stylesheet" href="'.$folderdir.'css/jquery.mobile-1.4.0.min.css">
 	<link rel="stylesheet" href="'.$folderdir.'css/icons/style.css">
-	<style type="text/css">.ui-page{background-image:url(images/formbackground.gif);background-size:100% ;background-repeat: no-repeat; background-attachment:fixed;}';
+	<style type="text/css">';
 	if($theme=='y')$htmlcontn .= '
 	#form5{background:rgba(255, 255, 255, 0.2);}';
 	$htmlcontn .= '</style>
@@ -115,7 +115,7 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-edit">&nbsp;&nbsp;&nbsp;</a>
 	<a href="#navigation" id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="formhr">'.$form.'</h1>
 	</div>
-	<div data-role="content"><form id="form" name="form">';
+	<div data-role="content" style="background-image:url(images/formbackground.gif);background-size:100%;background-repeat:repeat-y;"><form id="form" name="form">';
 	if($formtitle)$htmlcontn .= ''.$formtitle.'<HR><BR>';
 	if($form1)$htmlcontn .= $form1.'<input type="text" id="form1" name="form1" data-corners="false" required>';
 	if($form2)$htmlcontn .= $form2.'<input type="text" id="form2" name="form2" data-corners="false">';

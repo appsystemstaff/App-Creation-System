@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
 	<link rel="stylesheet" href="css/jqmobile.min.css">
 	<link rel="stylesheet" href="css/icon/style.css">
-	<style type="text/css">.ui-page{background-image:url(images/playbackground.gif);background-size:100% ;background-repeat: no-repeat; background-attachment:fixed;}
+	<style type="text/css">
 	@media all and (min-width: 1250px){.playd{font-size:88px;}.playdw{font-size:144px;};}
 			@media all and (min-width: 1020px) and (max-width: 1250px){.playd{font-size:66px;}.playdw{font-size:108px;};}
 			@media all and (min-width: 768px) and (max-width: 1020px){.playd{font-size:44px;}.playdw{font-size:72px;};}
@@ -21,6 +21,16 @@
 	.ui-icon-nbr:after{background-size: 18px 18px;}
 	.ui-icon-pigpaper:after{background-image: url("css/images/pigpaper.svg");}
 	.ui-icon-pigpaper:after{background-size: 18px 18px;}
+	@media all and (min-width: 1250px){.ifrwidth{min-width:1250px;min-height:680px;};}
+	@media all and (min-width: 1020px) and (max-width: 1250px){.ifrwidth{width:100%;min-height:650px;}
+	.ifrwidthpig{min-width:980px;};}
+	@media all and (min-width: 768px) and (max-width: 1020px){.ifrwidth{width:100%;min-height:500px;}
+	.ifrwidthpig{min-width:728px;};}
+	@media all and (min-width: 601px) and (max-width: 768px){.ifrwidth{width:100%;min-height:405px;}
+	.ifrwidthpig{min-width:568px;};}
+	@media all and (min-width: 321px) and (max-width: 600px){.ifrwidth{width:100%;min-height:405px;}
+	.ifrwidthpig{min-width:310px;};}
+	@media all and (max-width: 320px){.ifrwidth{width:100%;min-height:350px;};}
 	</style>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
@@ -29,10 +39,10 @@
 	 
 	</head>
 	<body><div data-role="page" class="page" data-theme="">
-	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/playgroundhr.gif);background-size:100% 100%;">
+	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/playhr.gif);background-size:100% 100%;">
 	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-tag">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="playbhr"></h1>
 	</div>
-	<div data-role="content">
+	<div data-role="content" style="background-image:url(images/playbackground.gif);background-size:100%;background-repeat:repeat-y;">
 	<a href="playground.html" data-ajax="false" class="ui-btn ui-icon-refresh ui-btn-icon-notext ui-btn-inline">Refresh</a>
 	<a href="#"  class="ui-btn ui-icon-nbr ui-btn-icon-notext ui-btn-inline" id="sign">Sign</a>
 	<a href="#"  class="ui-btn ui-icon-pigpaper ui-btn-icon-notext ui-btn-inline" id="nbr">Number</a>	
@@ -134,7 +144,7 @@
 	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p32" style="background-image:url(images/playground32.gif);background-size:100% 100%;">32</a></div>
 	</div>
 	
-	<div id="popup" data-role="popup" data-corners="false" style="width:100%"><img style="width:100%" id="img" src=""/></div>
+	<div id="popup" data-role="popup" data-corners="false" class="ifrwidthpig"><img style="width:100%" id="img" src=""/></div>
 
 	<div id="navigations" data-role="popup" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" data-inset="true">
