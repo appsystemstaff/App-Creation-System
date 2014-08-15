@@ -42,6 +42,9 @@
 	if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){
 	var networkState = navigator.connection.type;
 	if(networkState == Connection.NONE)alert("No Internet.");};}
+	
+
+
 	</script>
 	</head>
 	<body onLoad="onLoad()"><div data-role="page" data-theme="f" class="page indexhtml">
@@ -49,6 +52,7 @@
 	</div><!-- /header --><div data-role="content" class="pagebg"><!--copyiframe--><!-- /content!-->
 	
 	<div class="ui-grid-solo" style="background-image:url(img/ta.gif);background-size:100% 100%;background-repeat: no-repeat;" id="htitle">Header title area. Background fitting to content height.<br>Header title area<br>Header title area<br>Header title area<br>Header title area<br></div>
+	<div class="ui-grid-solo" id="indexpurepig"><iframe src="indexpure.html"  id="indexpurehtml" style="width:100%;" seamless frameBorder="0"></iframe></div>
 	<div class="ui-grid-solo" style="background-image:url(img/ta.gif);background-size:100% 100%;background-repeat: no-repeat;" id="htext">Header text area. Background fitting to content height.<br>Header text area<br>Header text area<br>Header text area<br></div>
 	
 	<a class="ui-btn ui-btn-y ui-icon-carat-l ui-btn-icon-left ui-btn-inline ui-mini" vlu="" vlus="" vluyr="" id="shtb" href="#">&nbsp;<br>&nbsp;</a>
@@ -314,7 +318,7 @@
 	<div id="ftbpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div id="jsnftb" style="background-image:url(img/hr.gif);background-size:100% 100%;background-repeat: no-repeat;">Popup of Football button : jsnftbbackground.gif<br>
 	The background picture of the following iframe is placed on your PHP server.
 </div>
-	<iframe class="ifrwidth" src="" id="jsnftbf"></iframe></div>
+	<iframe class="ifrwidth" src="" id="jsnftbf" seamless frameBorder="0"></iframe></div>
 	<div id="shopig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnsho" style="background-image:url(img/loveBg.gif);background-size:100% 100%;background-repeat: no-repeat;color:blue;">Popup of Shopping button : jsnshobackground.gif</div></div>
 	<div id="ltnpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnltn"  style="background-image:url(img/loveBg.gif);background-size:100% 100%;background-repeat: no-repeat;color:blue;">Popup of Location button : jsnltnbackground.gif</div></div>
 	<div id="popup1" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup1"  style="background-image:url(img/loveBg.gif);background-size:100% 100%;background-repeat: no-repeat;color:blue;">e.g. popuppicbackground1.gif for calendar(index.html)</div></div>	
@@ -337,3 +341,7 @@
 	</ul></div><!-- /navigation -->
 	</div><!--copyiframes--></body>
 	</html>
+<script>
+$("#indexpurehtml").height($(this).width()*2.6/10);
+
+	</script>

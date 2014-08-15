@@ -15,7 +15,7 @@ require_once 'excel_reader2.php';
 		$theme = strtolower(htmlspecialchars($ftdata->val(6,'B')));$themehr = strtolower(htmlspecialchars($ftdata->val(6,'D')));
 		
 		$htitle = htmlspecialchars($ftdata->val(7,'B'));
-		$htext = htmlspecialchars($ftdata->val(8,'B'));
+		$htext = htmlspecialchars($ftdata->val(8,'B'));$pur = htmlspecialchars($ftdata->val(8,'D'));
 		$htext = str_replace('&lt;/a&gt;','</a>',$htext);$ftext = str_replace('&lt;a','<a',$htext);
 		$htext = str_replace('&gt;','>',$htext);$htext = str_replace('”',"'",$htext);$htext = str_replace('"',"'",$htext);
 		$ftitle = htmlspecialchars($ftdata->val(9,'B'));
@@ -93,7 +93,13 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	<link rel="stylesheet" href="'.$folderdir.'css/jquerymobile-1.4.0.min.css">
 	<link rel="stylesheet" href="'.$folderdir.'css/jquery.mobile-1.4.0.min.css">
 	<link rel="stylesheet" href="'.$folderdir.'css/icons/style.css">
-	<style type="text/css">';
+	<style type="text/css">
+			@media all and (min-width: 1250px){#height{min-height: 1875px;}}
+			@media all and (min-width: 1020px) and (max-width: 1250px){#height{min-height: 1875px;}}
+			@media all and (min-width: 768px) and (max-width: 1020px){#height{min-height: 1530px;}}
+			@media all and (min-width: 601px) and (max-width: 768px){#height{min-height: 1152px;}}
+			@media all and (min-width: 321px) and (max-width: 600px){#height{min-height: 900px;}}
+			@media all and (max-width: 320px){#height{min-height: 480px;}}';
 	if($theme=='y')$htmlcontn .= '
 	#form5{background:rgba(255, 255, 255, 0.2);}';
 	$htmlcontn .= '</style>
@@ -115,7 +121,7 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-edit">&nbsp;&nbsp;&nbsp;</a>
 	<a href="#navigation" id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="formhr">'.$form.'</h1>
 	</div>
-	<div data-role="content" style="background-image:url(images/formbackground.gif);background-size:100%;background-repeat:repeat-y;"><form id="form" name="form">';
+	<div data-role="content" id="height"  style="background-image:url(images/formbackground.gif);background-size:100%;background-repeat:repeat-y;"><form id="form" name="form">';
 	if($formtitle)$htmlcontn .= ''.$formtitle.'<HR><BR>';
 	if($form1)$htmlcontn .= $form1.'<input type="text" id="form1" name="form1" data-corners="false" required>';
 	if($form2)$htmlcontn .= $form2.'<input type="text" id="form2" name="form2" data-corners="false">';
@@ -145,6 +151,8 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	
 	if($folder)$formfolder = $folder.'/';
 	$htmlcontn .= '<script>
+	$(document).ready(function() {$.mobile.loading(\'show\');}); $( window ).load(function() {$.mobile.loading( "hide" );});  
+	
 	$("#form").submit(function() {
 	var infhref= localStorage.getItem("infhref");
 		if(infhref.indexOf("http") == -1){infhref= "http://"+infhref;}		
@@ -238,6 +246,7 @@ $htmlcontn .= '
 				$htmlcontn ='';	}
 				
 
+$htmlcontn .= '$(document).ready(function() {$.mobile.loading(\'show\');}); $( window ).load(function() {$.mobile.loading( "hide" );});';
 if(!preg_match('/^[a-z]*$/', $themehr) or !$themehr or strlen($themehr)>1)$themehr = $theme;
 if($folderdir){$htmlcontn .= 'localStorage.setItem("pigsmenudir","1");';}else{$htmlcontn .= 'localStorage.setItem("pigsmenudir","");';}
 $htmlcontn .= '$(".page").attr("data-theme","'.$theme.'");$("#hrdiv").attr("data-theme","'.$themehr.'");';
@@ -319,6 +328,9 @@ if($agreeapp)$htmlcontn .= ';$("#agreeapp").html("'.$agreeapp.'");';
 
 if($appr)$htmlcontn .= ';$("#pigappr").html("'.$appr.'");';
 if($like)$htmlcontn .= ';$("#like").html("'.$like.'");';
+
+if($pur)$htmlcontn .= ';$("#indexpurehtml").height($(this).width()*4/10);
+	$("#indexpurepig").css("display","show");';
 
 				$fpagtrns="app/".$_SESSION[guanyin]."/theme.js";
 				$opnrtrns = fopen($fpagtrns, "w");
