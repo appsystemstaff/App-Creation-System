@@ -11,6 +11,13 @@
 	<link rel="stylesheet" href="css/jqmobile.min.css">
 	<link rel="stylesheet" href="css/icons/style.css">	
 	<style type="text/css">
+			@media all and (min-width: 1250px){#height{min-height: 1875px;}}
+			@media all and (min-width: 1020px) and (max-width: 1250px){#height{min-height: 1875px;}}
+			@media all and (min-width: 768px) and (max-width: 1020px){#height{min-height: 1530px;}}
+			@media all and (min-width: 601px) and (max-width: 768px){#height{min-height: 1152px;}}
+			@media all and (min-width: 321px) and (max-width: 600px){#height{min-height: 900px;}}
+			@media all and (max-width: 320px){#height{min-height: 480px;}}
+			
     @media all and (min-width: 1250px){.ifrwidth{min-width:1250px;min-height:680px;};}
 	@media all and (min-width: 1020px) and (max-width: 1250px){.ifrwidth{width:100%;min-height:650px;}
 	.ifrwidthpig{min-width:980px;};}
@@ -31,7 +38,7 @@
 	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/videohr.gif);background-size:100% 100%;">
 	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-video">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="videohr"></h1>
 	</div>
-	<div data-role="content" style="background-image:url(images/vdbackground.gif);background-size:100%;background-repeat:repeat-y;">
+	<div data-role="content" id="height" style="background-image:url(images/vdbackground.gif);background-size:100%;background-repeat:repeat-y;">
 	<div id="videotitle1"></div><BR>
 	<div id="video1"></div><BR>
 	<div id="vd1"></div><BR>
@@ -94,7 +101,7 @@
 	
 	<div id="navigation" data-role="popup" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
-	<li><a href="index.php" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
+	<li><a href="index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
 	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
 	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
 	<li><a href="playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
@@ -183,17 +190,18 @@
 			return video;
 		;}
 		
-		function video(http) { 
-			var video = '<video width="100%" controls loop><source src="'+http+'" type="video/mp4"><source src="'+http+'" type="video/ogg"></video>';
-			return video;
-		;}
 		
 		function videohtml(video,tag,videowb){
 		var videohtml ='';
 		if(video && (video.indexOf('http:') == -1 && video.indexOf('www.youtube.com') != -1))video = 'http://'+video;
 		if(video && (video.indexOf('v.qq.com') != -1 || video.indexOf('www.youtube.com') != -1)){videohtml += qqvytub(video);}
-		else if(video){videohtml += video(video);}
-		$('#'+tag).html(videohtml);
+			else if(video){
+			if(video.indexOf('.ogv') > 0){videompfour = video.replace(".ogv", ".mp4");}else{videompfour = video;} 
+			videohtml += '<video width="100%" controls loop><source src="'+videompfour+'" type="video/mp4">';
+			if(video.indexOf('.mp4') > 0)videogg = video.replace(".mp4", ".ogv");
+			else{videogg = video;} 
+			videohtml += '<source src="'+videogg+'" type="video/ogg"></video>';}
+			$('#'+tag).html(videohtml);
 		;}
 		
 		var videos = [];  var videotitles = [];  var videomsgs = []; var videowbs = []; 
@@ -209,7 +217,7 @@
 			if(videos[i]){
 				if(videowbs[i]=='btn' || videowbs[i]=='btnsn' || !videowbs[i]){
 				$("#video"+j).html('<a class="ui-btn ui-shadow ui-btn-inline" href="#popupVideo'+j+'" data-rel="popup" data-position-to="window"><span style="font-size:28px" class="pigss-videos"></span> Video Player</a>');
-				if(videos[i].indexOf('http:') == -1)videos[i] = 'http://'+videos[i];
+				if(videos[i].indexOf('http') == -1)videos[i] = 'http://'+videos[i];
 				$("#srcVideo"+j).attr("src",videos[i]);
 				}
 				

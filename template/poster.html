@@ -189,16 +189,16 @@
 	
 
 	
-	<div id="btnpopup1" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup1.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup2" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup2.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup3" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup3.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup4" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup4.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup5" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup5.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup6" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup6.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup7" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup7.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup8" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup8.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup9" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup9.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
-	<div id="btnpopup10" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup10.gif);background-size:100% 100%;" class="ifrwidthpig"></div>
+	<div id="btnpopup1" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup1.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup2" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup2.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup3" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup3.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup4" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup4.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup5" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup5.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup6" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup6.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup7" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup7.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup8" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup8.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup9" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup9.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup10" data-role="popup" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup10.gif);background-size:100% 100%; padding:5px;"></div>
 	<div class="ui-content" id="btnpopup15" data-role="popup" data-tolerance="15,15">
     <iframe width="496" height="298" src="" seamless="" id="btnpopupvideo"></iframe></div>
 
@@ -215,7 +215,7 @@
 	
 	<div id="navigation" data-role="popup" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
-	<li><a href="index.php" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
+	<li><a href="index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
 	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
 	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
 	<li><a href="playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
@@ -346,7 +346,7 @@
 				$(document).on({"pageshow": function () {window.location = 'poster.html';}}, '.page');
 				;})
 			;}else{
-				$("#btnpopup"+j).html(albumhtmln[i]);
+				$("#btnpopup"+j).append(albumhtmln[i]);
 			;}
 		;}
 		
@@ -410,7 +410,7 @@ $( document ).on( "pagecreate", function() {
         .attr( "height", "auto" );
     $( "#btnpopup15" ).on({
         popupbeforeposition: function() {        
-            var size = scale( 497, 298, 15, 1 ),
+            var size = scale( 496, 298, 15, 1 ),
                 w = size.width,
                 h = size.height;
             $( "#btnpopup15 iframe" )

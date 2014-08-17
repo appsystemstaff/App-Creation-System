@@ -1,4 +1,4 @@
- 
+if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){$(document).ready(function() {$.mobile.loading('show');}); $( window ).load(function() {$.mobile.loading( "hide" );});};
 $(".page").attr("data-theme","y");$("#hrdiv").attr("data-theme","y");$("#hrs").html("Football calendar");$("#htitle").html("Five Energy Company");$("#htext").html("50% off for Brazil Bikini Lady");$("#ftitle").html("All right reserved");$("#ftext").html("Tel:<a href='tel:12241225tel'>12241225xmas</a> Email:<a href='mailto:example@gmail.coms'>example@gmail.com</a>");$("#m1").html("Football calendar");$("#m2").html("Form");$("#m3").html("Kiss Me");$("#m4").html("Playground");$("#m5").html("Video");
 $("#videohr").html("Video");$("#kisshr").html("Kiss Me");$("#playbhr").html("Playground");
 $("#jsqr").html("");$("#appr").html("I love Bikini Lady Simulation -Goal Goal Hit Bra in Youtube");

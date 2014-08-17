@@ -151,7 +151,7 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	
 	if($folder)$formfolder = $folder.'/';
 	$htmlcontn .= '<script>
-	$(document).ready(function() {$.mobile.loading(\'show\');}); $( window ).load(function() {$.mobile.loading( "hide" );});  
+	if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){$(document).ready(function() {$.mobile.loading(\'show\');}); $( window ).load(function() {$.mobile.loading( "hide" );});};  
 	
 	$("#form").submit(function() {
 	var infhref= localStorage.getItem("infhref");
@@ -215,12 +215,15 @@ $websites = str_replace('9','',$websites);
 $webs = explode('.',$websites);
 $webn = $webs[2].'.'.$webs[1].'.'.$webs[0];
 
-if(!$_SESSION[folder]){$htmlcontn = '<?xml version="1.0" encoding="UTF-8"?>
+
+if(!$_SESSION[folder]){
+if(!$ver){$ver = '1';}else{$ver = $_SESSION[ver];}
+$htmlcontn = '<?xml version="1.0" encoding="UTF-8"?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "'.htmlspecialchars($webn).'"
         versionCode="'.htmlspecialchars($pgver).'" 
-        version   = "1">
+        version   = "'.htmlspecialchars($ver).'">
 	<preference name="phonegap-version" value="3.3.0" />
     <name>'.$appn.'</name>
     <description>
@@ -244,9 +247,9 @@ $htmlcontn .= '
 				fwrite($opnrtrns,$htmlcontn);
  				fclose($opnrtrns);	
 				$htmlcontn ='';	}
-				
+		
 
-$htmlcontn .= '$(document).ready(function() {$.mobile.loading(\'show\');}); $( window ).load(function() {$.mobile.loading( "hide" );});';
+$htmlcontn .= 'if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){$(document).ready(function() {$.mobile.loading(\'show\');}); $( window ).load(function() {$.mobile.loading( "hide" );});};';
 if(!preg_match('/^[a-z]*$/', $themehr) or !$themehr or strlen($themehr)>1)$themehr = $theme;
 if($folderdir){$htmlcontn .= 'localStorage.setItem("pigsmenudir","1");';}else{$htmlcontn .= 'localStorage.setItem("pigsmenudir","");';}
 $htmlcontn .= '$(".page").attr("data-theme","'.$theme.'");$("#hrdiv").attr("data-theme","'.$themehr.'");';

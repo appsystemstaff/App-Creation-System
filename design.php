@@ -51,6 +51,8 @@
 	 <div class="ui-grid-b">
 	 <div class="ui-block-a">
 	 <input type="file" name="webxls" required>
+	 Version Number of your design:
+	 <input type="number" name="ver" required>
 	 
 	 <input type="hidden" name="guanyin" value="<?php if(!$_POST[guanyin])$_SESSION[guanyin]=rand();
 	echo htmlspecialchars($_SESSION[guanyin]); ?>">
@@ -82,7 +84,7 @@ $tdy=date('Y-m-d');
 
 $allowedExtensions = array("xls");
 
-
+$_SESSION[ver] = $_POST[ver];
 
 if($_FILES['webxls']){
 $filename=$_FILES['webxls']['name'];$tmpname=$_FILES['webxls']['tmp_name'];

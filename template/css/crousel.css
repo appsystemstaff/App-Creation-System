@@ -89,6 +89,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
   display: block;
   font-size: 35px;
 }
+@media all and (max-width: 320px){.carousel-bullet {font-size: 22px;};}
 .carousel-bullet:hover {
   color: #aaaaaa;
 }
