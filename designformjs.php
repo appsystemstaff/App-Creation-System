@@ -1,6 +1,6 @@
 <?php session_start();  
 ?>    
-<?php 
+<?php  
 if($_SESSION[guanyin]){
 require_once 'excel_reader2.php';	
 		$ftexls="xls/".$_SESSION[guanyin].'trn.xls';
@@ -99,7 +99,8 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 			@media all and (min-width: 768px) and (max-width: 1020px){#height{min-height: 1530px;}}
 			@media all and (min-width: 601px) and (max-width: 768px){#height{min-height: 1152px;}}
 			@media all and (min-width: 321px) and (max-width: 600px){#height{min-height: 900px;}}
-			@media all and (max-width: 320px){#height{min-height: 480px;}}';
+			@media all and (max-width: 320px){#height{min-height: 480px;}}
+	';
 	if($theme=='y')$htmlcontn .= '
 	#form5{background:rgba(255, 255, 255, 0.2);}';
 	$htmlcontn .= '</style>
@@ -116,7 +117,7 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	if(networkState == Connection.NONE)alert("No Internet.");};}	
 	</script>
 	</head>
-	<body onload="onLoad()"><div data-role="page"  class="page" data-theme="'.$theme.'">
+	<body onload="onLoad()"><div data-role="page"  class="page" data-theme="'.$theme.'"  data-dom-cache="true">
 	<div  data-role="header" data-theme="'.$themehr.'" style="color:;background-image:url(images/formhr.gif);background-size:100% 100%;">
 	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-edit">&nbsp;&nbsp;&nbsp;</a>
 	<a href="#navigation" id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="formhr">'.$form.'</h1>
@@ -130,7 +131,7 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 	if($form5)$htmlcontn .= $form5.'<textarea id="form5" name="form5" data-corners="false"></textarea>';
 	if($form1 or $form2 or $form3 or $form4 or $form5)$htmlcontn .= '<HR><HR><input type="submit" id="submit" Value="Send" data-corners="false">';
 	if($formremark)$htmlcontn .= '<p>'.$formremark.'</p>';
-	$htmlcontn .= '</form><a href="'.$folderdir.'index.html" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-home">&nbsp;&nbsp;&nbsp;</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+	$htmlcontn .= '</form><a href="'.$folderdir.'index.html" data-ajax="false" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-home">&nbsp;&nbsp;&nbsp;</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 	<div id="navigations" data-role="popup" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false" id="uls" data-inset="true">
 	</ul></div><!-- /navigation -->
@@ -217,14 +218,19 @@ $webn = $webs[2].'.'.$webs[1].'.'.$webs[0];
 
 
 if(!$_SESSION[folder]){
-if(!$ver){$ver = '1';}else{$ver = $_SESSION[ver];}
+if(!$_SESSION[ver]){$ver = '1';}else{$ver = $_SESSION[ver];}
 $htmlcontn = '<?xml version="1.0" encoding="UTF-8"?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "'.htmlspecialchars($webn).'"
         versionCode="'.htmlspecialchars($pgver).'" 
         version   = "'.htmlspecialchars($ver).'">
-	<preference name="phonegap-version" value="3.3.0" />
+<preference name="phonegap-version" value="3.3.0" />
+<preference name="permissions" value="none"/>
+<preference name="LoadUrlTimeoutValue" value="50000"/>
+<preference name="disallowOverscroll" value="true"/>
+<preference name="AllowInlineMediaPlayback" value="true"/>
+<preference name="Orientation" value="portrait" />
     <name>'.$appn.'</name>
     <description>
         '.$des.' 
@@ -235,7 +241,7 @@ $htmlcontn = '<?xml version="1.0" encoding="UTF-8"?>
 	<gap:platform name="android"/>
 	<gap:platform name="ios"/>
 	<icon src="icon.png" />
-<preference name="permissions" value="none"/>
+
 <access origin="*"/>';
 $htmlcontn .= '
 <gap:plugin name="org.apache.cordova.inappbrowser"/>

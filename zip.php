@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php if($_SESSION[guanyin]){
+<?php if($_SESSION[guanyin]){ 
 $zip = new ZipArchive;
  
 $zipname = 'app/'.$_SESSION[guanyin].'/phonegap'.$_SESSION[folder].'.zip';
@@ -18,7 +18,7 @@ if(!$_SESSION[folder])$_SESSION[htmls]= '';
   
   if(!$_SESSION[folder]){	
   $zip->addFile("template/indexpure.html", "indexpure.html");
-  $zip->addFile("template/css/carousel.css", "css/crousel.css");
+  $zip->addFile("template/css/crousel.css", "css/crousel.css");
   $zip->addFile("template/css/jquerymobile-1.4.0.min.css", "css/jquerymobile-1.4.0.min.css");
   $zip->addFile("template/css/jquery.mobile-1.4.0.min.css", "css/jquery.mobile-1.4.0.min.css");
   $zip->addFile("template/css/icon/style.css", "css/icon/style.css");

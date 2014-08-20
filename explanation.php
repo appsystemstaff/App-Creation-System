@@ -1,35 +1,46 @@
 <?php $_SESSION[tn]=EN;?>
-<!DOCTYPE html> 
-	<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style">
-	<title></title>
-	<link rel="stylesheet" href="css/jquerymobile-1.4.0.min.css">
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
-	<link rel="stylesheet" href="css/jqmobile.min.css">
-	<link href="css/mtnpjhsp.css" rel="stylesheet">
-	<link href="css/icons/icon.css" rel="stylesheet">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!--wettopbr--><style type="text/css">
-	</style><!--copyiframes-->
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.mobile-1.4.0.min.js"></script>
-	<!--copyiframe--><!--copyiframes-->
+<!doctype html>
+<html> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="css/pure-min.css">
+<link rel="stylesheet" href="css/side-menu.css">
 
 </head>
-	<body><div data-role="page" data-theme="f" class="page indexhtml">
-	<div  data-role="header" id="hrdiv" data-theme="f"><h1 id="hrs">AppMoney712 App Creation System</h1><a href="index.php"  data-ajax="false" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-home">&nbsp;&nbsp;&nbsp;</a>
-	</div><!-- /header --><div data-role="content" class="pagebg"><!--copyiframe--><!-- /content!-->
+<body>
 
+<div id="layout">
+    <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+    </a>
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="#">Menu</a>
+
+            <ul>
+				<li><a href="index.php" data-ajax="false">xls form design method</a></li>
+				<li><a href="background.html" data-ajax="false">Background pictures</a></li>
+				<li><a href="design.php" data-ajax="false">App design upload page</a></li>
+				<li><a href="designmenu.php" data-ajax="false">Navigation Menu for sub-apps</a></li>
+				<li class="menu-item-divided pure-menu-selected"><a href="explanation.php" data-ajax="false">Explanation</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div class="header" style="background-color:#0098FF">          
+            <h2>AppMoney712 App Creation System</h2>
+        </div>
+
+        <div class="content">
+		
+	
 	
 	<h2 style="color:#000000"><?php if($_SESSION[tn]==PRC){echo '';}else if($_SESSION[tn]==EN){echo 'Contact';}else{echo '';}?></h2>
-	<a href="mailto:contact@appmoney712.net" class="ui-btn ui-btn-f ui-btn-inline">contact@appmoney712.net</a><hr>
+	<a href="mailto:contact@appmoney712.net" class="pure-button pure-button-primary">contact@appmoney712.net</a><hr>
 	
-	<h2 style="color:#000000">AppMoney712 JQMPIG FRAMEWORK - AppMoney712 App Creation System</h2>
+	<h2 style="color:#000000">AppMoney712 JQMPIG FRAMEWORK<BR>- AppMoney712 App Creation System</h2>
 	
 	<h2 style="color:#000000"><?php if($_SESSION[tn]==PRC){echo '';}else if($_SESSION[tn]==EN){echo 'Software License';}else{echo '';}?></h2>
 	Only donator can use this software for commerical use under MIT license and without distribution and/or sell privileges. Please refer to our website www.appmoney712.net.<br>
@@ -51,12 +62,12 @@
 	<hr>
 	<div class="copyright">&copy; 2014 Lee Wai Kwok(Hong Kong). JSTRUST CONSULTANCY. All Rights Reserved.</div>
 	
-	</div>
-	
-	
-	</div>
+</div>   
+    </div>
 </div>
-</body></html>
+
+</body>
+</html>
 
 <script>
 

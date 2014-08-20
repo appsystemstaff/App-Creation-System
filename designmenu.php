@@ -1,26 +1,23 @@
 <?php session_start();  
 if(!$_POST[nbr]){
 ?>   
-<!DOCTYPE html> 
-	<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style">
-	<title></title>
-	<link rel="stylesheet" href="css/jquerymobile-1.4.0.min.css">
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
-	<link rel="stylesheet" href="css/jqmobile.min.css">
-	<link href="css/mtnpjhsp.css" rel="stylesheet">
-	<link href="css/icons/icon.css" rel="stylesheet">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!--wettopbr--><style type="text/css">
-	</style><!--copyiframes-->
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.mobile-1.4.0.min.js"></script>
-	<!--copyiframe--><!--copyiframes--> 
+<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="css/pure-min.css">
+<link rel="stylesheet" href="css/side-menu.css">
+<link href="css/mtnpjhsp.css" rel="stylesheet">
+<style type="text/css">
+.button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+			background: rgb(66, 184, 221); 
+}
+</style>
 <script>
 	function checkform ( form )
 	{
@@ -83,72 +80,87 @@ if(!$_POST[nbr]){
 	 	$hr = '<hr>';
 	 ;}
 	 ?>
- </head>
-	<body><div data-role="page" data-theme="f" class="page indexhtml">
-	<div  data-role="header" id="hrdiv" data-theme="f"><h1 id="hrs">AppMoney712 App Creation System</h1><a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-btn-icon-left ui-icon-bars">&nbsp;&nbsp;&nbsp;</a>
-	</div><!-- /header --><div data-role="content" class="pagebg"><!--copyiframe--><!-- /content!-->
-	 <h3 style="color:#000000"><b>Navigation Menu for sub-apps</b></h3>
-	 <FORM action="designmenu.php"  method="post" enctype="multipart/form-data" data-ajax="false"  onSubmit="return checkform(this);">
+</head>
+<body>
+
+<div id="layout">
+    <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+    </a>
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="#">Menu</a>
+
+            <ul>
+				<li><a href="index.php" data-ajax="false">xls form design method</a></li>
+				<li><a href="background.html" data-ajax="false">Background pictures</a></li>
+				<li><a href="design.php" data-ajax="false">App design upload page</a></li>
+				<li class="menu-item-divided pure-menu-selected"><a href="designmenu.php" data-ajax="false">Navigation Menu for sub-apps</a></li>
+				<li><a href="explanation.php" data-ajax="false">Explanation</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div class="header" style="background-color:#0098FF">          
+            <h2>AppMoney712 App Creation System</h2> <h3 style="color:#000000"><b>Navigation Menu for sub-apps</b></h3>
+        </div>
+
+        <div class="content">
+
+
+	
+	 <FORM action="designmenu.php"  method="post" enctype="multipart/form-data" class="pure-form"  onSubmit="return checkform(this);">
 	 <?php if($nbr)echo 'Root + '; ?>Maximum Folder Number:
-	  <div class="ui-grid-b">
-	 <div class="ui-block-a">
+	  <div class="pure-g">
+	 <div class="pure-u-1-3">
 	 <input type="number" name="nbr" value="<?php echo htmlspecialchars($nbr) ?>" required></div></div>
 	 
-	  <div class="ui-grid-b">
-	 <div class="ui-block-a">
-	 Football calendar : <br><textarea name="calendar"><?php echo htmlspecialchars($vlu[1]) ?></textarea></div>
-	  <div class="ui-block-b"><a href="#" class="tps"><img style="width:22px" src="img/tps.gif"><span><br>The main app contains fixed pages and the menu shows on the top right side. If you add folder for adding page to your app, you need to use , to as separator for the title entry. The sub-function menu shows on the top left side. e.g. The title of Football calendar in main app is Football calendar and you add a calendar page to sub-app folder (named 1) with naming Bikini Calendar. You need to enter Football calendar,Bikini Calendar for the Football calendar field.</span></a></div>
-
-	 <div class="ui-block-a">
-	 Form : <br><textarea name="form"><?php echo htmlspecialchars($vlu[2]) ?></textarea></div><div class="ui-block-b">
-	 Kiss me : <br><textarea name="kiss"><?php echo htmlspecialchars($vlu[3]) ?></textarea></div><div class="ui-block-c">
-	 Playground : <br><textarea name="playground"><?php echo htmlspecialchars($vlu[4]) ?></textarea></div>
-	 <div class="ui-block-a">	 
-	 Video : <br><textarea name="video"><?php echo htmlspecialchars($vlu[5]) ?></textarea></div><div class="ui-block-b">
-	 Album : <br><textarea name="album"><?php echo htmlspecialchars($vlu[6]) ?></textarea></div><div class="ui-block-c">
-	 Poster : <br><textarea name="poster"><?php echo htmlspecialchars($vlu[7]) ?></textarea>	</div>
+	  <div class="pure-g">
+	 <div class="pure-u-1-3">
+	 Calendar : <br><textarea style="width:100%" name="calendar"><?php echo htmlspecialchars($vlu[1]) ?></textarea></div>
+	  <div class="pure-u-1-3"><a href="#" class="tps"><img style="width:22px" src="img/tps.gif"><span><br>The main app contains fixed pages and the menu shows on the top right side. If you add folder for adding page to your app, you need to use , to as separator for the title entry. The sub-function menu shows on the top left side. e.g. The title of Football calendar in main app is Football calendar and you add a calendar page to sub-app folder (named 1) with naming Bikini Calendar. You need to enter Football calendar,Bikini Calendar for the Football calendar field.</span></a></div></div>
+	<div class="pure-g">	
+	 <div class="pure-u-1-3">
+	 Form : <br><textarea style="width:100%" name="form"><?php echo htmlspecialchars($vlu[2]) ?></textarea></div><div class="pure-u-1-3">
+	 Kiss me : <br><textarea style="width:100%" name="kiss"><?php echo htmlspecialchars($vlu[3]) ?></textarea></div><div class="pure-u-1-3">
+	 Playground : <br><textarea style="width:100%" name="playground"><?php echo htmlspecialchars($vlu[4]) ?></textarea></div></div>
+	 
+	 <div class="pure-g">	
+	 <div class="pure-u-1-3">	 
+	 Video : <br><textarea style="width:100%" name="video"><?php echo htmlspecialchars($vlu[5]) ?></textarea></div><div class="pure-u-1-3">
+	 Album : <br><textarea style="width:100%" name="album"><?php echo htmlspecialchars($vlu[6]) ?></textarea></div><div class="pure-u-1-3">
+	 Poster : <br><textarea style="width:100%" name="poster"><?php echo htmlspecialchars($vlu[7]) ?></textarea>	</div></div>
 	 <input type="hidden" name="guanyin" value="<?php if(!$_POST[guanyin])$_SESSION[guanyin]=rand();
 	echo htmlspecialchars($_SESSION[guanyin]); ?>">
-	<div class="ui-block-a">
-	<input type="submit" name="submit" Value="SEND"></div><div class="ui-block-b">
-	<input type="reset" name="clear" Value="Clear"></div></div></FORM>
+	
+	<div class="pure-g">	
+	<div class="pure-u-1-3"><br>
+	<input type="submit" name="submit" class="pure-button button-secondary" Value="SEND">
+	<input type="reset" name="clear" class="pure-button button-secondary" Value="Clear"></div></div></FORM>
 	 <hr>
 	 <?php 
 	 if($hr){?>
-	 <a  class="ui-btn ui-btn-f ui-btn-inline" href="xls/menu.php" target="_blank">Preview your menu</a>
-	 <a  class="ui-btn ui-btn-f ui-btn-inline" href="menudownload.php" target="_blank">Download menu.html</a>
+	 <a  class="pure-button pure-button-primary" href="xls/menu.php" target="_blank">Preview your menu</a>
+	 <a  class="pure-button pure-button-primary" href="menudownload.php" target="_blank">Download menu.html</a>
 	 <?php  echo $hr;}?>
-	<a  class="ui-btn ui-btn-f ui-btn-inline" href="designmenuxls.php">xls method</a>
-	<a  class="ui-btn ui-btn-f ui-btn-inline" href="https://www.dropbox.com/s/ciuw60r1100ho2f/nm.xls" target="_blank">Adding menu for sub-apps xls example</a>
+	<a  class="pure-button pure-button-primary" href="designmenuxls.php">xls method</a>
+	<a  class="pure-button pure-button-primary" href="https://www.dropbox.com/s/ciuw60r1100ho2f/nm.xls" target="_blank">Adding menu for sub-apps xls example</a>
 	<br><br>
 	<a href="#" class="tps"><img style="width:22px" src="img/tps.gif"><span><br>If you use adding folder method to add pages to your app, you need to create sub-apps menu file. You need to place the created file(menu.html) on the root folder of app zip file.</span></a>
 	
 	 
 	 
 	 <br><br>
-	  Back to <a  class="ui-btn ui-btn-f ui-btn-inline" href="design.php">xls file upload</a>
-	  
+	  Back to <a  class="pure-button pure-button-primary" href="design.php">xls file upload</a>
+	  	 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 	  	
-	
-	<div id="navigations" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" data-inset="true">
-	<li><a href="index.php" data-ajax="false">xls form design method</a></li>
-	<li><a href="background.html" data-ajax="false">Background pictures</a></li>
-	<li><a href="design.php" data-ajax="false">App design upload page</a></li>
-	<li><a href="designmenu.php" data-ajax="false">Navigation Menu for sub-apps</a></li>
-	<li><a href="explanation.php" data-ajax="false">Explanation</a></li>
-
-	
-
-	</ul></div><!-- /navigation -->	
-	 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-  	 </div>
+</div>   
     </div>
-	
-	
- 	
+</div>
+
 </body>
 </html>
+
 
 <?php
 ;}//$_POST[nbr]
