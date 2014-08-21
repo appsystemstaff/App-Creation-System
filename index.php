@@ -68,7 +68,7 @@ $_SESSION[tn]=EN;
 	 For development of debug app and creating data testing account, you need to viist our website tutorials. 
 	 <br><br>
 	You need to consider your zip file size of design work not exceeding the size limitation of phonegap build(15M and 40M). You also need to consider related limitations of Android market and IOS store. You may use picture size similar to screen size of target device of your app.<br>
-	 For pictures in app, most of them need to be gif format(animated GIF or static GIF). For different formats of pictures, you can use Windows paint to resize and save your static pictures and then rename their file extensions(e.g. picture.png to picture.gif) in Windows file manager(you need to show the file extension by Windows 'Control Panel'-'Appearance and Personalization'-'Folder Options'-'View'-not click the 'Hide extensions for known file types').<br> 
+	 For pictures in app, most of them need to be gif format(animated GIF or static GIF). For different formats of pictures, you can use Windows paint to resize and save your static pictures and then rename their file extensions(e.g. picture.png to picture.gif) in Windows file manager(you need to show the file extension by Windows 'Control Panel'-'Appearance and Personalization'-'Folder Options'-'View'-not tick the 'Hide extensions for known file types').<br> 
 	 For pictures in the Internet data server(user device receiving the pictures in app), you also need to consider their sizes which affect the picture showing speed in your app.<br> 
 	 If you need a big size app, you may consider to install phonegap software to build your app locally.
 	<hr>
