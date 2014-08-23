@@ -342,7 +342,7 @@
 	</ul></div><!-- /navigation -->
 	</div><!--copyiframes--></body>
 	</html>
-	<script src="js/theme.js"></script>
+	<script src="js/theme.js"></script><script src="../js/menu.js"></script>
 	
 	
 	<script>
@@ -366,10 +366,11 @@
     	jsonpCallback: 'datp',
     	contentType: 'application/json',
     	dataType: 'jsonp'});})(jQuery);
-		function datp(data) { var ndate = []; var nbr = [];var jsn = [];var msg = [];
+		function datp(data) { var ndate = []; var nbr = [];var jsn = [];var msg = [];localStorage.setItem("ftbl",''); 
 			for(var i=0; i < data.btn.length; i++) {
 			if(data.btn[i].date)ndate[i] = data.btn[i].date;
 			if(data.btn[i].nbr){nbr[i]= data.btn[i].nbr;if(data.btn[i].jsn)jsn[i] = data.btn[i].jsn;
+			if(data.btn[i].nbr=='ftb')localStorage.setItem("ftbl",'1');
 			if(data.btn[i].msg)msg[i] = data.btn[i].msg;if(data.btn[i].jsnb)$('#jsn'+data.btn[i].nbr).html(data.btn[i].jsnb);}
 		;}
 		var jsndates = JSON.stringify(ndate);

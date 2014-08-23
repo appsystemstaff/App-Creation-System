@@ -141,13 +141,13 @@ if(!$_SESSION[folder] or ($_SESSION[folder]  and  $form)){$htmlcontn = '<!DOCTYP
 <li><a href="'.$folderdir.'index.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">'.$calendar.'</a></li>
 	<li><a href="'.$folderdir.'form.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-ajax="false" id="m2">'.$form.'</a></li>
 	<li><a href="'.$folderdir.'kiss.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">'.$kiss.'</a></li>
-	<li><a href="'.$folderdir.'playground.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">'.$playground.'</a></li>
+	<li><a href="'.$folderdir.'playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">'.$playground.'</a></li>
 	<li><a href="'.$folderdir.'video.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">'.$video.'</a></li>
 	<li><a href="'.$folderdir.'album.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">'.$album.'</a></li>
 	<li><a href="'.$folderdir.'poster.html"  data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">'.$poster.'</a></li>
 	</ul></div><!-- /navigation -->
 	</div></body>
-	</html>';
+	</html><script src="'.$folderdir.'js/menu.js"></script>';
 	if($form1 or $form2 or $form3 or $form4 or $form5){
 	
 	if($folder)$formfolder = $folder.'/';
@@ -225,12 +225,13 @@ $htmlcontn = '<?xml version="1.0" encoding="UTF-8"?>
         id        = "'.htmlspecialchars($webn).'"
         versionCode="'.htmlspecialchars($pgver).'" 
         version   = "'.htmlspecialchars($ver).'">
-<preference name="phonegap-version" value="3.3.0" />
+<preference name="phonegap-version" value="3.3.0"/>
 <preference name="permissions" value="none"/>
 <preference name="LoadUrlTimeoutValue" value="50000"/>
 <preference name="disallowOverscroll" value="true"/>
 <preference name="AllowInlineMediaPlayback" value="true"/>
-<preference name="Orientation" value="portrait" />
+<preference name="Orientation" value="portrait"/>
+<preference name="BackgroundColor" value="0xff0000ff"/>
     <name>'.$appn.'</name>
     <description>
         '.$des.' 
@@ -265,7 +266,6 @@ if($htitle)$htmlcontn .= '$("#htitle").html("'.$htitle.'");';
 if($htext)$htmlcontn .= '$("#htext").html("'.$htext.'");';
 if($ftitle)$htmlcontn .= '$("#ftitle").html("'.$ftitle.'");';
 if($ftext)$htmlcontn .= '$("#ftext").html("'.$ftext.'");';
-if(!$folder)$htmlcontn .= '$("#m1").html("'.$calendar.'");$("#m2").html("'.$form.'");$("#m3").html("'.$kiss.'");$("#m4").html("'.$playground.'");$("#m5").html("'.$video.'");$("#m6").html("'.$album.'");$("#m7").html("'.$poster.'");';
 $htmlcontn .= '$("#videohr").html("'.$video.'");$("#kisshr").html("'.$kiss.'");$("#playbhr").html("'.$playground.'");
 $("#albumhr").html("'.$album.'");$("#posterhr").html("'.$poster.'");
 $("#jsqr").html("'.$appn.'");$("#appr").html("'.$appr.'");
@@ -347,9 +347,21 @@ if($pur)$htmlcontn .= ';$("#indexpurehtml").height($(this).width()*4/10);
  				fclose($opnrtrns);	
 				$htmlcontn ='';	
 
+if(!$folder){
+		if(!$calendar)$calendar = 'Calendar';
+		if(!$form)$form = 'Form';
+		if(!$kiss)$kiss = 'Kiss me';
+		if(!$playground)$playground = 'Playground';
+		if(!$video)$video = 'Video';
+		if(!$album)$album = 'Album';
+		if(!$poster)$poster = 'Poster';
+$htmlcontn .= '$("#m1").html("'.$calendar.'");$("#m2").html("'.$form.'");$("#m3").html("'.$kiss.'");$("#m4").html("'.$playground.'");$("#m5").html("'.$video.'");$("#m6").html("'.$album.'");$("#m7").html("'.$poster.'");';
 
-
-	
+				$fpagtrns="app/".$_SESSION[guanyin]."/menu.js";
+				$opnrtrns = fopen($fpagtrns, "w");
+				fwrite($opnrtrns,$htmlcontn);
+ 				fclose($opnrtrns);	
+				$htmlcontn ='';	}	
 
 					
 echo "<meta http-equiv='refresh' content='0;URL=designflist.php'>";

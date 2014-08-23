@@ -66,6 +66,7 @@ if(!$_SESSION[folder])$_SESSION[htmls]= '';
   	 
   if(!$_SESSION[folder]){ 	 
   $zip->addFile("app/".$_SESSION[guanyin]."/config.xml", "config.xml");
+  $zip->addFile("app/".$_SESSION[guanyin]."/menu.js", "js/menu.js");
   }
   if(is_file("app/".$_SESSION[guanyin]."/jsqr.png"))$zip->addFile("app/".$_SESSION[guanyin]."/jsqr.png", "images/jsqr.png");
   if(is_file("app/".$_SESSION[guanyin]."/jsqr1.png"))$zip->addFile("app/".$_SESSION[guanyin]."/jsqr1.png", "images/jsqr1.png"); 

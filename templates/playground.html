@@ -35,8 +35,8 @@
 	</style>
 	<script src="../js/jquery.js"></script>
 	<script src="../js/jquery.mobile-1.4.0.min.js"></script>
-	<script src="js/fastvclick.js"></script>
-	<script>$(function(){Fastvclick.attach(document.body);});</script>
+	<script src="../js/fastvclick.js"></script>
+	<script>$(function(){Fastclick.attach(document.body);});</script>
 	 
 	</head>
 	<body><div data-role="page" class="page" data-theme="" data-dom-cache="true">
@@ -156,14 +156,14 @@
 	<li><a href="../index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
 	<li><a href="../form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
 	<li><a href="../kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
-	<li><a href="../playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
+	<li><a href="../playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
 	<li><a href="../video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
 	<li><a href="../album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
 	<li><a href="../poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
 	</ul></div><!-- /navigation -->
 	</div></body>
 	</html>
-	<script src="js/theme.js"></script>
+	<script src="js/theme.js"></script><script src="../js/menu.js"></script>
 	<script>
 	$("#sign").click(function(event){event.preventDefault();localStorage.setItem('playground','1');window.location='playground.html';});
 	$("#nbr").click(function(event){event.preventDefault();localStorage.setItem('playground','');window.location='playground.html';});
