@@ -38,7 +38,7 @@
 	
 	
 	<h2 style="color:#000000"><?php if($_SESSION[tn]==PRC){echo '';}else if($_SESSION[tn]==EN){echo 'Contact';}else{echo '';}?></h2>
-	<a href="mailto:contact@appmoney712.net" class="pure-button pure-button-primary">contact@appmoney712.net</a><hr>
+	<a href="mailto:contact@appmoney712.net;appmoney712@gmail.com;" class="pure-button pure-button-primary">contact@appmoney712.net</a><hr>
 	
 	<h2 style="color:#000000">AppMoney712 JQMPIG FRAMEWORK<BR>- AppMoney712 App Creation System</h2>
 	

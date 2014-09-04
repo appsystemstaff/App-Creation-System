@@ -3,9 +3,9 @@
 	<head>  
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title></title>
 	<link rel="stylesheet" href="css/jquerymobile-1.4.0.min.css">
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
@@ -16,41 +16,184 @@
 	<!--wettopbr--><style type="text/css">
 	.ui-icon-football:after{background-image: url("css/images/football.svg");}
 	.ui-icon-football:after{background-size: 18px 18px;}
-	.xkn{height:1px;}
-	@media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi){.xkn{height:1.5px;}}
-	@media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){.xkn{height:2px;}}
+	.xkn{height:2px;}
+	@media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){.xkn{height:3px;}}
 	@media(-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){.xkn{height:3px;}}
-		@media all and (min-width: 1250px){.ifrwidth{min-width:1250px;min-height:680px;};}
+		@media all and (min-width: 1250px){.ifrwidth{min-width:1250px;min-height:680px;}#height{min-height: 1875px;}.playd{font-size:88px;}.playdw{font-size:144px;}}
 			@media all and (min-width: 1020px) and (max-width: 1250px){.ifrwidth{width:100%;min-height:650px;}
-			.ifrwidthpig{min-width:980px;};}
+			.ifrwidthpig{min-width:980px;}#height{min-height: 1875px;}.playd{font-size:66px;}.playdw{font-size:108px;}}
 			@media all and (min-width: 768px) and (max-width: 1020px){.ifrwidth{width:100%;min-height:500px;}
-			.ifrwidthpig{min-width:728px;};}
+			.ifrwidthpig{min-width:728px;}#height{min-height: 1530px;}.playd{font-size:44px;}.playdw{font-size:72px;}}
 			@media all and (min-width: 601px) and (max-width: 768px){.ifrwidth{width:100%;min-height:405px;}
-			.ifrwidthpig{min-width:568px;};}
+			.ifrwidthpig{min-width:568px;}#height{min-height: 1152px;}.playd{font-size:33px;}.playdw{font-size:54px;}}
 			@media all and (min-width: 321px) and (max-width: 600px){.ifrwidth{width:100%;min-height:405px;}
-			.ifrwidthpig{min-width:310px;};}
-			@media all and (max-width: 320px){.ifrwidth{width:100%;min-height:350px;}.ifrwidthpig{min-width:275px;};}
+			.ifrwidthpig{min-width:310px;}#height{min-height: 900px;}.playd{font-size:28px;}.playdw{font-size:36px;}}
+			@media all and (max-width: 320px){.ifrwidth{width:100%;min-height:350px;}.ifrwidthpig{min-width:275px;}#height{min-height: 480px;}.playd{font-size:22px;}.playdw{font-size:26px;}}
+	.ui-icon-nbr:after{background-image: url("css/images/nbr.svg");}
+	.ui-icon-nbr:after{background-size: 18px 18px;}
+	.ui-icon-pigpaper:after{background-image: url("css/images/pigpaper.svg");}
+	.ui-icon-pigpaper:after{background-size: 18px 18px;}
+	.album{background-size:100%;background-repeat: no-repeat; }
+	.fit-content{bottom:0px;top:44px;position:absolute;left:0;right:0;}
+	.introcptalbum{position:absolute;bottom:0px;left:0px;width:100%;padding:18px;}
+	
+	.area {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color:;}
+	
+	.area1 {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color:;}
+	
+	.area2 {
+    display: block;
+    width: 100px;
+    height: 75px;
+    background-color:;}
+	
+	.area3 {
+    display: block;
+    width: 125px;
+    height: 75px;
+    background-color:;}
+	
+	.area4 {
+    display: block;
+	width: 150px;
+    height: 100px;
+    background-color:;}
+
+	@media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi){
+	.area {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color:;}
+	
+	.area1 {
+    display: block;
+    width: 112.5px;
+    height: 112.5px;
+    background-color:;}
+	
+	.area2 {
+    display: block;
+    width: 150px;
+    height: 112.5px;
+    background-color:;}
+	
+	.area3 {
+    display: block;
+    width: 187.5px;
+    height: 112.5px;
+    background-color:;}
+	
+	.area4 {
+    display: block;
+	width: 225px;
+    height: 150px;
+    background-color:;}
+	}
+	@media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){
+	.area {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color:;}
+	
+	.area1 {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color:;}
+	
+	.area2 {
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-color:;}
+	
+	.area3 {
+    display: block;
+    width: 250px;
+    height: 150px;
+    background-color:;}
+	
+	.area4 {
+    display: block;
+	width: 300px;
+    height: 200px;
+    background-color:;}}
+	
+	
+	
+	
+	@media(-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
+	.area {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color:;}
+	
+	.area1 {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color:;}
+	
+	.area2 {
+    display: block;
+    width: 300px;
+    height: 250px;
+    background-color:;}
+	
+	.area3 {
+    display: block;
+    width: 375px;
+    height: 250px;
+    background-color:;}
+	
+	.area4 {
+    display: block;
+	width: 450px;
+    height: 300px;
+    background-color:;
+	
+	
+	}}
+	
+	.btndata {display: none;}
+	
 	.tps tr,.tps td{border-top: 1px solid #000000;}
+	.ui-listview li:last-child{
+            border:none;
+     }
 	</style><!--copyiframes-->
-	<script src="js/jquery.js"></script>
+	<script src="js/jquery.js"></script><script src="js/mobileinit.js"></script>
 	<script src="js/jquery.mobile-1.4.0.min.js"></script><script src="js/fastclick.js"></script>
+	<script src="js/jquery.qrcode.min.js">
 	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	<!--copyiframe--><!--copyiframes-->
-	<script>$(function(){FastClick.attach(document.body);});
+	<script>
+	$(function(){FastClick.attach(document.body);});
 	function onLoad() {
 	if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|IEMobile)/)){
 	var networkState = navigator.connection.type;
 	if(networkState == Connection.NONE)alert("No Internet.");};}
+	$('input[type=text], textarea').val('');
 	</script>
 	</head>
-	<body onLoad="onLoad()"><div data-role="page" data-theme="" class="page indexhtml">
+	<body onLoad="onLoad()"><div data-role="page" id="appageone" data-theme="" class="page indexhtml">
 	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/hr.gif);background-size:100% 100%;"><h1 id="hrs"></h1><a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-calendar">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a>
 	</div><!-- /header --><div data-role="content" class="pagebg" style="background-image:url(images/background.gif);background-size:100%;background-repeat:repeat-y;"><!--copyiframe--><!-- /content!-->
 	
 	<div class="ui-grid-solo" style="background-image:url(images/htitlebackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="htitle"></div>
 	<div class="ui-grid-solo" id="indexpurepig" style="display:none"><iframe src="indexpure.html"  id="indexpurehtml" style="width:100%;" seamless frameBorder="0"></iframe></div>
 	<div class="ui-grid-solo" style="background-image:url(images/htextbackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="htext"></div>
-	
 	<a class="ui-btn ui-btn-y ui-icon-carat-l ui-btn-icon-left ui-btn-inline ui-mini" vlu="" vlus="" vluyr="" id="shtb" href="#">&nbsp;<br>&nbsp;</a>
 	<a class="ui-btn ui-btn-y ui-icon-carat-r ui-btn-icon-right ui-btn-inline ui-mini" vlu="" vlus="" vluyr="" id="shtf" href="#">&nbsp;<br>&nbsp;</a><span class="year stycln8s1"></span> <span class="stycln8s1">-</span> <span class="month stycln8s1"></span><div style="background-color:rgba(255, 255, 255, 0.4);width:100%; padding:3px;" id="day1" class="day day1"><span class="stycln8s1">01</span> <span class="stycln8s1" id="wday1"></span> 
 	<a class="ui-btn ui-btn-y ui-btn-icon-left ui-btn-inline ui-mini ui-icon-info inf" data-rel="popup"  style="background-image:url(images/infday1.gif);background-repeat:no-repeat;background-size:100% 100%;text-decoration:none;display:none;" id="infday1" href="#infpig"><span class="msginf"></span></a>
@@ -304,59 +447,613 @@
 	<div class="ui-grid-solo" style="background-image:url(images/ftitlebackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="ftitle"></div>
 	<div class="ui-grid-solo" style="background-image:url(images/ftextbackground.gif);background-size:100% 100%;background-repeat: no-repeat;" id="ftext"></div>
 		
-	<div data-role="popup" data-corners="false" id="etpigagree"><iframe id="etpigagrees" src="1.html" seamless frameBorder="0"></iframe><div style="padding:5px" id="agreepig">You need to accept the agreement. </div><br><div style="padding:5px" ><a href="#" class="ui-btn ui-btn-b" id="agreeapp">I Agree.</a></div>
+	<div data-role="popup" data-transition="pop" data-corners="false" id="etpigagree"><iframe id="etpigagrees" src="1.html" seamless frameBorder="0"></iframe><div style="padding:5px" id="agreepig">You need to accept the agreement. </div><br><div style="padding:5px" ><a href="#" class="ui-btn ui-btn-b" id="agreeapp">I Agree.</a></div>
 	</div>
 	</div><!-- /content -->
 
 	
-	<div id="infpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsninf" style="background-image:url(images/jsninfbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
-	<div id="ftbpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div id="jsnftb" style="background-image:url(images/jsnftbbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div>
+	<div id="infpig" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsninf" style="background-image:url(images/jsninfbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
+	<div id="ftbpig" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div id="jsnftb" style="background-image:url(images/jsnftbbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div>
 	<iframe class="ifrwidth" src="" id="jsnftbf" seamless frameBorder="0"></iframe></div>
-	<div id="shopig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnsho" style="background-image:url(images/jsnshobackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
-	<div id="ltnpig" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnltn"  style="background-image:url(images/jsnltnbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
-	<div id="popup1" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup1"  style="background-image:url(images/popuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup2" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup2"  style="background-image:url(images/popuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup3" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup3"  style="background-image:url(images/popuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
-	<div id="popup4" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup4"  style="background-image:url(images/popuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup5" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup5"  style="background-image:url(images/popuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup6" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup6"  style="background-image:url(images/popuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup7" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup7"  style="background-image:url(images/popuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup8" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup8"  style="background-image:url(images/popuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup9" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup9"  style="background-image:url(images/popuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup10" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup10"  style="background-image:url(images/popuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup11" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup11"  style="background-image:url(images/popuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup12" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup12"  style="background-image:url(images/popuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup13" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup13"  style="background-image:url(images/popuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup14" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup14"  style="background-image:url(images/popuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup15" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup15"  style="background-image:url(images/popuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup16" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup16"  style="background-image:url(images/popuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup17" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup17"  style="background-image:url(images/popuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup18" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup18"  style="background-image:url(images/popuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="shopig" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnsho" style="background-image:url(images/jsnshobackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
+	<div id="ltnpig" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnltn"  style="background-image:url(images/jsnltnbackground.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>
+	<div id="datepopup1" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup1"  style="background-image:url(images/popuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup2" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup2"  style="background-image:url(images/popuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup3" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup3"  style="background-image:url(images/popuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
+	<div id="datepopup4" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup4"  style="background-image:url(images/popuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup5" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup5"  style="background-image:url(images/popuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup6" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup6"  style="background-image:url(images/popuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup7" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup7"  style="background-image:url(images/popuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup8" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup8"  style="background-image:url(images/popuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup9" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup9"  style="background-image:url(images/popuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup10" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup10"  style="background-image:url(images/popuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup11" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup11"  style="background-image:url(images/popuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup12" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup12"  style="background-image:url(images/popuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup13" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup13"  style="background-image:url(images/popuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup14" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup14"  style="background-image:url(images/popuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup15" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup15"  style="background-image:url(images/popuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup16" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup16"  style="background-image:url(images/popuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup17" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup17"  style="background-image:url(images/popuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="datepopup18" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup18"  style="background-image:url(images/popuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+
+
+	<div id="navigations" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" class="uls" data-inset="true">
+	<li data-icon="bars"><a href="#navigationpanelone" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
+	</ul>
+	</div><!-- /navigation -->
+	
+	<div  data-role="panel" data-display="overlay"id="navigationpanelone" class="panel" data-theme="" style="background-image:url(images/background.gif);background-size:100%;background-repeat:repeat-y;">
+    <ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#navigationpanelone" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-carat-l" style="background-image:url(images/indexpanel.gif);background-size:100% 100%;background-repeat:no-repeat;" data-rel="close">&nbsp;&nbsp;</a></li>
+	<li><a href="#appageone" data-transition="flip"  class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-check" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li data-icon="edit"><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul>
+	<a href="#formpanelpopupone" id="formpanelpopupbtnone" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-edit" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="formpanelpopupone" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulformpanelpopupone" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#kisspanelpopupone" id="kisspanelpopupbtnone" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-heart" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="kisspanelpopupone" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulkisspanelpopupone" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#playpanelpopupone" id="playpanelpopupbtnone" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-tag" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="playpanelpopupone" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulplaypanelpopupone" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#videopanelpopupone" id="videopanelpopupbtnone" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-video" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="videopanelpopupone" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulvideopanelpopupone" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#albumpanelpopupone" id="albumpanelpopupbtnone" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-camera" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="albumpanelpopupone" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulalbumpanelpopupone" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#posterpanelpopupone" id="posterpanelpopupbtnone" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-comment" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="posterpanelpopupone" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulposterpanelpopupone" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	</div><!-- /panel -->
+
+	<div id="navigation" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul></div><!-- /navigation -->
+	</div>
+	</div><!--copyiframes-->
+	
+	
+	
+	
+<div data-role="page" id="appagetwo" class="page" data-theme="">
+	<div  data-role="header" data-theme="f" style="color:;background-image:url(images/formhr.gif);background-size:100% 100%;">
+	<a href="#navigations2" id="menubttns2"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-edit">&nbsp;&nbsp;&nbsp;</a>
+	<a href="#navigation2" id="menubttn2"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="formhr">Form</h1>
+	</div>
+	<div data-role="content" id="height" style="background-image:url(images/formbackground.gif);background-size:100%;background-repeat:repeat-y;"><form id="form" name="form" data-corners="false"><div id="formtitle"></div><HR><BR><div id="formcss1"><div id="formtitle1"></div><input type="text" id="form1" name="form1"  data-corners="false" required></div><div id="formcss2"><div id="formtitle2"></div><input type="text" id="form2" name="form2" data-corners="false"></div><div id="formcss3"><div id="formtitle3"></div><input type="text" id="form3" name="form3" data-corners="false"></div><div id="formcss4"><div id="formtitle4"></div><input type="text" id="form4" name="form4" data-corners="false"></div><div id="formcss5"><div id="formtitle5"></div><textarea id="form5" name="form5" data-corners="false"></textarea></div><hr><hr><input type="submit" id="submit" Value="Send" data-corners="false"><p  id="formremark"></p></form><a href="index.html" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-home">&nbsp;&nbsp;&nbsp;</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 	
 		
-	<div id="navigations" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" data-inset="true">
+		
+	<div id="navigations2" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls2" class="uls2" data-inset="true">
+	<li data-icon="bars"><a href="#navigationpaneltwo" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
 	</ul></div><!-- /navigation -->
 	
-	<div id="navigation" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
-	<li><a href="index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
-	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
-	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
-	<li><a href="playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
-	<li><a href="video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
-	<li><a href="album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
-	<li><a href="poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
+	
+	<div  data-role="panel" data-display="overlay"id="navigationpaneltwo" class="panel" data-theme="" style="background-image:url(images/formbackground.gif);background-size:100%;background-repeat:repeat-y;">
+    <ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#navigationpaneltwo" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-carat-l" style="background-image:url(images/formpanel.gif);background-size:100% 100%;background-repeat:no-repeat;" data-rel="close">&nbsp;&nbsp;</a></li>
+	<li data-icon="calendar"><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li><a href="#appagetwo"  data-transition="flip" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-check" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul>
+	<a href="#calendarpanelpopuptwo" id="calendarpanelpopupbtntwo" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-calendar" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="calendarpanelpopuptwo" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulcalendarpanelpopuptwo" class="uls2" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#kisspanelpopuptwo" id="kisspanelpopupbtntwo" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-heart" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="kisspanelpopuptwo" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulkisspanelpopuptwo" class="uls2" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#playpanelpopuptwo" id="playpanelpopupbtntwo" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-tag" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="playpanelpopuptwo" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulplaypanelpopuptwo" class="uls2" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#videopanelpopuptwo" id="videopanelpopupbtntwo" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-video" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="videopanelpopuptwo" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulvideopanelpopuptwo" class="uls2" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#albumpanelpopuptwo" id="albumpanelpopupbtntwo" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-camera" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="albumpanelpopuptwo" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulalbumpanelpopuptwo" class="uls2" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#posterpanelpopuptwo" id="posterpanelpopupbtntwo" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-comment" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="posterpanelpopuptwo" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulposterpanelpopuptwo" class="uls2" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>	
+	</div><!-- /panel -->
+	
+	
+	<div id="navigation2" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
 	</ul></div><!-- /navigation -->
-	</div><!--copyiframes--></body>
+	</div>
+	</div><!--copyiframes-->
+	
+	
+	
+	
+	<div data-role="page" id="appagethree" class="page" data-theme="">
+	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/kisshr.gif);background-size:100% 100%;">
+	<a href="#navigations3" id="menubttns3"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-heart">&nbsp;&nbsp;&nbsp;</a><a href="#navigation3"  id="menubttn3"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="kisshr"></h1>
+	</div>
+	<div data-role="content" style="background-image:url(images/kissbackground.gif);background-size:100%;background-repeat:repeat-y;">
+	<div id="qrx1"></div><div id="qrs1"></div><div id="qrf1"></div><div id="qrv1" style="max-width:50%;background-image:url(images/jsqr1.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz1"></div>
+	<div id="qrx2"></div><div id="qrs2"></div><div id="qrf2"></div><div id="qrv2" style="max-width:50%;background-image:url(images/jsqr2.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz2"></div>
+	<div id="qrx3"></div><div id="qrs3"></div><div id="qrf3"></div><div id="qrv3" style="max-width:50%;background-image:url(images/jsqr3.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz3"></div>
+	<div id="qrx4"></div><div id="qrs4"></div><div id="qrf4"></div><div id="qrv4" style="max-width:50%;background-image:url(images/jsqr4.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz4"></div>
+	<div id="qrx5"></div><div id="qrs5"></div><div id="qrf5"></div><div id="qrv5" style="max-width:50%;background-image:url(images/jsqr5.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz5"></div>
+	<div id="qrx6"></div><div id="qrs6"></div><div id="qrf6"></div><div id="qrv6" style="max-width:50%;background-image:url(images/jsqr6.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz6"></div>
+	<div id="qrx7"></div><div id="qrs7"></div><div id="qrf7"></div><div id="qrv7" style="max-width:50%;background-image:url(images/jsqr7.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz7"></div>
+	<div id="qrx8"></div><div id="qrs8"></div><div id="qrf8"></div><div id="qrv8" style="max-width:50%;background-image:url(images/jsqr8.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz8"></div>
+	<div id="qrx9"></div><div id="qrs9"></div><div id="qrf9"></div><div id="qrv9" style="max-width:50%;background-image:url(images/jsqr9.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz9"></div>
+	<div id="qrx10"></div><div id="qrs10"></div><div id="qrf10"></div><div id="qrv10" style="max-width:50%;background-image:url(images/jsqr10.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz10"></div>
+	<div id="qrx11"></div><div id="qrs11"></div><div id="qrf11"></div><div id="qrv11" style="max-width:50%;background-image:url(images/jsqr11.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz11"></div>
+	<div id="qrx12"></div><div id="qrs12"></div><div id="qrf12"></div><div id="qrv12" style="max-width:50%;background-image:url(images/jsqr12.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz12"></div>
+	<div id="qrx13"></div><div id="qrs13"></div><div id="qrf13"></div><div id="qrv13" style="max-width:50%;background-image:url(images/jsqr13.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz13"></div>
+	<div id="qrx14"></div><div id="qrs14"></div><div id="qrf14"></div><div id="qrv14" style="max-width:50%;background-image:url(images/jsqr14.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz14"></div>
+	<div id="qrx15"></div><div id="qrs15"></div><div id="qrf15"></div><div id="qrv15" style="max-width:50%;background-image:url(images/jsqr15.gif);background-size:auto 100%;background-repeat:no-repeat;"></div><div id="qrz15"></div>
+	
+	<div id="Kspopup1" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup1"  style="background-image:url(images/kspopuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup2" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup2"  style="background-image:url(images/kspopuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup3" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup3"  style="background-image:url(images/kspopuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
+	<div id="Kspopup4" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup4"  style="background-image:url(images/kspopuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup5" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup5"  style="background-image:url(images/kspopuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup6" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup6"  style="background-image:url(images/kspopuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup7" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup7"  style="background-image:url(images/kspopuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup8" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup8"  style="background-image:url(images/kspopuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup9" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup9"  style="background-image:url(images/kspopuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup10" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup10"  style="background-image:url(images/kspopuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup11" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup11"  style="background-image:url(images/kspopuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup12" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup12"  style="background-image:url(images/kspopuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup13" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup13"  style="background-image:url(images/kspopuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup14" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup14"  style="background-image:url(images/kspopuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup15" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup15"  style="background-image:url(images/kspopuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<!--<div id="Kspopup16" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup16"  style="background-image:url(images/kspopuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup17" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup17"  style="background-image:url(images/kspopuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Kspopup18" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Ksjsnpopup18"  style="background-image:url(images/kspopuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>!-->	
+	<div class="ui-content" id="Kspopup16" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="Ksjsnpopup16" src=""></iframe></div>
+	<div class="ui-content" id="Kspopup17" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="Ksjsnpopup17" src=""></iframe></div>
+	<div class="ui-content" id="Kspopup18" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="Ksjsnpopup18" src=""></iframe></div>	
+	
+	<div id="navigations3" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" id="uls3" class="uls3" data-inset="true">
+	<li data-icon="bars"><a href="#navigationpanelthree" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
+	</ul></div><!-- /navigation -->
+
+
+	<div  data-role="panel" data-display="overlay"id="navigationpanelthree" class="panel" data-theme="" style="background-image:url(images/kissbackground.gif);background-size:100%;background-repeat:repeat-y;">
+    <ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#navigationpanelthree" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-carat-l" style="background-image:url(images/kisspanel.gif);background-size:100% 100%;background-repeat:no-repeat;" data-rel="close">&nbsp;&nbsp;</a></li>
+	<li data-icon="calendar"><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li data-icon="edit"><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="#appagethree" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-check" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul>
+	<a href="#calendarpanelpopupthree" id="calendarpanelpopupbtnthree" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-calendar" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="calendarpanelpopupthree" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulcalendarpanelpopupthree" class="uls3" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#formpanelpopupthree" id="formpanelpopupbtnthree" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-edit" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="formpanelpopupthree" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulformpanelpopupthree" class="uls3" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#playpanelpopupthree" id="playpanelpopupbtnthree" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-tag" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="playpanelpopupthree" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulplaypanelpopupthree" class="uls3" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#videopanelpopupthree" id="videopanelpopupbtnthree" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-video" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="videopanelpopupthree" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulvideopanelpopupthree" class="uls3" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#albumpanelpopupthree" id="albumpanelpopupbtnthree" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-camera" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="albumpanelpopupthree" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulalbumpanelpopupthree" class="uls3" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#posterpanelpopupthree" id="posterpanelpopupbtnthree" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-comment" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="posterpanelpopupthree" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulposterpanelpopupthree" class="uls3" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	</div><!-- /panel -->
+	
+		
+	<div id="navigation3" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul></div><!-- /navigation -->
+	</div>
+	</div><!--copyiframes-->
+	
+
+
+	
+	
+	<div data-role="page" id="appagefive" class="page" data-theme="">
+	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/videohr.gif);background-size:100% 100%;">
+	<a href="#navigations5" id="menubttns5"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-video">&nbsp;&nbsp;&nbsp;</a><a href="#navigation5"  id="menubttn5"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="videohr"></h1>
+	</div>
+	<div data-role="content" id="height" style="background-image:url(images/vdbackground.gif);background-size:100%;background-repeat:repeat-y;">
+	<div id="videotitle1"></div>
+	<div id="video1"></div>
+	<div id="vd1"></div>
+	<div id="videoftr1"></div>
+	
+	<div id="videotitle2"></div>
+	<div id="video2"></div>
+	<div id="vd2"></div>
+	<div id="videoftr2"></div>
+	
+	<div id="videotitle3"></div>
+	<div id="video3"></div>
+	<div id="vd3"></div>
+	<div id="videoftr3"></div>
+	
+	<div id="videotitle4"></div>
+	<div id="video4"></div>
+	<div id="vd4"></div>
+	<div id="videoftr4"></div>
+	
+	<div id="videotitle5"></div>
+	<div id="video5"></div>
+	<div id="vd5"></div>
+	<div id="videoftr5"></div>
+	
+	
+	<div class="ui-content" id="popupVideo1" data-role="popup" data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="srcVideo1" src=""></iframe></div>
+	<div class="ui-content" id="popupVideo2" data-role="popup" data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="srcVideo2" src=""></iframe></div>
+	<div class="ui-content" id="popupVideo3" data-role="popup" data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="srcVideo3" src=""></iframe></div>
+	<div class="ui-content" id="popupVideo4" data-role="popup" data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="srcVideo4" src=""></iframe></div>
+	<div class="ui-content" id="popupVideo5" data-role="popup" data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="srcVideo5" src=""></iframe></div>
+	 
+	<div id="Vdpopup1" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup1"  style="background-image:url(images/videopopuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup2" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup2"  style="background-image:url(images/videopopuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup3" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup3"  style="background-image:url(images/videopopuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
+	<div id="Vdpopup4" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup4"  style="background-image:url(images/videopopuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup5" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup5"  style="background-image:url(images/videopopuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup6" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup6"  style="background-image:url(images/videopopuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup7" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup7"  style="background-image:url(images/videopopuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup8" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup8"  style="background-image:url(images/videopopuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup9" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup9"  style="background-image:url(images/videopopuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup10" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup10"  style="background-image:url(images/videopopuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup11" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup11"  style="background-image:url(images/videopopuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup12" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup12"  style="background-image:url(images/videopopuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup13" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup13"  style="background-image:url(images/videopopuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup14" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup14"  style="background-image:url(images/videopopuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup15" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup15"  style="background-image:url(images/videopopuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup16" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup16"  style="background-image:url(images/videopopuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup17" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup17"  style="background-image:url(images/videopopuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Vdpopup18" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Vdjsnpopup18"  style="background-image:url(images/videopopuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	
+	<div id="navigations5" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" id="uls5" class="uls5" data-inset="true">
+	<li data-icon="bars"><a href="#navigationpanelfive" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
+	</ul></div><!-- /navigation -->
+
+
+
+	<div data-role="panel" data-display="overlay" id="navigationpanelfive" class="panel" data-theme="" style="background-image:url(images/vdbackground.gif);background-size:100%;background-repeat:repeat-y;">
+    <ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#navigationpanelfive" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-carat-l" style="background-image:url(images/videopanel.gif);background-size:100% 100%;background-repeat:no-repeat;" data-rel="close">&nbsp;&nbsp;</a></li>
+	<li data-icon="calendar"><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li data-icon="edit"><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="#appagefive" data-transition="flip" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-check" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul>
+	<a href="#calendarpanelpopupfive" id="calendarpanelpopupbtnfive" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-calendar" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="calendarpanelpopupfive" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulcalendarpanelpopupfive" class="uls5" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#formpanelpopupfive" id="formpanelpopupbtnfive" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-edit" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="formpanelpopupfive" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulformpanelpopupfive" class="uls5" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#kisspanelpopupfive" id="kisspanelpopupbtnfive" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-heart" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="kisspanelpopupfive" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulkisspanelpopupfive" class="uls5" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#playpanelpopupfive" id="playpanelpopupbtnfive" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-tag" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="playpanelpopupfive" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulplaypanelpopupfive" class="uls5" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#albumpanelpopupfive" id="albumpanelpopupbtnfive" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-camera" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="albumpanelpopupfive" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulalbumpanelpopupfive" class="uls5" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#posterpanelpopupfive" id="posterpanelpopupbtnfive" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-comment" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="posterpanelpopupfive" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulposterpanelpopupfive" class="uls5" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	</div><!-- /panel -->
+	
+	
+		
+	<div id="navigation5" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul></div><!-- /navigation -->
+	</div>
+	</div><!--copyiframes-->	
+
+	
+	
+	
+	
+	
+	
+	<div data-role="page" id="appagesix" class="page" data-theme="">
+	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/albumhr.gif);background-size:100% 100%;">
+	<a href="#navigations6" id="menubttns6"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-camera">&nbsp;&nbsp;&nbsp;</a><a href="#navigation6"  id="menubttn6"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="albumhr"></h1>
+	</div>
+	<div data-role="content" class="fit-content" style="background-image:url(images/albumbackground.gif);background-size:100%;background-repeat: repeat-y;">
+	
+	<div nbr="1" class="album" id="nb" style="width:100%;height:100%;position:relative;">
+	
+	<a href="#" nbr="0" class="albumr ui-btn ui-btn-z ui-btn-icon-notext ui-btn-inline ui-icon-carat-l" style="text-decoration:none;position:relative;left:12px;"></a>
+	<a href="#" nbr="1" class="albuml ui-btn ui-btn-z  ui-btn-icon-notext  ui-btn-inline ui-icon-carat-r" style="text-decoration:none;float:right;"></a><!--webmodel[album]3.jpgimgcapt!-->
+	
+	
+	</div>
+	
+	<div class="introcptalbum" style="background-color:rgba(255, 255, 255, 0.4);">
+	<div style="color:red;" id="albumtilte"></div>
+	<div id="introcptaudio">
+	</div></div>
+	</div><!-- /content -->
+	
+	<div id="Albumpopup1" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup1"  style="background-image:url(images/apopuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup2" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup2"  style="background-image:url(images/apopuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup3" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup3"  style="background-image:url(images/apopuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
+	<div id="Albumpopup4" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup4"  style="background-image:url(images/apopuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup5" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup5"  style="background-image:url(images/apopuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup6" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup6"  style="background-image:url(images/apopuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup7" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup7"  style="background-image:url(images/apopuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup8" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup8"  style="background-image:url(images/apopuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup9" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup9"  style="background-image:url(images/apopuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup10" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup10"  style="background-image:url(images/apopuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup11" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup11"  style="background-image:url(images/apopuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup12" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup12"  style="background-image:url(images/apopuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup13" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup13"  style="background-image:url(images/apopuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup14" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup14"  style="background-image:url(images/apopuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup15" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup15"  style="background-image:url(images/apopuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup16" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup16"  style="background-image:url(images/apopuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup17" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup17"  style="background-image:url(images/apopuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="Albumpopup18" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="Albumjsnpopup18"  style="background-image:url(images/apopuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+
+	<div id="navigations6" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" id="uls6" class="uls6" data-inset="true">
+	<li data-icon="bars"><a href="#navigationpanelsix" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
+	</ul></div><!-- /navigation -->
+
+
+
+	<div  data-role="panel" data-display="overlay"id="navigationpanelsix" class="panel" data-theme="" style="background-image:url(images/albumbackground.gif);background-size:100%;background-repeat:repeat-y;">
+    <ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#navigationpanelsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-carat-l" style="background-image:url(images/albumpanel.gif);background-size:100% 100%;background-repeat:no-repeat;" data-rel="close">&nbsp;&nbsp;</a></li>
+	<li data-icon="calendar"><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li data-icon="edit"><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="#appagesix" data-transition="flip" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-check" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul>
+	<a href="#calendarpanelpopupsix" id="calendarpanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-calendar" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="calendarpanelpopupsix" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulcalendarpanelpopupsix" class="uls6" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#formpanelpopupsix" id="formpanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-edit" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="formpanelpopupsix" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulformpanelpopupsix" class="uls6" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#kisspanelpopupsix" id="kisspanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-heart" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="kisspanelpopupsix" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulkisspanelpopupsix" class="uls6" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#playpanelpopupsix" id="playpanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-tag" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="playpanelpopupsix" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulplaypanelpopupsix" class="uls6" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#videopanelpopupsix" id="videopanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-video" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="videopanelpopupsix" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulvideopanelpopupsix" class="uls6" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#posterpanelpopupsix" id="posterpanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-comment" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="posterpanelpopupsix" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulposterpanelpopupsix" class="uls6" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	</div><!-- /panel -->
+	
+	
+	<div id="navigation6" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul></div><!-- /navigation -->
+	</div>
+	</div><!--copyiframes-->
+	
+	
+	
+	
+	<div data-role="page" id="appageseven" class="page" data-theme="">
+	<div  data-role="header" id="hrdiv" data-theme="" style="color:;background-image:url(images/posterhr.gif);background-size:100% 100%;">
+	<a href="#navigations7" id="menubttns7"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-left ui-icon-comment">&nbsp;&nbsp;&nbsp;</a><a href="#navigation7"  id="menubttn7"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="posterhr"></h1>
+	</div>
+	<div data-role="content" class="fit-content album"  style="width:100%;height:100%;background-image:url(images/posterbackground.gif);background-size:100%;background-repeat:repeat-y;">
+	
+
+	
+	
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn1" btn="1" data-transition="flip" id="1" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn2" btn="2" data-transition="flip" id="2" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn3" btn="3" data-transition="flip" id="3" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn4" btn="4" data-transition="flip" id="4" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn5" btn="5" data-transition="flip" id="5" href="#"></a>
+
+
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn6" btn="6" data-transition="flip" id="6" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn7" btn="7" data-transition="flip" id="7" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn8" btn="8" data-transition="flip" id="8" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn9" btn="9" data-transition="flip" id="9" href="#"></a>
+	<a class="ui-btn ui-btn-icon-notext ui-btn-inline btn btn10" btn="10" data-transition="flip"  id="10" href="#"></a>
+
+	
+	
+
+	
+	<div id="btnpopup1" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup1.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup2" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup2.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup3" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup3.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup4" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup4.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup5" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup5.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup6" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup6.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup7" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup7.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup8" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup8.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup9" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup9.gif);background-size:100% 100%; padding:5px;"></div>
+	<div id="btnpopup10" data-role="popup" data-transition="pop" data-corners="false" data-arrow="true" style="background-image:url(images/posterpopup10.gif);background-size:100% 100%; padding:5px;"></div>
+	<div class="ui-content" id="btnpopup15" data-role="popup" data-transition="pop" data-corners="false" data-tolerance="15,15">
+    <iframe width="496" height="298" src="" seamless="" id="btnpopupvideo"></iframe></div>
+
+
+
+	</div><!-- /content -->
+	
+	
+	
+	<div id="navigations7" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" id="uls7" class="uls7" data-inset="true">
+	<li data-icon="bars"><a href="#navigationpanelseven" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
+	</ul></div><!-- /navigation -->
+
+
+
+
+	<div  data-role="panel" data-display="overlay"id="navigationpanelseven" class="panel" data-theme="" style="background-image:url(images/posterbackground.gif);background-size:100%;background-repeat:repeat-y;">
+    <ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#navigationpanelseven" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-carat-l" style="background-image:url(images/posterpanel.gif);background-size:100% 100%;background-repeat:no-repeat;" data-rel="close">&nbsp;&nbsp;</a></li>
+	<li data-icon="calendar"><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li data-icon="edit"><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="#appageseven" data-transition="flip" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-check" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul>
+	<a href="#calendarpanelpopupseven" id="calendarpanelpopupbtnseven" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-calendar" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="calendarpanelpopupseven" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulcalendarpanelpopupseven" class="uls7" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#formpanelpopupseven" id="formpanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-edit" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="formpanelpopupseven" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulformpanelpopupseven" class="uls7" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#kisspanelpopupseven" id="kisspanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-heart" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="kisspanelpopupseven" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulkisspanelpopupseven" class="uls7" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#playpanelpopupseven" id="playpanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-tag" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="playpanelpopupseven" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulplaypanelpopupseven" class="uls7" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#videopanelpopupseven" id="videopanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-video" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="videopanelpopupseven" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulvideopanelpopupseven" class="uls7" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#albumpanelpopupseven" id="albumpanelpopupbtnsix" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-camera" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="albumpanelpopupseven" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulalbumpanelpopupseven" class="uls7" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	</div><!-- /panel -->
+	
+	
+	<div id="navigation7" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#appageone" data-transition="flip" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>	
+	<li><a href="#appagetwo"  data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">Kiss</a></li>
+	<li><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul></div><!-- /navigation -->
+	</div>
+	</div><!--copyiframes-->
+	</body>
 	</html>
 	<script src="js/theme.js"></script><script src="js/menu.js"></script>
 	
 	<script>if(!localStorage.getItem("agreeapp")){
 		$(document).on({"pageshow": function () {$('#etpigagrees').css("width",$(window).width()*0.85);$('#etpigagrees').css("height",$(window).height()*0.5);setTimeout(function(){$('#etpigagree').popup("open");},1500);$('#etpigagrees').attr("src","1.html");}}, '.indexhtml'); $( document ).on( "popupafterclose", "#etpigagree", function() {$('#etpigagree').popup("open");});$(".page").click(function(){window.location="index.html";});
 		 $("#agreeapp").click(function(){localStorage.setItem("agreeapp",1);window.location="index.html";});}
-</script>
-	<script>
+
+
+		
+var appageone = '';var appagetwo = '';var appagethree = '';var appagefive = '';var appagesix = '';var appageseven = '';
+$(document).on('pageshow', '#appageone', function() {
+	if(!appageone){	
 	var infhrefs= localStorage.getItem('infhref');
 		if(infhrefs.indexOf('http') == -1){infhrefs= 'http://'+infhrefs;}		
 		if(infhrefs.substr(infhrefs.length - 1)=='/'){var srcphp = '';}else{var srcphp = '/';}
@@ -364,7 +1061,7 @@
 		if(webdir){var ftblsrc = infhrefs+srcphp+webdir+'ftbl.php';}else{var ftblsrc = infhrefs+srcphp+'ftbl.php';}
 		
 
-	(function($) {
+
 		var infhref= localStorage.getItem('infhref');
 		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
 		if(infhref.substr(infhref.length - 1)=='/'){var fbclrphp = 'ftbinf.php';}else{var fbclrphp = '/ftbinf.php';}
@@ -376,12 +1073,13 @@
     	async: false,
     	jsonpCallback: 'datp',
     	contentType: 'application/json',
-    	dataType: 'jsonp'});})(jQuery);
-		function datp(data) { var ndate = []; var nbr = [];var jsn = [];var msg = [];localStorage.setItem("ftbl",''); 
+    	dataType: 'jsonp',
+        success: datp});
+		function datp(data) { var ndate = []; var nbr = [];var jsn = [];var msg = [];var ftbl ='';localStorage['ftbl']='';
 			for(var i=0; i < data.btn.length; i++) {
+			if(data.btn[i].nbr=='ftb')localStorage['ftbl']=1;
 			if(data.btn[i].date)ndate[i] = data.btn[i].date;
 			if(data.btn[i].nbr){nbr[i]= data.btn[i].nbr;if(data.btn[i].jsn)jsn[i] = data.btn[i].jsn;
-			if(data.btn[i].nbr=='ftb')localStorage.setItem("ftbl",'1');
 			if(data.btn[i].msg)msg[i] = data.btn[i].msg;if(data.btn[i].jsnb)$('#jsn'+data.btn[i].nbr).html(data.btn[i].jsnb);}
 		;}
 		var jsndates = JSON.stringify(ndate);
@@ -398,9 +1096,7 @@
 
 		;};
 		
-		(function($) {
-		var infhref= localStorage.getItem('infhref');
-		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
+	
 		if(infhref.substr(infhref.length - 1)=='/'){var fbclrphp = 'calendarpopup.php';}else{var fbclrphp = '/calendarpopup.php';}
 		var webdir = localStorage.getItem("webdir");
 		if(webdir){var urls = infhref+webdir+fbclrphp;}else{var urls = infhref+fbclrphp;}
@@ -412,7 +1108,8 @@
     	async: false,
     	jsonpCallback: 'datps',
     	contentType: 'application/json',
-    	dataType: 'jsonp'});})(jQuery);
+    	dataType: 'jsonp',
+		success: datps});
 		function datps(data) { var popupimg = [];var popuptle = [];var popupftr = [];
 			for(var i=0; i < data.btns.length; i++) {
 			j = i+1;
@@ -421,13 +1118,16 @@
 			popupftr = data.btns[i].ftr;
 				if(popupimg.length < 150 && popuptle.length < 1500 && popupftr.length < 5500){
 				if(popupimg)popupimg = '<img style="width:100%" src="'+popupimg+'"/>';
-				$('#jsnpopup'+j).html(popuptle+popupimg+popupftr);
+				$('#datejsnpopup'+j).html(popuptle+popupimg+popupftr);
 				;}
 			popupnbr='';popuptle='';popupftr='';
 			}
-		;};</script>
-	<!--copyiframe-->
-	<script>$(document).ajaxStop(function() {
+			
+		;};
+
+	
+	
+	$(document).one("ajaxStop",function(){
 	if(localStorage.getItem("ftbl")){$("#jsnftbf").attr("src",ftblsrc);	}else{$("#jsnftbf").attr("src",'');}	
 	
 	localStorage.setItem("jsnyr","2014");
@@ -502,8 +1202,10 @@ else{$("#shtb").attr("vlus",parseInt($(this).attr("vlus"))+1);$(this).attr("vlus
 		if($(this).attr("vlus")==xday[1] && $(this).attr("vluyr")==xday[0])
 		{$("#"+nbr[j]+"day"+xday[2]).show();if(jsn[j])$("#jsn"+nbr[j]).html(jsn[j]);$(".msg"+nbr[j]).html(msg[j]);}else{$("#"+nbr[j]+"day"+xday[2]).hide();};};
 	$(".month").text($(this).attr("vlus"));$(".year").text($(this).attr("vluyr"));
+	
 	});
 	
+
 	$("#shtb").click(function(event) {
 	event.preventDefault();
 	shtfm = parseInt($(this).attr("vlu"));
@@ -537,10 +1239,8 @@ else{$("#shtf").attr("vlus",parseInt($(this).attr("vlus"))-1);$(this).attr("vlus
 	});/*$("#shtb")*/
 	;});/*ajaxStop*/
 
-$('.nvmenu').click(function() {
-		var nvmenuhtml = $(this).attr('href');
-		$(document).on({"pageshow": function () {window.location = nvmenuhtml.replace('../','');}}, '.page');
-;})	
+$(".panelbtn").click(function(){$("#navigations").popup("close");});
+
 
 var albummenu='';var slt='';
 if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
@@ -549,11 +1249,1222 @@ if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = 
 for(var j=0;j < albummenu.length;j++){
 if(j){menusdir = j+'/';piginds='s';}
 if($("#hrs").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
-if(albummenu[j])menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'index'+piginds+'.html" data-ajax="false" style="background-image:url('+menusdir+'images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';
+if(!j){menushtml += '<li '+slt+'><a href="#" style="background-image:url('+menusdir+'images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'index'+piginds+'.html" data-ajax="false" style="background-image:url('+menusdir+'images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;}
+
+if(localStorage.getItem("menushtml")){
+albummenu = '';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+if(albummenu){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtml += '<li data-icon="edit"><a href="#appagetwo" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li data-icon="edit"><a href="'+j+'/form.html" data-ajax="false" style="background-image:url('+j+'/images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}
+albummenu = '';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+if(albummenu){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtml += '<li data-icon="heart"><a href="#appagethree" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li data-icon="heart"><a href="'+j+'/kiss.html" data-ajax="false" style="background-image:url('+j+'/images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}
+albummenu = '';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+if(albummenu){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtml += '<li data-icon="video"><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li data-icon="video"><a href="'+j+'/playground.html" data-ajax="false" style="background-image:url('+j+'/images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}
+albummenu = '';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+if(albummenu){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtml += '<li data-icon="video"><a href="#appagefive" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li data-icon="video"><a href="'+j+'/video.html" data-ajax="false" style="background-image:url('+j+'/images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}
+albummenu = '';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+
+if(albummenu){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtml += '<li data-icon="camera"><a href="#appagesix" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li data-icon="camera"><a href="'+j+'/album.html" data-ajax="false" style="background-image:url('+j+'/images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}
+albummenu = '';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+if(albummenu){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtml += '<li data-icon="comment"><a href="#appageseven" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li data-icon="comment"><a href="'+j+'/poster.html" data-ajax="false" style="background-image:url('+j+'/images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}
+;}// if localStorage.getItem("menushtml")
+
+
+if(menushtml){
+albummenu = '';var menushtmlform='';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlform += '<li data-icon="edit"><a href="#appagetwo" data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlform += '<li data-icon="edit"><a href="'+j+'/form.html" data-ajax="false" style="background-image:url('+j+'/images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#formpanelpopupbtnone').css('display','none');}
+
+albummenu = '';var menushtmlks='';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlks += '<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlks += '<li data-icon="heart"><a href="'+j+'/kiss.html" data-ajax="false" style="background-image:url('+j+'/images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#kisspanelpopupbtnone').css('display','none');}
+
+albummenu = '';var menushtmlplay='';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlplay += '<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(../images/playgroundohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlplay += '<li data-icon="tag"><a href="'+j+'/playground.html" data-ajax="false" style="background-image:url('+j+'/images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#playpanelpopupbtnone').css('display','none');}
+
+albummenu = '';var menushtmlvideo='';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlvideo += '<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlvideo += '<li data-icon="video"><a href="'+j+'/video.html" data-ajax="false" style="background-image:url('+j+'/images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#videopanelpopupbtnone').css('display','none');}
+
+
+albummenu = '';var menushtmlalbum='';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlalbum += '<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlalbum += '<li data-icon="camera"><a href="'+j+'/album.html" data-ajax="false" style="background-image:url('+j+'/images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#albumpanelpopupbtnone').css('display','none');}
+
+
+albummenu = '';var menushtmlposter='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlposter += '<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlposter += '<li data-icon="comment"><a href="'+j+'/poster.html" data-ajax="false" style="background-image:url('+j+'/images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#posterpanelpopupbtnone').css('display','none');}
+;}//if(menushtml){
+
+
+if(menushtml){$('#uls').append(menushtml);
+	if(menushtmlform)$('#ulformpanelpopupone').append(menushtmlform);
+	if(menushtmlks)$('#ulkisspanelpopupone').append(menushtmlks);
+	if(menushtmlplay)$('#ulplaypanelpopupone').append(menushtmlplay);
+	if(menushtmlvideo)$('#ulvideopanelpopupone').append(menushtmlvideo);
+	if(menushtmlalbum)$('#ulalbumpanelpopupone').append(menushtmlalbum);
+	if(menushtmlposter)$('#ulposterpanelpopupone').append(menushtmlposter);
+	
+	$('.uls').listview('refresh');}
+else{$('#menubttns').css('display','none');}
+
+;}//
+appageone =1;
+});<!--$(document).on('pageshow'-->
+
+
+
+
+
+$(document).on('pageshow', '#appagetwo', function() {
+if(!appagetwo){
+
+$("#form").submit(function() {var infhref= localStorage.getItem("infhref");
+		if(infhref.indexOf("http") == -1){infhref= "http://"+infhref;}		
+	if(infhref.substr(infhref.length - 1)=="/"){var postphp = "post.php";}else{var postphp = "/post.php";}
+		var url = infhref+postphp;
+	var order = $("form").serialize();
+
+
+	$.ajax({
+    type: "POST",
+    url: url,
+    data: { 'order': order },
+    cache: false,
+    success:function(data){
+                alert("Sent.");			
+				window.location = "index.html#appagetwo";
+            },
+            error: function(){
+				alert("Error.");
+				window.location = "index.html#appagetwo";
+            }
+    });
+});
+
+
+$(".panelbtn").click(function(){$("#navigations2").popup("close");});
+
+var albummenu='';var slt='';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+var menusdir='';var menushtml='';var pigsmenu='';
+for(var j=0;j < albummenu.length;j++){
+if(j)menusdir = j+"/";
+if($("#formhr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
+if(!j){menushtml += '<li '+slt+'><a href="#" style="background-image:url('+menusdir+'images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li '+slt+'><a href="'+menusdir+'form.html" data-ajax="false" style="background-image:url('+menusdir+'images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;}
+
+
+if(menushtml){
+albummenu = '';var menushtmlcalendar='';
+if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlcalendar += '<li data-icon="calendar"><a href="#appageone" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlcalendar += '<li data-icon="calendar"><a href="'+j+'/indexs.html" data-ajax="false" style="background-image:url('+j+'/images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#calendarpanelpopupbtntwo').css('display','none');}
+
+
+albummenu = '';var menushtmlks='';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlks += '<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlks += '<li data-icon="heart"><a href="'+j+'/kiss.html" data-ajax="false" style="background-image:url('+j+'/images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#kisspanelpopupbtntwo').css('display','none');}
+
+albummenu = '';var menushtmlplay='';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlplay += '<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(../images/playgroundohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlplay += '<li data-icon="tag"><a href="'+j+'/playground.html" data-ajax="false" style="background-image:url('+j+'/images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#playpanelpopupbtntwo').css('display','none');}
+
+albummenu = '';var menushtmlvideo='';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlvideo += '<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlvideo += '<li data-icon="video"><a href="'+j+'/video.html" data-ajax="false" style="background-image:url('+j+'/images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#videopanelpopupbtntwo').css('display','none');}
+
+
+albummenu = '';var menushtmlalbum='';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlalbum += '<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlalbum += '<li data-icon="camera"><a href="'+j+'/album.html" data-ajax="false" style="background-image:url('+j+'/images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#albumpanelpopupbtntwo').css('display','none');}
+
+
+albummenu = '';var menushtmlposter='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlposter += '<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlposter += '<li data-icon="comment"><a href="'+j+'/poster.html" data-ajax="false" style="background-image:url('+j+'/images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#posterpanelpopupbtntwo').css('display','none');}
+;}//if(menushtml){
+
+
+if(menushtml){$('#uls2').append(menushtml);
+	if(menushtmlcalendar)$('#ulcalendarpanelpopuptwo').append(menushtmlcalendar);
+	if(menushtmlks)$('#ulkisspanelpopuptwo').append(menushtmlks);
+	if(menushtmlplay)$('#ulplaypanelpopuptwo').append(menushtmlplay);
+	if(menushtmlvideo)$('#ulvideopanelpopuptwo').append(menushtmlvideo);
+	if(menushtmlalbum)$('#ulalbumpanelpopuptwo').append(menushtmlalbum);
+	if(menushtmlposter)$('#ulposterpanelpopuptwo').append(menushtmlposter);
+	
+	$('.uls2').listview('refresh');}
+else{$('#menubttns2').css('display','none');}
+;}//
+appagetwo = 1;
+
+});<!--$(document).on('pageshow'-->
+
+
+
+
+
+
+$(document).on('pageshow', '#appagethree', function() {
+if(!appagethree){
+		var infhref= localStorage.getItem('infhref');
+		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
+		if(infhref.substr(infhref.length - 1)=='/'){var fbclrphp = 'kisspopup.php';}else{var fbclrphp = '/kisspopup.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var urls = infhref+webdir+fbclrphp;}else{var urls = infhref+fbclrphp;}
+		var j='';
+		$.ajax({
+   		type: 'GET',
+    	url: urls,
+    	async: false,
+    	jsonpCallback: 'datps',
+    	contentType: 'application/json',
+    	dataType: 'jsonp',
+		success: datpsks});
+		function datpsks(data) { var popupimg = [];var popuptle = [];var popupftr = [];
+			for(var i=0; i < data.btns.length; i++) {
+			j = i+1;
+			popupimg= data.btns[i].img;
+			popuptle = data.btns[i].tle;
+			popupftr = data.btns[i].ftr;
+				if(popupimg.length < 150 && popuptle.length < 1500 && popupftr.length < 5500){
+				if(j > 15 && popupimg){
+					if(popupimg.indexOf('v.qq.com') != -1 || popupimg.indexOf('www.youtube.com') != -1){
+					$('#Ksjsnpopup'+j).attr('src',popupimg);}
+				;}else{
+				if(popupimg)popupimg = '<img style="width:100%" src="'+popupimg+'"/>';
+				$('#Ksjsnpopup'+j).html(popuptle+popupimg+popupftr);
+				}
+				
+				;}
+			popupnbr='';popuptle='';popupftr='';
+			}
+		;};
+		
+				
+		if(infhref.substr(infhref.length - 1)=='/'){var kissphp = 'qrcode.php';}else{var kissphp = '/qrcode.php';}	
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var url = infhref+webdir+kissphp;}else{var url = infhref+kissphp;}	
+		$.ajax({
+   		type: 'GET',
+    	url: url,
+    	async: false,
+    	jsonpCallback: 'datp',
+    	contentType: 'application/json',
+    	dataType: 'jsonp',
+		success: datkiss});
+		
+		function datkiss(data) { var kissurl = []; var kisstitle = [];  var kissftr = []; var kissaudio = []; var kissize = []; var kissbg = [];var kissclr = []; var kisspic = [];var kisspicgrid = []; var kisspopup = []; 
+			for(var i=0; i < data.btn.length; i++) {
+			if(data.btn[i].kissurl)kissurl[i] = data.btn[i].kissurl;
+			if(data.btn[i].kisstitle)kisstitle[i]= data.btn[i].kisstitle;
+			if(data.btn[i].kissftr)kissftr[i]= data.btn[i].kissftr;
+			if(data.btn[i].kissaudio)kissaudio[i] = data.btn[i].kissaudio;
+			if(data.btn[i].kissize)kissize[i] = data.btn[i].kissize;
+			if(data.btn[i].kissbg)kissbg[i] = data.btn[i].kissbg;
+			if(data.btn[i].kissclr)kissclr[i] = data.btn[i].kissclr;
+			if(data.btn[i].kisspic)kisspic[i] = data.btn[i].kisspic;
+			if(data.btn[i].kisspicgrid)kisspicgrid[i] = data.btn[i].kisspicgrid;
+			if(data.btn[i].kisspopup)kisspopup[i] = data.btn[i].kisspopup;	
+			}
+		
+		var kissurlvar  = JSON.stringify(kissurl);
+		var kisstitlevar  = JSON.stringify(kisstitle);
+		var kissftrvar  = JSON.stringify(kissftr);
+		var kissaudiovar  = JSON.stringify(kissaudio);
+		var kissizevar  = JSON.stringify(kissize);
+		var kissbgvar  = JSON.stringify(kissbg);
+		var kissclrvar  = JSON.stringify(kissclr);
+		var kisspicvar  = JSON.stringify(kisspic);
+		var kisspicgridvar  = JSON.stringify(kisspicgrid);
+		var kisspopupvar  = JSON.stringify(kisspopup);
+		
+		
+		
+		if(kissurlvar.length < 1550){
+			localStorage['kissurl']=kissurlvar;
+			if(kisstitle.length < 15500)localStorage['kisstitle']=kisstitlevar;
+			if(kissftr.length < 15500)localStorage['kissftr']=kissftrvar;
+			if(kissaudio.length < 1550)localStorage['kissaudio']=kissaudiovar;
+			if(kissize.length < 5)localStorage['kissize']=kissizevar;
+			if(kissbg.length < 50)localStorage['kissbg']=kissbgvar;
+			if(kissclr.length < 50)localStorage['kissclr']=kissclrvar;
+			if(kisspic.length < 155)localStorage['kisspic']=kisspicvar;
+			if(kisspicgrid.length < 5)localStorage['kisspicgrid']=kisspicgridvar;
+			if(kisspopup.length < 155)localStorage['kisspopup']=kisspopupvar;			
+		}
+		
+		}
+
+
+$(document).one("ajaxStop",function(){
+		var kisshtml = '';var kisshtmlx = '';
+		var kissurls = [];  var kisstitles = [];var kissftrs = [];  var kissaudios = [];  var kissizes = []; var kissbgs = [];var kissclrs = []; var kisspics = [];var kisspicgrids = []; var kisspopups = [];  
+		var kissurlvlu = localStorage.getItem("kissurl");
+		var kisstitlevlu = localStorage.getItem("kisstitle");
+		
+		if(kissurlvlu || kisstitlevlu){
+		kissurls =  $.parseJSON(kissurlvlu);
+		kisstitles =  $.parseJSON(kisstitlevlu);
+		kissftrs  = $.parseJSON(localStorage.getItem("kissftr"));
+		kissaudios  = $.parseJSON(localStorage.getItem("kissaudio"));
+		kissizes  = $.parseJSON(localStorage.getItem("kissize"));
+		kissbgs  = $.parseJSON(localStorage.getItem("kissbg"));
+		kissclrs  = $.parseJSON(localStorage.getItem("kissclr"));
+		kisspics  = $.parseJSON(localStorage.getItem("kisspic"));
+		kisspicgrids  = $.parseJSON(localStorage.getItem("kisspicgrid"));
+		kisspopups  = $.parseJSON(localStorage.getItem("kisspopup"));
+		var kissizesj = "";var kissbgsj = "";var kissclrssj = "";var kissgridj = "";var js="";var kisspopupsj = "";
+		var kissdatarelj="";var kisshtmlxs="";var divhtml="";
+		if(kisstitles.length > kissurls.length){var lgth = kisstitles.length;}else{var lgth = kissurls.length;}
+		for(var j=0;j < lgth;j++){
+		js= j+1;	
+		if(kissurls[j] || kisstitles[j]){
+
+		if(kisstitles[j]){kisshtmlx ='<h2>'+kisstitles[j]+'</h2>';}else{kisshtmlx ='';}
+		if(kissaudios[j]){kisshtml +='<br><audio controls loop><source src="'+kissaudios[j]+'" class="mp" type="audio/mpeg"><source src="'+kissaudios[j]+'" class="wav" type="audio/wav"></audio>';}else{kisshtml +='';}
+		if(kissftrs[j]){kisshtml +='<div>'+kissftrs[j]+'</div>';}else{kisshtml +='';}
+		if(kisspics[j]){
+			if(kisspicgrids[j])kisshtml +='<div class="ui-grid-'+kisspicgrids[j]+'">';
+			if(kisspicgrids[j]){kissgridj = 'block-a';}else{kissgridj = 'grid-solo';}
+			if(kisspopups[j] && kisspopups[j].indexOf('http') !== -1){kisspopupsj = kisspopups[j];kissdatarelj = 'target="_blank"';}
+				else if(kisspopups[j]){kisspopupsj = '#Kspopup'+kisspopups[j];kissdatarelj = 'data-rel="popup"';}
+			kisshtml +='<div class="ui-'+kissgridj+'"><a class="grid" href="'+kisspopupsj+'" '+kissdatarelj+'><img style="width:100%" src="'+kisspics[j]+'"></a></div>';	
+			
+			if(kisspicgrids[j])kisshtml +='</div>';
+		}else{kisshtml +='';}	
+		
+		
+		if(kissizes[j]){kissizesj = kissizes[j];}else{kissizesj = 180;}
+		if(kissbgs[j]){kissbgsj = kissbgs[j];}else{kissbgsj = '';}
+		if(kissclrs[j]){kissclrssj = kissclrs[j];}else{kissclrssj = '#000000';}
+		divhtml = $('#qrs'+js).html();
+		if(kissurls[j] && !divhtml)$('#qrs'+js).qrcode({"render": "div","background":kissbgsj,"size":kissizesj,"fill":kissclrssj,"quiet": 1,"text": kissurls[j]});
+	
+		}//if(kissurls[j] || kisstitles[j]){
+		if(j)kisshtmlxs = '<br><br><br>';
+		if(kisshtmlx){$("#qrx"+js).html(kisshtmlxs+kisshtmlx);}else if(kisshtml || kissurls[j]){$("#qrx"+js).html(kisshtmlxs);}
+		if(kisshtml)$("#qrz"+js).html(kisshtml);
+		kisshtml='';xkisshtml='';
+		}//for
+		}//if(kissurlvlu || isstitlevlu){
+
+;});/*ajaxStop*/		
+		
+
+
+
+$(".panelbtn").click(function(){$("#navigations3").popup("close");});
+	
+var albummenu='';var slt='';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+var menusdir='';var menushtml='';var pigsmenu='';var pigsmenudir='';
+if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = '';}
+for(var j=0;j < albummenu.length;j++){
+if(j)menusdir = j+'/';
+if($("#kisshr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
+if(!j){menushtml += '<li '+slt+'><a href="#" style="background-image:url('+menusdir+'images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'kiss.html" data-ajax="false" style="background-image:url('+menusdir+'images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;}
+
+if(menushtml){
+albummenu = '';var menushtmlcalendar='';
+if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlcalendar += '<li data-icon="calendar"><a href="#appageone" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlcalendar += '<li data-icon="calendar"><a href="'+j+'/indexs.html" data-ajax="false" style="background-image:url('+j+'/images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#calendarpanelpopupbtnthree').css('display','none');}
+
+albummenu = '';var menushtmlform='';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlform += '<li data-icon="edit"><a href="#appagetwo" data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlform += '<li data-icon="edit"><a href="'+j+'/form.html" data-ajax="false" style="background-image:url('+j+'/images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#formpanelpopupbtnthree').css('display','none');}
+
+
+albummenu = '';var menushtmlplay='';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlplay += '<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(../images/playgroundohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlplay += '<li data-icon="tag"><a href="'+j+'/playground.html" data-ajax="false" style="background-image:url('+j+'/images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#playpanelpopupbtnthree').css('display','none');}
+
+albummenu = '';var menushtmlvideo='';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlvideo += '<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlvideo += '<li data-icon="video"><a href="'+j+'/video.html" data-ajax="false" style="background-image:url('+j+'/images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#videopanelpopupbtnthree').css('display','none');}
+
+
+albummenu = '';var menushtmlalbum='';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlalbum += '<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlalbum += '<li data-icon="camera"><a href="'+j+'/album.html" data-ajax="false" style="background-image:url('+j+'/images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#albumpanelpopupbtnthree').css('display','none');}
+
+
+albummenu = '';var menushtmlposter='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlposter += '<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlposter += '<li data-icon="comment"><a href="'+j+'/poster.html" data-ajax="false" style="background-image:url('+j+'/images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#posterpanelpopupbtnthree').css('display','none');}
+;}//if(menushtml){
+
+
+if(menushtml){$('#uls3').append(menushtml);
+	if(menushtmlcalendar)$('#ulcalendarpanelpopupthree').append(menushtmlcalendar);
+	if(menushtmlform)$('#ulformpanelpopupthree').append(menushtmlform);
+	if(menushtmlplay)$('#ulplaypanelpopupthree').append(menushtmlplay);
+	if(menushtmlvideo)$('#ulvideopanelpopupthree').append(menushtmlvideo);
+	if(menushtmlalbum)$('#ulalbumpanelpopupthree').append(menushtmlalbum);
+	if(menushtmlposter)$('#ulposterpanelpopupthree').append(menushtmlposter);
+	
+	$('.uls3').listview('refresh');}
+else{$('#menubttns3').css('display','none');}
+;}//
+appagethree = 1;
+
+});<!--$(document).on('pageshow'-->
+
+
+
+
+
+
+$(document).on('pageshow', '#appagefive', function() {
+if(!appagefive){
+
+
+		var infhref= localStorage.getItem('infhref');
+		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
+		if(infhref.substr(infhref.length - 1)=='/'){var fbclrphp = 'videopopup.php';}else{var fbclrphp = '/videopopup.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var urls = infhref+webdir+fbclrphp;}else{var urls = infhref+fbclrphp;}
+		var j='';
+		$.ajax({
+   		type: 'GET',
+    	url: urls,
+    	async: false,
+    	jsonpCallback: 'datps',
+    	contentType: 'application/json',
+    	dataType: 'jsonp',
+		success: datpsvideo});
+		function datpsvideo(data) { var popupimg = [];var popuptle = [];var popupftr = [];
+			for(var i=0; i < data.btns.length; i++) {
+			j = i+1;
+			popupimg= data.btns[i].img;
+			popuptle = data.btns[i].tle;
+			popupftr = data.btns[i].ftr;
+				if(popupimg.length < 150 && popuptle.length < 1500 && popupftr.length < 5500){
+				if(popupimg)popupimg = '<img style="width:100%" src="'+popupimg+'"/>';
+				$('#Vdjsnpopup'+j).html(popuptle+popupimg+popupftr);
+				;}
+			popupnbr='';popuptle='';popupftr='';
+			}
+		;};
+		
+	
+		if(infhref.substr(infhref.length - 1)=='/'){var videophp = 'video.php';}else{var videophp = '/video.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var url = infhref+webdir+videophp;}else{var url = infhref+videophp;}
+		$.ajax({
+   		type: 'GET',
+    	url: url,
+    	async: false,
+    	jsonpCallback: 'datp',
+    	contentType: 'application/json',
+    	dataType: 'jsonp',
+		success: datpvideo});
+		function datpvideo(data) { var video = []; var videotitle = []; var videomsg = [];  var videowb = [];
+			for(var i=0; i < data.btn.length; i++) {
+			if(data.btn[i].video)video[i] = data.btn[i].video;
+			if(data.btn[i].vtitle)videotitle[i]= data.btn[i].vtitle;
+			if(data.btn[i].videomsg)videomsg[i] = data.btn[i].videomsg;
+			if(data.btn[i].videowb)videowb[i] = data.btn[i].videowb;
+			}
+		
+		var videovar  = JSON.stringify(video);
+		var videotitlevar  = JSON.stringify(videotitle);
+		var videomsgvar  = JSON.stringify(videomsg);
+		var videowbvar  = JSON.stringify(videowb);
+
+		
+		if(videovar.length < 3500){
+			localStorage['video']=videovar;
+			if(videotitlevar.length < 3500)localStorage['videotitle']=videotitlevar;
+			if(videomsgvar.length < 28800)localStorage['videomsg']=videomsgvar;
+			if(videowbvar.length < 3500)localStorage['videowb']=videowbvar;
+		}
+		}
+		
+		
+	
+$(document).one("ajaxStop",function(){
+		function qqvytub(http) { 
+			if(http.indexOf('v.qq.com') != -1){var vhgt = 0.833;}else{var vhgt = 0.563;}
+			var hgt = $(window).width()*0.85*vhgt;
+			var wdh = $(window).width()*0.85;
+			var video = '<iframe width="'+wdh+'" height="'+hgt+'" src="'+http+'" frameborder="0" allowfullscreen></iframe>';
+			return video;
+		;}
+		
+
+		
+		function videohtml(video,tag,videowb){
+		var videohtml ='';var videompfour  ='';var videogg  ='';
+		if(video && (video.indexOf('http:') == -1 && video.indexOf('www.youtube.com') != -1))video = 'http://'+video;
+		if(video && (video.indexOf('v.qq.com') != -1 || video.indexOf('www.youtube.com') != -1)){videohtml += qqvytub(video);}
+		else if(video){
+			if(video.indexOf('.ogv') > 0){videompfour = video.replace(".ogv", ".mp4");}else{videompfour = video;} 
+			videohtml += '<video width="100%" controls loop><source src="'+videompfour+'" type="video/mp4">';
+			if(video.indexOf('.mp4') > 0)videogg = video.replace(".mp4", ".ogv");
+			else{videogg = video;} 
+			videohtml += '<source src="'+videogg+'" type="video/ogg"></video>';}
+			$('#'+tag).html(videohtml);
+		;}
+		
+		var videos = [];  var videotitles = [];  var videomsgs = []; var videowbs = []; 
+		if(localStorage.getItem("video"))videos =  $.parseJSON(localStorage.getItem("video"));
+		if(localStorage.getItem("videotitle"))videotitles =  $.parseJSON(localStorage.getItem("videotitle"));
+		if(localStorage.getItem("videomsg"))videomsgs =  $.parseJSON(localStorage.getItem("videomsg"));
+		if(localStorage.getItem("videowb"))videowbs =  $.parseJSON(localStorage.getItem("videowb"));
+		
+		var j='';
+		for(var i=0;i<5;i++){		
+			j=i+1;
+			if(videotitles[i])$("#videotitle"+j).html(videotitles[i]);
+			if(videos[i]){
+				if(videowbs[i]=='btn' || videowbs[i]=='btnsn' || !videowbs[i]){
+				$("#video"+j).html('<br><a class="ui-btn ui-shadow ui-btn-inline" href="#popupVideo'+j+'" data-rel="popup" data-position-to="window"><span style="font-size:28px" class="pigss-videos"></span> Video Player</a><br><br>');
+				if(videos[i].indexOf('http') == -1)videos[i] = 'http://'+videos[i];
+				$("#srcVideo"+j).attr("src",videos[i]);
+				}
+				
+				if(videowbs[i]=='sn' || videowbs[i]=='btnsn'){
+				videohtml(videos[0],'vd'+j,videowbs[0]);
+				}
+				
+				hr = '<br><br><br>';
+			}else{hr = '';}
+			if(videomsgs[i])$("#videoftr"+j).html(videomsgs[i]+hr);		
+		;}	
+		
+;});/*ajaxStop*/
+	
+
+
+
+$(".panelbtn").click(function(){$("#navigations5").popup("close");});
+
+		
+var albummenu='';var slt='';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+var menusdir='';var menushtml='';var pigsmenu='';var pigsmenudir='';
+if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = '';}
+for(var j=0;j < albummenu.length;j++){
+if(j)menusdir = j+'/';
+if($("#videohr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
+if(!j){menushtml += '<li '+slt+'><a href="#" style="background-image:url('+menusdir+'images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'video.html" data-ajax="false" style="background-image:url('+menusdir+'images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;}
+
+
+if(menushtml){
+albummenu = '';var menushtmlcalendar='';
+if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlcalendar += '<li data-icon="calendar"><a href="#appageone" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlcalendar += '<li data-icon="calendar"><a href="'+j+'/indexs.html" data-ajax="false" style="background-image:url('+j+'/images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#calendarpanelpopupbtnfive').css('display','none');}
+
+albummenu = '';var menushtmlform='';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlform += '<li data-icon="edit"><a href="#appagetwo" data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlform += '<li data-icon="edit"><a href="'+j+'/form.html" data-ajax="false" style="background-image:url('+j+'/images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#formpanelpopupbtnfive').css('display','none');}
+
+albummenu = '';var menushtmlks='';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlks += '<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlks += '<li data-icon="heart"><a href="'+j+'/kiss.html" data-ajax="false" style="background-image:url('+j+'/images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#kisspanelpopupbtnfive').css('display','none');}
+
+albummenu = '';var menushtmlplay='';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlplay += '<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(../images/playgroundohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlplay += '<li data-icon="tag"><a href="'+j+'/playground.html" data-ajax="false" style="background-image:url('+j+'/images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#playpanelpopupbtnfive').css('display','none');}
+
+
+
+albummenu = '';var menushtmlalbum='';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlalbum += '<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlalbum += '<li data-icon="camera"><a href="'+j+'/album.html" data-ajax="false" style="background-image:url('+j+'/images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#albumpanelpopupbtnfive').css('display','none');}
+
+
+albummenu = '';var menushtmlposter='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlposter += '<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlposter += '<li data-icon="comment"><a href="'+j+'/poster.html" data-ajax="false" style="background-image:url('+j+'/images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#posterpanelpopupbtnfive').css('display','none');}
+;}//if(menushtml){
+
+
+if(menushtml){$('#uls5').append(menushtml);
+	if(menushtmlcalendar)$('#ulcalendarpanelpopupfive').append(menushtmlcalendar);
+	if(menushtmlform)$('#ulformpanelpopupfive').append(menushtmlform);
+	if(menushtmlks)$('#ulkisspanelpopupfive').append(menushtmlks);
+	if(menushtmlplay)$('#ulplaypanelpopupfive').append(menushtmlplay);
+	if(menushtmlalbum)$('#ulalbumpanelpopupfive').append(menushtmlalbum);
+	if(menushtmlposter)$('#ulposterpanelpopupfive').append(menushtmlposter);
+	
+	$('.uls5').listview('refresh');}
+else{$('#menubttns5').css('display','none');}
+;}//
+appagefive = 1;
+});<!--$(document).on('pageshow'-->
+
+
+
+
+
+$(document).on('pageshow', '#appagesix', function() {
+if(!appagesix){
+
+
+		var infhref= localStorage.getItem('infhref');
+		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
+		if(infhref.substr(infhref.length - 1)=='/'){var fbclrphp = 'albumpopup.php';}else{var fbclrphp = '/albumpopup.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var urls = infhref+webdir+fbclrphp;}else{var urls = infhref+fbclrphp;}
+		
+		var j='';
+		$.ajax({
+   		type: 'GET',
+    	url: urls,
+    	async: false,
+    	jsonpCallback: 'datps',
+    	contentType: 'application/json',
+    	dataType: 'jsonp',
+		success: datnalbum});
+		function datnalbum(data) { var popupimg = [];var popuptle = [];var popupftr = [];
+			for(var i=0; i < data.btns.length; i++) {
+			j = i+1;
+			popupimg= data.btns[i].img;
+			popuptle = data.btns[i].tle;
+			popupftr = data.btns[i].ftr;
+				if(popupimg.length < 150 && popuptle.length < 1500 && popupftr.length < 5500){
+				if(popupimg)popupimg = '<img style="width:100%" src="'+popupimg+'"/>';
+				$('#Albumjsnpopup'+j).html(popuptle+popupimg+popupftr);
+				;}
+			popupnbr='';popuptle='';popupftr='';
+			}
+		;};
+
+						
+		
+		if(infhref.substr(infhref.length - 1)=='/'){var albumphp = 'album.php';}else{var albumphp = '/album.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var url = infhref+webdir+albumphp;}else{var url = infhref+albumphp;}		
+		$.ajax({
+   		type: 'GET',
+    	url: url,
+    	async: false,
+    	jsonpCallback: 'datp',
+    	contentType: 'application/json',
+    	dataType: 'jsonp',
+		success: datalbum});
+
+		function datalbum(data) { var albumurl = []; var albumtitle = []; var albumaudio = []; var albumaudiomp = [];
+			for(var i=0; i < data.btn.length; i++) {
+			if(data.btn[i].albumurl)albumurl[i] = data.btn[i].albumurl;
+			if(data.btn[i].albumtitle)albumtitle[i]= data.btn[i].albumtitle;
+			if(data.btn[i].albumaudio)albumaudio[i] = data.btn[i].albumaudio;
+			if(data.btn[i].albumaudiomp)albumaudiomp[i] = data.btn[i].albumaudiomp;
+			}
+		
+		var albumurlvar  = JSON.stringify(albumurl);
+		var albumtitlevar  = JSON.stringify(albumtitle);
+		var albumaudiovar  = JSON.stringify(albumaudio);
+		var albumaudiompvar  = JSON.stringify(albumaudiomp);
+
+		
+		if(albumurlvar.length < 15500){
+			localStorage['albumurl']=albumurlvar;
+			if(albumtitle.length < 15500)localStorage['albumtitle']=albumtitlevar;
+			if(albumaudio.length < 15500)localStorage['albumaudio']=albumaudiovar;
+			if(albumaudiomp.length < 15500)localStorage['albumaudiomp']=albumaudiompvar;
+		}
+		
+		}
+
+$(document).one("ajaxStop",function(){	
+		var albumurls = [];  var albumtitles = [];  var albumaudios = [];  var albumaudiomps = []; 
+		var albumurlvlu = localStorage.getItem("albumurl");
+		if(albumurlvlu){
+		albumurls =  $.parseJSON(localStorage.getItem("albumurl"));
+		$(".album").css("background-image",'url(' + albumurls[0] + ')');	
+		var urlnbr = albumurls.length-1;}		
+		if(!albumurlvlu || albumurlvlu.indexOf(',') == -1){$(".albumr").css('display','none');$(".albuml").css('display','none');}
+		
+		if(localStorage.getItem("albumtitle")){albumtitles =  $.parseJSON(localStorage.getItem("albumtitle"));
+		$("#albumtilte").html(albumtitles[0]);}
+		
+		if(localStorage.getItem("albumaudio")){
+		albumaudios =  $.parseJSON(localStorage.getItem("albumaudio"));
+		albumaudiomps =  $.parseJSON(localStorage.getItem("albumaudiomp"));
+		if(albumaudiomps[0] || albumaudios[0]){$("#introcptaudio").html('<audio controls loop id="audio"><source src="'+albumaudiomps[0]+'" id="mp" type="audio/mpeg"><source src="'+albumaudios[0]+'" id="wav" type="audio/wav"></audio>');}else{$("#introcptaudio").html('');}
+		}
+		
+		if(!albumtitles[0] && !albumaudios[0])$(".introcptalbum").css("display","none");
+		if(albumtitles[0] && !albumaudios[0])$("#introcptaudio").css("display","none");
+
+		
+		
+function navleft(nbr,albumclass,phototn,url,title,audio,audiomp){
+var nbrs = parseInt(nbr)+1;
+if(nbrs>=phototn)nbrs=phototn;				
+$(".album").css("background-image",'url(' + url + ')');
+if(title || audiomp){$(".introcptalbum").css("display","");$("#albumtilte").html(title);}else{$(".introcptalbum").css("display","none");}
+if(title && !audiomp){$("#introcptaudio").css("display","none");}
+else if(audiomp){$("#introcptaudio").css("display","");}
+if(audiomp){$("#introcptaudio").html('<audio controls loop id="audio"><source src="'+audiomp+'" id="mp" type="audio/mpeg"><source src="'+audio+'" id="wav" type="audio/wav"></audio>');}else{$("#introcptaudio").html('');}
+;}
+				
+function navright(nbr,albumclass,url,title,audio,audiomp){
+var nbrs = parseInt(nbr)-1;
+if(!nbrs)nbrs=1;
+$(".album").css("background-image",'url(' + url + ')');
+if(title || audiomp){$(".introcptalbum").css("display","");$("#albumtilte").html(title);}else{$(".introcptalbum").css("display","none");}
+if(title && !audiomp){$("#introcptaudio").css("display","none");}
+else if(audiomp){$("#introcptaudio").css("display","");}
+if(audiomp){$("#introcptaudio").html('<audio controls loop id="audio"><source src="'+audiomp+'" id="mp" type="audio/mpeg"><source src="'+audio+'" id="wav" type="audio/wav"></audio>');}else{$("#introcptaudio").html('');}
+;};
+ 
+
+
+
+$(".albumr").click(function(event){
+event.preventDefault();
+var nbr = $(this).attr("nbr");
+navright(nbr,"album",albumurls[nbr],albumtitles[nbr],albumaudios[nbr],albumaudiomps[nbr]);
+$(".albuml").attr("nbr",parseInt(nbr)+1);
+nbr = parseInt(nbr)-1;
+if(nbr==-1)nbr=0;$(this).attr("nbr",nbr);
+})
+
+$(".albuml").click(function(event){
+event.preventDefault();
+var nbr = $(this).attr("nbr");
+navleft( nbr,"album",urlnbr,albumurls[nbr],albumtitles[nbr],albumaudios[nbr],albumaudiomps[nbr]);
+$(".albumr").attr("nbr",parseInt(nbr)-1)
+nbr = parseInt(nbr)+1;
+if(nbr>urlnbr)nbr=urlnbr;
+$(this).attr("nbr",nbr);
+;})
+
+;});/*ajaxStop*/
+
+$(".panelbtn").click(function(){$("#navigations6").popup("close");});
+
+var albummenu='';var slt='';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+var menusdir='';var menushtml='';var pigsmenu='';var pigsmenudir='';
+if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = '';}
+for(var j=0;j < albummenu.length;j++){
+if(j){menusdir = j+'/';}
+if($("#albumhr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
+if(!j){menushtml += '<li '+slt+'><a href="#" style="background-image:url('+menusdir+'images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'album.html" data-ajax="false" style="background-image:url('+menusdir+'images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
 ;}
 
 
 
-if(menushtml){$('#uls').html(menushtml);$('#uls').listview('refresh');}
-else{$('#menubttns').css('display','none');}
+if(menushtml){
+albummenu = '';var menushtmlcalendar='';
+if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlcalendar += '<li data-icon="calendar"><a href="#appageone" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlcalendar += '<li data-icon="calendar"><a href="'+j+'/indexs.html" data-ajax="false" style="background-image:url('+j+'/images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#calendarpanelpopupbtnsix').css('display','none');}
+
+albummenu = '';var menushtmlform='';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlform += '<li data-icon="edit"><a href="#appagetwo" data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlform += '<li data-icon="edit"><a href="'+j+'/form.html" data-ajax="false" style="background-image:url('+j+'/images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#formpanelpopupbtnsix').css('display','none');}
+
+albummenu = '';var menushtmlks='';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlks += '<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlks += '<li data-icon="heart"><a href="'+j+'/kiss.html" data-ajax="false" style="background-image:url('+j+'/images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#kisspanelpopupbtnsix').css('display','none');}
+
+albummenu = '';var menushtmlplay='';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlplay += '<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(../images/playgroundohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlplay += '<li data-icon="tag"><a href="'+j+'/playground.html" data-ajax="false" style="background-image:url('+j+'/images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#playpanelpopupbtnsix').css('display','none');}
+
+albummenu = '';var menushtmlvideo='';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlvideo += '<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlvideo += '<li data-icon="video"><a href="'+j+'/video.html" data-ajax="false" style="background-image:url('+j+'/images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#videopanelpopupbtnsix').css('display','none');}
+
+
+
+albummenu = '';var menushtmlposter='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlposter += '<li data-icon="comment"><a href="#appageseven" data-transition="flip" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlposter += '<li data-icon="comment"><a href="'+j+'/poster.html" data-ajax="false" style="background-image:url('+j+'/images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#posterpanelpopupbtnsix').css('display','none');}
+;}//if(menushtml){
+
+
+if(menushtml){$('#uls6').append(menushtml);
+	if(menushtmlcalendar)$('#ulcalendarpanelpopupsix').append(menushtmlcalendar);	
+	if(menushtmlform)$('#ulformpanelpopupsix').append(menushtmlform);
+	if(menushtmlks)$('#ulkisspanelpopupsix').append(menushtmlks);
+	if(menushtmlplay)$('#ulplaypanelpopupsix').append(menushtmlplay);
+	if(menushtmlvideo)$('#ulvideopanelpopupsix').append(menushtmlvideo);
+	if(menushtmlposter)$('#ulposterpanelpopupsix').append(menushtmlposter);
+	
+	$('.uls6').listview('refresh');}
+else{$('#menubttns6').css('display','none');}
+;}//
+appagesix = 1;
+});<!--$(document).on('pageshow'-->
+
+
+
+
+$(document).on('pageshow', '#appageseven', function() {
+
+	
+if(!appageseven){
+
+
+		var infhref= localStorage.getItem('infhref');
+		if(infhref.indexOf('http') == -1){infhref= 'http://'+infhref;}		
+		if(infhref.substr(infhref.length - 1)=='/'){var albumphp = 'poster.php';}else{var albumphp = '/poster.php';}
+		var webdir = localStorage.getItem("webdir");
+		if(webdir){var url = infhref+webdir+albumphp;}else{var url = infhref+albumphp;}		
+		$.ajax({
+   		type: 'GET',
+    	url: url,
+    	async: false,
+    	jsonpCallback: 'datp',
+    	contentType: 'application/json',
+    	dataType: 'jsonp',
+		success: posterdatp});
+
+		function posterdatp(data) {  var albumurl = []; var albumratio = [];var albumnbr = [];var albumpx = [];var albumpv = []; var albumtype = [];var albumicon = []; var albumtitle = [];var albumhtml = [];
+			for(var i=0; i < data.btn.length; i++) {
+			if(data.btn[i].posterurl)albumurl[i] = data.btn[i].posterurl;
+			if(data.btn[i].posternbr)albumnbr[i]= data.btn[i].posternbr;
+			if(data.btn[i].posterratio)albumratio[i]= data.btn[i].posterratio;
+			if(data.btn[i].posterpx)albumpx[i]= data.btn[i].posterpx;
+			if(data.btn[i].posterpv)albumpv[i]= data.btn[i].posterpv;
+			if(data.btn[i].postericon)albumicon[i]= data.btn[i].postericon;
+			if(data.btn[i].postertype)albumtype[i]= data.btn[i].postertype;
+			if(data.btn[i].postertitle)albumtitle[i]= data.btn[i].postertitle;
+			if(data.btn[i].posterhtml)albumhtml[i] = data.btn[i].posterhtml;
+			}
+		
+		var albumurlvar  = JSON.stringify(albumurl);
+		var albumnbrvar  = JSON.stringify(albumnbr);
+		var albumratiovar  = JSON.stringify(albumratio);
+		var albumpxvar  = JSON.stringify(albumpx);
+		var albumpvvar  = JSON.stringify(albumpv);
+		var albumiconvar  = JSON.stringify(albumicon);
+		var albumtypevar  = JSON.stringify(albumtype);
+		var albumtitlevar  = JSON.stringify(albumtitle);
+		var albumhtmlvar  = JSON.stringify(albumhtml);
+
+
+		
+		if(albumurlvar.length < 355){
+			localStorage['posterurl']=albumurlvar;
+			if(albumnbr.length < 15)localStorage['posternbr']=albumnbrvar;
+			if(albumratio.length < 15)localStorage['posterratio']=albumratiovar;
+			if(albumpx.length < 15)localStorage['posterpx']=albumpxvar;
+			if(albumpv.length < 15)localStorage['posterpv']=albumpvvar;
+			if(albumicon.length < 15)localStorage['postericon']=albumiconvar;
+			if(albumtype.length < 150)localStorage['postertype']=albumtypevar;
+			if(albumtitlevar.length < 285)localStorage['postertitle']=albumtitlevar;
+			if(albumhtml.length < 15500)localStorage['posterhtml']=albumhtmlvar;
+		}
+		
+		}
+
+		$(document).ajaxStop(function() {
+		var albumurls = []; var albumnbrs = [];var albumratios = []; var albumpxs = [];var albumpvs = []; var albumtypes = [];var albumicons = []; var albumtitles = [];var albumhtmln = [];
+		if(localStorage.getItem("posterurl")){
+		albumurls =  $.parseJSON(localStorage.getItem("posterurl"));
+		albumnbrs =  $.parseJSON(localStorage.getItem("posternbr"));
+		albumratios =  $.parseJSON(localStorage.getItem("posterratio"));
+		albumpxs =  $.parseJSON(localStorage.getItem("posterpx"));
+		albumpvs =  $.parseJSON(localStorage.getItem("posterpv"));
+		albumicons =  $.parseJSON(localStorage.getItem("postericon"));
+		albumtypes =  $.parseJSON(localStorage.getItem("postertype"));
+		albumtitles =  $.parseJSON(localStorage.getItem("postertitle"));
+		albumhtmln =  $.parseJSON(localStorage.getItem("posterhtml"));
+		$(".album").css("background-image",'url(' + albumurls[0] + ')');}
+		
+		
+			
+		var j = '';
+		
+		
+		for(var i=0;i<10;i++){
+		j=i+1;
+		
+		if(!albumtypes[i])$(".btn"+j).addClass('btndata');
+		
+		if(albumtypes[i] && albumtypes[i].indexOf('area')!=-1){
+			$(".btn"+j).removeClass('ui-btn').addClass(albumtypes[i]);
+		}else{
+			$(".btn"+j).addClass(albumtypes[i]);		
+		;}
+		
+		var porks = /^[0-9]+$/;
+		
+		if(albumhtmln[i]){
+		 	if(albumhtmln[i].indexOf('http')==0){
+		     	$(".btn"+j).attr('id',15);
+				$("#btnpopupvideo").attr("src",albumhtmln[i]);
+			;}else if(porks.test(albumhtmln[i])){
+				$(".btn"+j).attr('id','');		
+				$(".btn"+j).attr('href',pigsmenudir+albumhtmln[i]+'/poster.html');
+				$(".btn"+j).removeClass('btn');
+				$(".btn"+j).click(function() {
+				$(document).on({"pageshow": function () {window.location = 'poster.html';}}, '.page');
+				;})
+			;}else if(albumhtmln[i].indexOf('btn')==0){
+		    	$(".btn"+j).attr('id','');
+				$(".btn"+j).removeClass('btn').addClass('bg');
+			;}else if(albumhtmln[i].match(".html$")){
+		    	$(".btn"+j).attr('id','');
+				$(".btn"+j).attr('href',albumhtmln[i]);
+				$(".btn"+j).removeClass('btn');
+				$(".btn"+j).click(function() {
+				var htmls = $(this).attr('href');
+				$(document).on({"pageshow": function () {window.location = htmls;}}, '.page');
+				;})
+			;}else if(albumhtmln[i]=='index'){
+		    	$(".btn"+j).attr('id','');		
+				$(".btn"+j).attr('href','../poster.html');
+				$(".btn"+j).removeClass('btn');
+				$(".btn"+j).click(function() {
+				var htmls = $(this).attr('href');
+				$(document).on({"pageshow": function () {window.location = 'poster.html';}}, '.page');
+				;})
+			;}else{
+				$("#btnpopup"+j).append(albumhtmln[i]);
+			;}
+		;}
+		
+			if(albumtitles[i]){
+				$(".btn"+j).removeClass('ui-btn-icon-notext').addClass('ui-btn-icon-left');
+				$(".btn"+j).text(albumtitles[i]);
+			}
+			if(albumicons[i]){
+				if(albumicons[i].indexOf('ui-icon-')!=-1){
+					$(".btn"+j).addClass(albumicons[i]);}
+				else{albumtitles[i] = '<i class="iconfont">&#'+albumicons[i]+'</i> '+albumtitles[i];}
+			}
+		var width =  $(window).width();	
+		if(albumratios[i])$(".album").height(width*albumratios[i]);
+		if(albumratios[i]){var height =  $(window).width()* albumratios[i];}	
+		if(albumpxs[i]){var pxs = width * albumpxs[i]/100;}else{var pxs = 0;}
+		if(albumpvs[i] && albumratios[i]){var pvs = height * albumpvs[i]/100;}else if(albumpvs[i]){var pvs = albumpvs[i];}else{var pvs = 0;}
+		if(albumpvs[i] && albumpxs[i])$(".btn"+j).css({top: pvs, left: pxs, position:'absolute'});	
+		;}
+	
+		$('.bg').click(function(event) {
+			event.preventDefault();
+			var bgbtnnbr = parseInt($(this).attr('btn'))-1;
+			if(albumurls[bgbtnnbr])$('.album').css('background-image', 'url(' + albumurls[bgbtnnbr] + ')');
+		;})
+		
+		$.mobile.document.on( "click", ".btn", function( evt ) {
+			var typ = $(this).attr('id');		
+    		if(typ)$( "#btnpopup"+typ  ).popup( "open", { x: evt.pageX, y: evt.pageY } );
+    		evt.preventDefault();
+		});
+		});/*ajaxStop*/
+
+$(".panelbtn").click(function(){$("#navigations7").popup("close");});		
+
+var albummenu='';var js='';var slt='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+var menusdir='';var menushtml='';var pigsmenu='';
+if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = '';}
+for(var j=0;j < albummenu.length;j++){
+if(j){menusdir = j+'/';}
+if(j)js = j;
+if($("#posterhr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
+if(!j){menushtml += '<li '+slt+'><a href="#" style="background-image:url('+menusdir+'images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'poster.html" data-ajax="false" id="href'+js+'" style="background-image:url('+menusdir+'images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;}
+
+
+if(menushtml){
+albummenu = '';var menushtmlcalendar='';
+if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlcalendar += '<li data-icon="calendar"><a href="#appageone" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlcalendar += '<li data-icon="calendar"><a href="'+j+'/indexs.html" data-ajax="false" style="background-image:url('+j+'/images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#calendarpanelpopupbtnseven').css('display','none');}
+
+albummenu = '';var menushtmlform='';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlform += '<li data-icon="edit"><a href="#appagetwo" data-transition="flip" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlform += '<li data-icon="edit"><a href="'+j+'/form.html" data-ajax="false" style="background-image:url('+j+'/images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#formpanelpopupbtnseven').css('display','none');}
+
+albummenu = '';var menushtmlks='';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlks += '<li data-icon="heart"><a href="#appagethree" data-transition="flip" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlks += '<li data-icon="heart"><a href="'+j+'/kiss.html" data-ajax="false" style="background-image:url('+j+'/images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#kisspanelpopupbtnseven').css('display','none');}
+
+albummenu = '';var menushtmlplay='';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlplay += '<li data-icon="tag"><a href="playground.html" data-ajax="false" style="background-image:url(../images/playgroundohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlplay += '<li data-icon="tag"><a href="'+j+'/playground.html" data-ajax="false" style="background-image:url('+j+'/images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#playpanelpopupbtnseven').css('display','none');}
+
+albummenu = '';var menushtmlvideo='';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlvideo += '<li data-icon="video"><a href="#appagefive" data-transition="flip" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlvideo += '<li data-icon="video"><a href="'+j+'/video.html" data-ajax="false" style="background-image:url('+j+'/images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#videopanelpopupbtnseven').css('display','none');}
+
+
+albummenu = '';var menushtmlalbum='';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlalbum += '<li data-icon="camera"><a href="#appagesix" data-transition="flip" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlalbum += '<li data-icon="camera"><a href="'+j+'/album.html" data-ajax="false" style="background-image:url('+j+'/images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#albumpanelpopupbtnseven').css('display','none');}
+
+;}//if(menushtml){
+
+
+if(menushtml){$('#uls7').append(menushtml);
+	if(menushtmlcalendar)$('#ulcalendarpanelpopupseven').append(menushtmlcalendar);	
+	if(menushtmlform)$('#ulformpanelpopupseven').append(menushtmlform);
+	if(menushtmlks)$('#ulkisspanelpopupseven').append(menushtmlks);
+	if(menushtmlplay)$('#ulplaypanelpopupseven').append(menushtmlplay);
+	if(menushtmlvideo)$('#ulvideopanelpopupseven').append(menushtmlvideo);
+	if(menushtmlalbum)$('#ulalbumpanelpopupseven').append(menushtmlalbum);
+
+	
+	$('.uls7').listview('refresh');}
+else{$('#menubttns7').css('display','none');}
+;}//
+appageseven = 1;
+});<!--$(document).on('pageshow'-->
+
+$( document ).on( "pagecreate", function() {   
+    function scale( width, height, padding, border ) {
+        var scrWidth = $( window ).width() - 30,
+            scrHeight = $( window ).height() - 30,
+            ifrPadding = 2 * padding,
+            ifrBorder = 2 * border,
+            ifrWidth = width + ifrPadding + ifrBorder,
+            ifrHeight = height + ifrPadding + ifrBorder,
+            h, w;
+        if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
+            w = ifrWidth;
+            h = ifrHeight;
+        } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
+            w = scrWidth;
+            h = ( scrWidth / ifrWidth ) * ifrHeight;
+        } else {
+            h = scrHeight;
+            w = ( scrHeight / ifrHeight ) * ifrWidth;
+        }
+        return {
+            'width': w - ( ifrPadding + ifrBorder ),
+            'height': h - ( ifrPadding + ifrBorder )
+        };
+    };
+    $( ".ui-popup iframe" )
+        .attr( "width", 0 )
+        .attr( "height", "auto" );
+    $( "#btnpopup15" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#btnpopup15 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#btnpopup15 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#Ksjsnpopup16" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#Ksjsnpopup16 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#Ksjsnpopup16 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#Ksjsnpopup17" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#Ksjsnpopup17 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#Ksjsnpopup17 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+    $( "#Ksjsnpopup18" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#Ksjsnpopup18 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#Ksjsnpopup18 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#popupVideo1" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#popupVideo1 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#popupVideo1 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#popupVideo2" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#popupVideo2 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#popupVideo2 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+    $( "#popupVideo3" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#popupVideo3 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#popupVideo3 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+    $( "#popupVideo4" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#popupVideo4 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#popupVideo4 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+    $( "#popupVideo5" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#popupVideo5 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#popupVideo5 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+});
+
 	</script><!--copyiframes-->

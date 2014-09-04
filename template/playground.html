@@ -32,7 +32,7 @@
 	.ifrwidthpig{min-width:310px;};}
 	@media all and (max-width: 320px){.ifrwidth{width:100%;min-height:350px;};}
 	</style>
-	<script src="js/jquery.js"></script>
+	<script src="js/jquery.js"></script><script src="js/mobileinit.js"></script>
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
 	<script src="js/fastvclick.js"></script>
 	<script>$(function(){Fastclick.attach(document.body);});</script>
@@ -48,7 +48,11 @@
 	<a href="#"  class="ui-btn ui-icon-pigpaper ui-btn-icon-notext ui-btn-inline" id="nbr">Number</a>	
 	<a href="#"  class="ui-btn ui-icon-bullets ui-btn-inline  ui-btn-icon-notext" id="playr"></a>
 	<a href="#"  class="ui-btn ui-icon-grid ui-btn-icon-notext ui-btn-inline" id="popw"></a>
-
+	<a href="index.html#appagethree" id="kshref" data-ajax="false" class="ui-btn ui-icon-heart ui-btn-icon-notext ui-btn-inline"></a>
+	<a href="#kspopup" id="ks" data-rel="popup" class="ui-btn ui-icon-heart ui-btn-icon-notext ui-btn-inline"></a>
+	<div id="kspopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false" id="kspopupuls" class="uls" data-inset="true">
+	</ul></div><!-- /navigation -->
 
 	<div class="ui-grid-a" style="">
 	<div class="ui-block-a"><a href="#popup" class="ui-btn playdw" data-rel="popup" style="color:red;background-image:url(images/result1.gif);background-size:100% 100%;" pigs="" id="piga"></a></div>
@@ -144,21 +148,61 @@
 	<div class="ui-block-b"><a href="#popup" class="ui-btn ui-icon-heart ui-btn-icon-right playd" data-rel="popup" id="p32" style="background-image:url(images/playground32.gif);background-size:100% 100%;">32</a></div>
 	</div>
 	
-	<div id="popup" data-role="popup" data-corners="false" class="ifrwidthpig"><img style="width:100%" id="img" src=""/></div>
+	<div id="popup" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><img style="width:100%" id="img" src=""/></div>
 
-	<div id="navigations" data-role="popup" data-theme="none">
+	<div id="navigations" data-role="popup"  data-transition="pop" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" data-inset="true">
+	<li data-icon="bars"><a href="#navigationpanel" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
 	</ul></div><!-- /navigation -->
-		
-	<div id="navigation" data-role="popup" data-theme="none">
+
+
+	<div data-role="panel" data-display="overlay" id="navigationpanel" class="panel" data-theme="" style="background-image:url(images/playbackground.gif);background-size:100%;background-repeat:repeat-y;">
+    <ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#navigationpanel" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-carat-l" style="background-image:url(images/playpanel.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="close">&nbsp;&nbsp;</a></li>
+	<li data-icon="calendar"><a href="index.html" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Football calendar</a></li>
+	<li data-icon="edit"><a href="form.html" data-ajax="false" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li data-icon="heart"><a href="kiss.html" data-ajax="false" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">QR Code</a></li>
+	<li><a href="playground.html" data-ajax="false" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-check" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li data-icon="video"><a href="video.html" data-ajax="false" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li data-icon="camera"><a href="album.html" data-ajax="false" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li data-icon="comment"><a href="poster.html" data-ajax="false" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul>
+	<a href="#calendarpanelpopup" id="calendarpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-calendar" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="calendarpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulcalendarpanelpopup" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#formpanelpopup" id="formpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-edit" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="formpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulformpanelpopup" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#kisspanelpopup" id="kisspanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-heart" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="kisspanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulkisspanelpopup" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#videopanelpopup" id="videopanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-video" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="videopanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulvideopanelpopup" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#albumpanelpopup" id="albumpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-camera" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="albumpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulalbumpanelpopup" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#posterpanelpopup" id="posterpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-comment" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="posterpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulposterpanelpopup" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	</div><!-- /panel -->
+	
+			
+	<div id="navigation" data-role="popup"  data-transition="pop" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
-	<li><a href="index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
-	<li><a href="form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
-	<li><a href="kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
-	<li><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
-	<li><a href="video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
-	<li><a href="album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
-	<li><a href="poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
+	<li><a href="index.html"  data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>
+	<li><a href="index.html#appagetwo" data-ajax="false" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="index.html#appagethree" data-ajax="false" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">QR Code</a></li>
+	<li data-icon="check"><a href="playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="index.html#appagefive" data-ajax="false" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="index.html#appagesix" data-ajax="false" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="index.html#appageseven" data-ajax="false" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
 	</ul></div><!-- /navigation -->
 	</div></body>
 	</html>
@@ -241,10 +285,8 @@
 		localStorage.setItem('playshw','');window.location='playground.html';
 	;}
 
-$('.nvmenu').click(function() {
-		var nvmenuhtml = $(this).attr('href');
-		$(document).on({"pageshow": function () {window.location = nvmenuhtml.replace('../','');}}, '.page');
-;})
+$(".panelbtn").click(function(){$("#navigations").popup("close");});
+
 	
 var albummenu='';var slt='';
 if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
@@ -253,11 +295,62 @@ if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = 
 for(var j=0;j < albummenu.length;j++){
 if(j)menusdir = j+'/';
 if($("#playbhr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
-if(albummenu[j])menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'playground.html" data-ajax="false" style="background-image:url('+menusdir+'images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';
+if(albummenu[j]){menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'playground.html" data-ajax="false" style="background-image:url('+pigsmenudir+menusdir+'images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
 ;}
 
+if(!menushtml)$('#ks').css('display','none');
+
+if(menushtml){
+albummenu = '';var menushtmlcalendar='';
+if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlcalendar += '<li data-icon="calendar"><a href="index.html" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlcalendar += '<li data-icon="calendar"><a href="'+j+'/indexs.html" data-ajax="false" style="background-image:url('+j+'/images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#calendarpanelpopupbtn').css('display','none');}
+
+albummenu = '';var menushtmlform='';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlform += '<li data-icon="edit"><a href="index.html#appagetwo" data-ajax="false" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlform += '<li data-icon="edit"><a href="'+j+'/form.html" data-ajax="false" style="background-image:url('+j+'/images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#formpanelpopupbtn').css('display','none');}
+
+albummenu = '';var menushtmlks='';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlks += '<li data-icon="heart"><a href="index.html#appagethree" data-ajax="false" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlks += '<li data-icon="heart"><a href="'+j+'/kiss.html" data-ajax="false" style="background-image:url('+j+'/images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#kisspanelpopupbtn').css('display','none');}
+
+if(albummenu.length==1){$('#ks').css('display','none');}else{$('#kshref').css('display','none');}
+
+albummenu = '';var menushtmlvideo='';
+if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlvideo += '<li data-icon="video"><a href="index.html#appagefive" data-ajax="false" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlvideo += '<li data-icon="video"><a href="'+j+'/video.html" data-ajax="false" style="background-image:url('+j+'/images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#videopanelpopupbtn').css('display','none');}
 
 
-if(menushtml){$('#uls').html(menushtml);$('#uls').listview('refresh');}
+albummenu = '';var menushtmlalbum='';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlalbum += '<li data-icon="camera"><a href="index.html#appagesix" data-ajax="false" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlalbum += '<li data-icon="camera"><a href="'+j+'/album.html" data-ajax="false" style="background-image:url('+j+'/images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#albumpanelpopupbtn').css('display','none');}
+
+
+albummenu = '';var menushtmlposter='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlposter += '<li data-icon="comment"><a href="index.html#appageseven" data-ajax="false" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlposter += '<li data-icon="comment"><a href="'+j+'/poster.html" data-ajax="false" style="background-image:url('+j+'/images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#posterpanelpopupbtn').css('display','none');}
+;}//if(menushtml){
+
+if(menushtml){$('#uls').append(menushtml);
+	$('#kspopupuls').append(menushtmlks);
+	if(menushtmlcalendar)$('#ulcalendarpanelpopup').append(menushtmlcalendar);
+	if(menushtmlform)$('#ulformpanelpopup').append(menushtmlform);
+	if(menushtmlks)$('#ulkisspanelpopup').append(menushtmlks);
+	if(menushtmlvideo)$('#ulvideopanelpopup').append(menushtmlvideo);
+	if(menushtmlalbum)$('#ulalbumpanelpopup').append(menushtmlalbum);
+	if(menushtmlposter)$('#ulposterpanelpopup').append(menushtmlposter);
+	
+	$('.uls').listview('refresh');}
 else{$('#menubttns').css('display','none');}
 	</script>

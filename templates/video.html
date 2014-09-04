@@ -30,7 +30,7 @@
 	@media all and (max-width: 320px){.ifrwidth{width:100%;min-height:350px;};}
 	.tps tr,.tps td{border-top: 1px solid #000000;}
 	</style>
-	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.js"></script><script src="../js/mobileinit.js"></script>
 	<script src="../js/jquery.mobile-1.4.0.min.js"></script>
 	 
 	</head>
@@ -39,76 +39,117 @@
 	<a href="#navigations" id="menubttns"  data-rel="popup" class="ui-btn-left ui-btn ui-btn-inline  ui-btn-icon-left ui-icon-video">&nbsp;&nbsp;&nbsp;</a><a href="#navigation"  id="menubttn"  data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-btn-icon-right ui-icon-bars">&nbsp;&nbsp;&nbsp;</a><h1 id="videohr"></h1>
 	</div>
 	<div data-role="content" id="height" style="background-image:url(images/vdbackground.gif);background-size:100%;background-repeat:repeat-y;">
-	<div id="videotitle1"></div><BR>
-	<div id="video1"></div><BR>
-	<div id="vd1"></div><BR>
-	<div id="videoftr1"></div><BR>
+	<div id="videotitle1"></div>
+	<div id="video1"></div>
+	<div id="vd1"></div>
+	<div id="videoftr1"></div>
 	
-	<div id="videotitle2"></div><BR>
-	<div id="video2"></div><BR>
-	<div id="vd2"></div><BR>
-	<div id="videoftr2"></div><BR>
+	<div id="videotitle2"></div>
+	<div id="video2"></div>
+	<div id="vd2"></div>
+	<div id="videoftr2"></div>
 	
-	<div id="videotitle3"></div><BR>
-	<div id="video3"></div><BR>
-	<div id="vd3"></div><BR>
-	<div id="videoftr3"></div><BR>
+	<div id="videotitle3"></div>
+	<div id="video3"></div>
+	<div id="vd3"></div>
+	<div id="videoftr3"></div>
 	
-	<div id="videotitle4"></div><BR>
-	<div id="video4"></div><BR>
-	<div id="vd4"></div><BR>
-	<div id="videoftr4"></div><BR>
+	<div id="videotitle4"></div>
+	<div id="video4"></div>
+	<div id="vd4"></div>
+	<div id="videoftr4"></div>
 	
-	<div id="videotitle5"></div><BR>
-	<div id="video5"></div><BR>
-	<div id="vd5"></div><BR>
-	<div id="videoftr5"></div><BR>
+	<div id="videotitle5"></div>
+	<div id="video5"></div>
+	<div id="vd5"></div>
+	<div id="videoftr5"></div>
 	
 	
-	<div class="ui-content" id="popupVideo1" data-role="popup" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+	<div class="ui-content" id="popupVideo1" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
     <iframe width="496" height="298" id="srcVideo1" src=""></iframe></div>
-	<div class="ui-content" id="popupVideo2" data-role="popup" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+	<div class="ui-content" id="popupVideo2" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
     <iframe width="496" height="298" id="srcVideo2" src=""></iframe></div>
-	<div class="ui-content" id="popupVideo3" data-role="popup" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+	<div class="ui-content" id="popupVideo3" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
     <iframe width="496" height="298" id="srcVideo3" src=""></iframe></div>
-	<div class="ui-content" id="popupVideo4" data-role="popup" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+	<div class="ui-content" id="popupVideo4" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
     <iframe width="496" height="298" id="srcVideo4" src=""></iframe></div>
-	<div class="ui-content" id="popupVideo5" data-role="popup" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
-    <iframe width="496" height="298" id="srcVideo5" src="" seamless=""></iframe></div>
+	<div class="ui-content" id="popupVideo5" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="srcVideo5" src=""></iframe></div>
 
-	<div id="popup1" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup1"  style="background-image:url(images/videopopuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup2" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup2"  style="background-image:url(images/videopopuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup3" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup3"  style="background-image:url(images/videopopuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
-	<div id="popup4" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup4"  style="background-image:url(images/videopopuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup5" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup5"  style="background-image:url(images/videopopuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup6" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup6"  style="background-image:url(images/videopopuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup7" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup7"  style="background-image:url(images/videopopuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup8" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup8"  style="background-image:url(images/videopopuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup9" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup9"  style="background-image:url(images/videopopuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup10" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup10"  style="background-image:url(images/videopopuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup11" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup11"  style="background-image:url(images/videopopuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup12" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup12"  style="background-image:url(images/videopopuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup13" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup13"  style="background-image:url(images/videopopuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup14" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup14"  style="background-image:url(images/videopopuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup15" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup15"  style="background-image:url(images/videopopuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup16" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup16"  style="background-image:url(images/videopopuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup17" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup17"  style="background-image:url(images/videopopuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
-	<div id="popup18" data-role="popup" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup18"  style="background-image:url(images/videopopuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup1" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup1"  style="background-image:url(images/videopopuppicbackground1.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup2" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup2"  style="background-image:url(images/videopopuppicbackground2.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup3" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup3"  style="background-image:url(images/videopopuppicbackground3.gif);background-size:100% 100%;background-repeat: no-repeat"></div></div>	
+	<div id="popup4" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup4"  style="background-image:url(images/videopopuppicbackground4.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup5" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup5"  style="background-image:url(images/videopopuppicbackground5.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup6" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup6"  style="background-image:url(images/videopopuppicbackground6.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup7" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup7"  style="background-image:url(images/videopopuppicbackground7.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup8" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup8"  style="background-image:url(images/videopopuppicbackground8.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup9" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup9"  style="background-image:url(images/videopopuppicbackground9.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup10" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup10"  style="background-image:url(images/videopopuppicbackground10.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup11" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup11"  style="background-image:url(images/videopopuppicbackground11.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup12" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup12"  style="background-image:url(images/videopopuppicbackground12.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup13" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup13"  style="background-image:url(images/videopopuppicbackground13.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup14" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup14"  style="background-image:url(images/videopopuppicbackground14.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup15" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup15"  style="background-image:url(images/videopopuppicbackground15.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup16" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup16"  style="background-image:url(images/videopopuppicbackground16.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup17" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup17"  style="background-image:url(images/videopopuppicbackground17.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
+	<div id="popup18" data-role="popup"  data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="jsnpopup18"  style="background-image:url(images/videopopuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
 	 	
-	<div id="navigations" data-role="popup" data-theme="none">
-	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" data-inset="true">
+	<div id="navigations" data-role="popup"  data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" class="uls" data-inset="true">
+	<li data-icon="bars"><a href="#navigationpanel" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
 	</ul></div><!-- /navigation -->
+
+
+	<div data-role="panel" data-display="overlay" id="navigationpanel" class="panel" data-theme="" style="background-image:url(images/vdbackground.gif);background-size:100%;background-repeat:repeat-y;">
+    <ul style="min-width:210px;" data-role="listview" data-corners="false" data-inset="true">
+	<li><a href="#navigationpanel" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-left ui-icon-carat-l" style="background-image:url(images/videopanel.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="close">&nbsp;&nbsp;</a></li>
+	<li data-icon="calendar"><a href="../index.html" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>
+	<li data-icon="edit"><a href="../index.html#appagetwo" data-ajax="false" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li data-icon="heart"><a href="../index.html#appagethree" data-ajax="false" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">QR Code</a></li>
+	<li data-icon="tag"><a href="../playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li data-icon="video"><a href="../index.html#appagefive" data-ajax="false" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li data-icon="camera"><a href="../index.html#appagesix" data-ajax="false" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li data-icon="comment"><a href="../index.html#appageseven" data-ajax="false" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
+	</ul>
+	<a href="#calendarpanelpopup" id="calendarpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-calendar" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="calendarpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulcalendarpanelpopup" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#formpanelpopup" id="formpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-edit" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="formpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulformpanelpopup" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#kisspanelpopup" id="kisspanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-heart" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="kisspanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulkisspanelpopup" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#playpanelpopup" id="playpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-tag" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="playpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulplaypanelpopup" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#albumpanelpopup" id="albumpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-camera" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="albumpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulalbumpanelpopup" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	<a href="#posterpanelpopup" id="posterpanelpopupbtn" class="ui-btn ui-btn-inline ui-mini ui-btn-icon-notext ui-icon-comment" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" data-rel="popup">&nbsp;&nbsp;</a>
+	<div id="posterpanelpopup" data-role="popup" data-transition="pop" data-theme="none">
+	<ul style="min-width:210px;" id="ulposterpanelpopup" class="uls" data-role="listview" data-corners="false" data-inset="true">
+	</ul></div>
+	</div><!-- /panel -->
 	
-	<div id="navigation" data-role="popup" data-theme="none">
+		
+	<div id="navigation" data-role="popup"  data-transition="pop" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  data-inset="true">
-	<li><a href="../index.html" data-transition="flip" class="nvmenu" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m1">Football calendar</a></li>
-	<li><a href="../form.html" data-transition="flip" class="nvmenu" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m2">Form</a></li>
-	<li><a href="../kiss.html" data-transition="flip" class="nvmenu" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m3">QR Code</a></li>
-	<li><a href="../playground.html" data-transition="flip" class="nvmenu" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m4">Playground</a></li>
-	<li><a href="../video.html" data-transition="flip" class="nvmenu" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m5">Video</a></li>
-	<li><a href="../album.html" data-transition="flip" class="nvmenu" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m6">Album</a></li>
-	<li><a href="../poster.html" data-transition="flip" class="nvmenu" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" id="m7">Poster</a></li>
+	<li><a href="../index.html" data-ajax="false" style="background-image:url(images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m1">Calendar</a></li>
+	<li><a href="../index.html#appagetwo" data-ajax="false" style="background-image:url(images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m2">Form</a></li>
+	<li><a href="../index.html#appagethree" data-ajax="false" style="background-image:url(images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m3">QR Code</a></li>
+	<li><a href="../playground.html" data-ajax="false" style="background-image:url(images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m4">Playground</a></li>
+	<li><a href="../index.html#appagefive" data-ajax="false" style="background-image:url(images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m5">Video</a></li>
+	<li><a href="../index.html#appagesix" data-ajax="false" style="background-image:url(images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m6">Album</a></li>
+	<li><a href="../index.html#appageseven" data-ajax="false" style="background-image:url(images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;" class="m7">Poster</a></li>
 	</ul></div><!-- /navigation -->
+	</div>
 	</div></body>
 	</html>
 	<script src="js/theme.js"></script><script src="../js/menu.js"></script>
@@ -217,7 +258,7 @@
 			if(videotitles[i])$("#videotitle"+j).html(videotitles[i]);
 			if(videos[i]){
 				if(videowbs[i]=='btn' || videowbs[i]=='btnsn' || !videowbs[i]){
-				$("#video"+j).html('<a class="ui-btn ui-shadow ui-btn-inline" href="#popupVideo'+j+'" data-rel="popup" data-position-to="window"><span style="font-size:28px" class="pigss-videos"></span> Video Player</a>');
+				$("#video"+j).html('<br><a class="ui-btn ui-shadow ui-btn-inline" href="#popupVideo'+j+'" data-rel="popup" data-position-to="window"><span style="font-size:28px" class="pigss-videos"></span> Video Player</a><br><br>');
 				if(videos[i].indexOf('http') == -1)videos[i] = 'http://'+videos[i];
 				$("#srcVideo"+j).attr("src",videos[i]);
 				}
@@ -226,7 +267,7 @@
 				videohtml(videos[0],'vd'+j,videowbs[0]);
 				}
 				
-				hr = '<hr>';
+				hr = '<br><br><br>';
 			}else{hr = '';}
 			if(videomsgs[i])$("#videoftr"+j).html(videomsgs[i]+hr);		
 		;}	
@@ -339,10 +380,8 @@ $( document ).on( "pagecreate", function() {
     });
 });
 
-$('.nvmenu').click(function() {
-		var nvmenuhtml = $(this).attr('href');
-		$(document).on({"pageshow": function () {window.location = nvmenuhtml.replace('../','');}}, '.page');
-;})
+
+$(".panelbtn").click(function(){$("#navigations").popup("close");});
 		
 var albummenu='';var slt='';
 if(localStorage.getItem("vdmenu"))albummenu =  $.parseJSON(localStorage.getItem("vdmenu"));
@@ -351,11 +390,59 @@ if(localStorage.getItem('pigsmenudir')){pigsmenudir = '../';}else{pigsmenudir = 
 for(var j=0;j < albummenu.length;j++){
 if(j)menusdir = j+'/';
 if($("#videohr").text()==albummenu[j]){slt='data-icon="check"';}else{slt='';}
-if(albummenu[j])menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'video.html" data-ajax="false" style="background-image:url('+menusdir+'images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';
+if(!j){menushtml += '<li '+slt+'><a href="../index.html#appagefive" data-ajax="false" style="background-image:url(../images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtml += '<li '+slt+'><a href="'+pigsmenudir+menusdir+'video.html" data-ajax="false" style="background-image:url('+pigsmenudir+menusdir+'images/videohtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
 ;}
 
 
 
-if(menushtml){$('#uls').html(menushtml);$('#uls').listview('refresh');}
+if(menushtml){
+albummenu = '';var menushtmlcalendar='';
+if(localStorage.getItem("pigmenu"))albummenu =  $.parseJSON(localStorage.getItem("pigmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlcalendar += '<li data-icon="calendar"><a href="../index.html" data-ajax="false" style="background-image:url(../images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlcalendar += '<li data-icon="calendar"><a href="../'+j+'/indexs.html" data-ajax="false" style="background-image:url(../'+j+'/images/indexhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#calendarpanelpopupbtn').css('display','none');}
+
+albummenu = '';var menushtmlform='';
+if(localStorage.getItem("formmenu"))albummenu =  $.parseJSON(localStorage.getItem("formmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlform += '<li data-icon="edit"><a href="../index.html#appagetwo" data-ajax="false" style="background-image:url(../images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlform += '<li data-icon="edit"><a href="../'+j+'/form.html" data-ajax="false" style="background-image:url(../'+j+'/images/formhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#formpanelpopupbtn').css('display','none');}
+
+albummenu = '';var menushtmlks='';
+if(localStorage.getItem("ksmenu"))albummenu =  $.parseJSON(localStorage.getItem("ksmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlks += '<li data-icon="heart"><a href="../index.html#appagethree" data-ajax="false" style="background-image:url(../images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlks += '<li data-icon="heart"><a href="../'+j+'/kiss.html" data-ajax="false" style="background-image:url(../'+j+'/images/kisshtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#kisspanelpopupbtn').css('display','none');}
+
+
+albummenu = '';var menushtmlplay='';
+if(localStorage.getItem("pdmenu"))albummenu =  $.parseJSON(localStorage.getItem("pdmenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlplay += '<li data-icon="tag"><a href="../playground.html" data-ajax="false" style="background-image:url(../images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlplay += '<li data-icon="tag"><a href="../'+j+'/playground.html" data-ajax="false" style="background-image:url(../'+j+'/images/playgroundhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#playpanelpopupbtn').css('display','none');}
+
+
+albummenu = '';var menushtmlalbum='';
+if(localStorage.getItem("albummenu"))albummenu =  $.parseJSON(localStorage.getItem("albummenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlalbum += '<li data-icon="camera"><a href="../index.html#appagesix" data-ajax="false" style="background-image:url(../images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlalbum += '<li data-icon="camera"><a href="../'+j+'/album.html" data-ajax="false" style="background-image:url(../'+j+'/images/albumhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#albumpanelpopupbtn').css('display','none');}
+
+
+albummenu = '';var menushtmlposter='';
+if(localStorage.getItem("postermenu"))albummenu =  $.parseJSON(localStorage.getItem("postermenu"));
+if(albummenu && albummenu.length > 1){for(var j=0;j < albummenu.length;j++){
+if(!j){menushtmlposter += '<li data-icon="comment"><a href="../index.html#appageseven" data-ajax="false" style="background-image:url(../images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}else if(albummenu[j]){menushtmlposter += '<li data-icon="comment"><a href="../'+j+'/poster.html" data-ajax="false" style="background-image:url(../'+j+'/images/posterhtml.gif);background-size:100% 100%;background-repeat: no-repeat;">'+albummenu[j]+'</a></li>';}
+;};}else{$('#posterpanelpopupbtn').css('display','none');}
+;}//if(menushtml){
+
+if(menushtml){$('#uls').append(menushtml);	
+	if(menushtmlcalendar)$('#ulcalendarpanelpopup').append(menushtmlcalendar);
+	if(menushtmlform)$('#ulformpanelpopup').append(menushtmlform);
+	if(menushtmlks)$('#ulkisspanelpopup').append(menushtmlks);
+	if(menushtmlplay)$('#ulplaypanelpopup').append(menushtmlplay);
+	if(menushtmlalbum)$('#ulalbumpanelpopup').append(menushtmlalbum);
+	if(menushtmlposter)$('#ulposterpanelpopup').append(menushtmlposter);	
+	$('.uls').listview('refresh');}
 else{$('#menubttns').css('display','none');}
 	</script>
