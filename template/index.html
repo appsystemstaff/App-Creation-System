@@ -477,6 +477,24 @@
 	<div id="datepopup18" data-role="popup" data-transition="pop" data-corners="false" class="ifrwidthpig"><div class="ifrwidth" id="datejsnpopup18"  style="background-image:url(images/popuppicbackground18.gif);background-size:100% 100%;background-repeat: no-repeat;"></div></div>	
 
 
+
+	<div class="ui-content" id="datepopupv1" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="datejsnpopupv1" src=""></iframe></div>
+	<div class="ui-content" id="datepopupv2" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="datejsnpopupv2" src=""></iframe></div>
+	<div class="ui-content" id="datepopupv3" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="datejsnpopupv3" src=""></iframe></div>
+	<div class="ui-content" id="datepopupv4" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="datejsnpopupv4" src=""></iframe></div>
+	<div class="ui-content" id="datepopupv5" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="datejsnpopupv5" src=""></iframe></div>
+	<div class="ui-content" id="datepopupv6" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="datejsnpopupv6" src=""></iframe></div>
+	<div class="ui-content" id="datepopupv7" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="datejsnpopupv7" src=""></iframe></div>
+	<div class="ui-content" id="datepopupv8" data-role="popup"  data-transition="pop" data-theme="f" data-overlay-theme="b" data-tolerance="15,15">
+    <iframe width="496" height="298" id="datejsnpopupv8" src=""></iframe></div>
+
 	<div id="navigations" data-role="popup" data-transition="pop" data-theme="none">
 	<ul style="min-width:210px;" data-role="listview" data-corners="false"  id="uls" class="uls" data-inset="true">
 	<li data-icon="bars"><a href="#navigationpanelone" class="panelbtn" style="background-image:url(images/indexhtmls.gif);background-size:100% 100%;background-repeat: no-repeat;">&nbsp;</a></li>	
@@ -1117,8 +1135,13 @@ $(document).on('pageshow', '#appageone', function() {
 			popuptle = data.btns[i].tle;
 			popupftr = data.btns[i].ftr;
 				if(popupimg.length < 150 && popuptle.length < 1500 && popupftr.length < 5500){
+				if(j <= 8 && popupimg && popuptle=='vd'){
+					if(popupimg.indexOf('v.qq.com') != -1 || popupimg.indexOf('www.youtube.com') != -1){
+					$('#datajsnpopupv'+j).attr('src',popupimg);}
+				;}else{
 				if(popupimg)popupimg = '<img style="width:100%" src="'+popupimg+'"/>';
 				$('#datejsnpopup'+j).html(popuptle+popupimg+popupftr);
+				}
 				;}
 			popupnbr='';popuptle='';popupftr='';
 			}
@@ -2461,6 +2484,126 @@ $( document ).on( "pagecreate", function() {
         },
         popupafterclose: function() {
             $( "#popupVideo5 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#datepopupv1" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#datepopupv1 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#datepopupv1 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#datepopupv2" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#datepopupv2 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#datepopupv2 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#datepopupv3" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#datepopupv3 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#datepopupv3 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#datepopupv4" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#datepopupv4 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#datepopupv4 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#datepopupv5" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#datepopupv5 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#datepopupv5 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#datepopupv6" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#datepopupv6 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#datepopupv6 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#datepopupv7" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#datepopupv7 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#datepopupv7 iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+	$( "#datepopupv8" ).on({
+        popupbeforeposition: function() {        
+            var size = scale( 496, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#datepopupv8 iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#datepopupv8 iframe" )
                 .attr( "width", 0 )
                 .attr( "height", 0 );
         }
